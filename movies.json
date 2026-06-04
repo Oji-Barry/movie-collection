@@ -120,6 +120,91 @@
   },
   {
     "id": 8,
+    "title": "Evangelion: 1.11 You Are (Not) Alone",
+    "year": 2009,
+    "runtime": "100 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0870529/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rebuild of Evangelion film 1"
+  },
+  {
+    "id": 9,
+    "title": "Evangelion: 2.22 You Can (Not) Advance",
+    "year": 2009,
+    "runtime": "112 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1150928/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rebuild of Evangelion film 2"
+  },
+  {
+    "id": 10,
+    "title": "Evangelion: 3.0+1.11 Thrice Upon a Time",
+    "year": 2021,
+    "runtime": "155 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt2458948/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rebuild of Evangelion film 4"
+  },
+  {
+    "id": 11,
+    "title": "Evangelion: 3.33 You Can (Not) Redo",
+    "year": 2012,
+    "runtime": "95 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1650393/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rebuild of Evangelion film 3"
+  },
+  {
+    "id": 12,
+    "title": "Evangelion: Death(True)\u00b2",
+    "year": 1998,
+    "runtime": "68 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0341234/",
+    "shelf": "",
+    "image": "",
+    "notes": "Included in Complete Series set"
+  },
+  {
+    "id": 13,
     "title": "The Hobbit: An Unexpected Journey",
     "year": 2012,
     "runtime": "182 min",
@@ -136,7 +221,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 9,
+    "id": 14,
     "title": "The Hobbit: The Battle of the Five Armies",
     "year": 2014,
     "runtime": "164 min",
@@ -153,7 +238,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 10,
+    "id": 15,
     "title": "The Hobbit: The Desolation of Smaug",
     "year": 2013,
     "runtime": "186 min",
@@ -170,7 +255,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 11,
+    "id": 16,
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "year": 2001,
     "runtime": "228 min",
@@ -187,7 +272,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 12,
+    "id": 17,
     "title": "The Lord of the Rings: The Return of the King",
     "year": 2003,
     "runtime": "263 min",
@@ -204,7 +289,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 13,
+    "id": 18,
     "title": "The Lord of the Rings: The Two Towers",
     "year": 2002,
     "runtime": "235 min",
@@ -221,7 +306,7 @@
     "notes": "Extended Edition"
   },
   {
-    "id": 14,
+    "id": 19,
     "title": "Mars Attacks!",
     "year": 1996,
     "runtime": "106 min",
@@ -236,5 +321,39 @@
     "shelf": "",
     "image": "",
     "notes": ""
+  },
+  {
+    "id": 20,
+    "title": "Neon Genesis Evangelion: The Complete Series",
+    "year": 1995,
+    "runtime": "779 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0112159/",
+    "shelf": "",
+    "image": "",
+    "notes": "TV series, 26 episodes. Includes Death(True)\u00b2 and End of Evangelion"
+  },
+  {
+    "id": 21,
+    "title": "Neon Genesis Evangelion: The End of Evangelion",
+    "year": 1997,
+    "runtime": "87 min",
+    "genre": "Animation",
+    "genre2": "Action",
+    "category": "NGE",
+    "director": "Hideaki Anno",
+    "format": "Blu-ray",
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0169858/",
+    "shelf": "",
+    "image": "",
+    "notes": "Included in Complete Series set"
   }
 ]
