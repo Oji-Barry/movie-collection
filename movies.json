@@ -13,7 +13,7 @@
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0071230/",
     "shelf": "COM-A",
-    "image": "https://image.tmdb.org/t/p/w500/lMFbEe0OHMXaRMs2F5VtRjHQkXF.jpg",
+    "image": "",
     "notes": ""
   },
   {
@@ -30,7 +30,7 @@
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0116996/",
     "shelf": "SCI-A",
-    "image": "https://image.tmdb.org/t/p/w500/eFqnEBCKlnNHZlOstmkQSVEWXaA.jpg",
+    "image": "",
     "notes": ""
   }
 ]
