@@ -6,30 +6,13 @@
 <title>My Movie Collection</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #0a0a0c;
-  --surface: #111116;
-  --surface2: #18181f;
-  --border: #2a2a35;
-  --accent: #e8c84a;
-  --accent2: #c0392b;
-  --text: #e8e8f0;
-  --text-dim: #7a7a90;
-  --text-faint: #3a3a50;
-  --row-hover: #16161e;
-  --banner-h: 320px;
-  --radius: 6px;
-}
+:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--row-hover:#16161e;--banner-h:320px;--radius:6px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;min-height:100vh}
-
-/* HEADER */
 .site-header{padding:2rem 2.5rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .site-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:.04em;line-height:1}
 .site-title span{color:var(--accent)}
 .count-tag{font-size:12px;color:var(--text-dim);background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:3px 10px;margin-left:10px;font-weight:400}
-
-/* CONTROLS */
 .controls{padding:1rem 2.5rem;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--border);background:var(--surface);position:sticky;top:0;z-index:50}
 .search-wrap{position:relative;flex:1;min-width:180px;max-width:300px}
 .search-wrap svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text-dim);pointer-events:none}
@@ -41,8 +24,6 @@ select:focus{border-color:var(--accent)}
 .filter-label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .clear-btn{background:none;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-dim);padding:7px 12px;font-family:'DM Sans',sans-serif;font-size:12px;cursor:pointer;transition:all .2s}
 .clear-btn:hover{border-color:var(--accent2);color:var(--accent2)}
-
-/* BANNER */
 .banner{overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;background:var(--surface2);border-bottom:1px solid var(--border)}
 .banner.open{max-height:var(--banner-h);opacity:1}
 .banner-inner{display:flex;align-items:stretch;height:var(--banner-h);position:relative;overflow:hidden}
@@ -60,9 +41,8 @@ select:focus{border-color:var(--accent)}
 .edit-btn{background:none;border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);color:rgba(255,255,255,.7);font-family:'DM Sans',sans-serif;font-size:12px;padding:5px 12px;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;transition:all .2s}
 .edit-btn:hover{border-color:var(--accent);color:var(--accent)}
 .banner-close{position:absolute;top:1rem;right:1.5rem;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:50%;width:30px;height:30px;color:white;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}
-.banner-close:hover{border-color: rgba(192,57,43,.6)}
-
-/* TABLE */
+.banner-close:hover{background:rgba(192,57,43,.6)}
+.poster-loading{width:160px;height:240px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-faint);font-size:11px;flex-shrink:0}
 .table-wrap{padding:0 2.5rem 3rem;overflow-x:auto}
 table{width:100%;border-collapse:collapse;margin-top:1.5rem}
 thead th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dim);padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none;transition:color .2s}
@@ -87,15 +67,13 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .imdb-link:hover{opacity:1}
 .results-info{font-size:12px;color:var(--text-dim);padding:.75rem 2.5rem 0}
 .empty-state{text-align:center;padding:4rem 2rem;color:var(--text-faint);font-size:15px}
-
-/* EDIT MODAL */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:200;padding:1rem;backdrop-filter:blur(4px)}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2rem;width:100%;max-width:480px;max-height:90vh;overflow-y:auto}
 .modal h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;margin-bottom:1.5rem;color:var(--accent)}
 .field{margin-bottom:1rem}
 .field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);margin-bottom:5px}
 .field input,.field select,.field textarea{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);padding:8px 10px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;transition:border-color .2s}
-.field input:focus,.field select,.field textarea:focus{border-color:var(--accent)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent)}
 .field textarea{height:60px;resize:vertical}
 .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%237a7a90' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -121,7 +99,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 <div class="controls">
   <div class="search-wrap">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="searchInput" placeholder="Search titles, directors…">
+    <input type="text" id="searchInput" placeholder="Search titles, directors...">
   </div>
   <span class="filter-label">Genre</span>
   <select id="genreFilter">
@@ -148,7 +126,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   <div class="banner-inner">
     <div class="banner-bg" id="bannerBg"></div>
     <button class="banner-close" onclick="closeBanner()">✕</button>
-    <div class="banner-covers" id="bannerCovers"></div>
+    <div class="banner-covers" id="bannerCovers"><div class="poster-loading">Loading...</div></div>
     <div class="banner-info" id="bannerInfo"></div>
   </div>
 </div>
@@ -176,7 +154,6 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   <div class="empty-state" id="emptyState" style="display:none">No movies match your filters.</div>
 </div>
 
-<!-- EDIT MODAL -->
 <div class="modal-bg" id="modalBg" style="display:none" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <h3 id="modalTitle">Edit Movie</h3>
@@ -215,10 +192,9 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <div class="field"><label>Shelf Location</label><input id="f-shelf" placeholder="COM-A"></div>
     </div>
     <div class="field"><label>IMDb URL</label><input id="f-imdb" type="url"></div>
-    <div class="field"><label>Poster Image URL</label><input id="f-image" type="url" placeholder="https://…"></div>
     <div class="field"><label>Notes</label><textarea id="f-notes"></textarea></div>
     <div class="modal-actions">
-      <button class="btn btn-danger" id="deleteBtn" onclick="deleteMovie()">Delete</button>
+      <button class="btn btn-danger" onclick="deleteMovie()">Delete</button>
       <button class="btn btn-ghost" onclick="closeModal()">Cancel</button>
       <button class="btn btn-primary" onclick="saveMovie()">Save</button>
     </div>
@@ -226,25 +202,37 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 </div>
 
 <script>
-let movies = [];
-let filtered = [];
-let activeIdx = null;
-let sortCol = 'title';
-let sortDir = 1;
-let editingId = null;
+const OMDB_KEY = '13c7cf73';
+const posterCache = {};
+
+let movies = [], filtered = [], activeIdx = null, sortCol = 'title', sortDir = 1, editingId = null;
+
+async function fetchPoster(title, year) {
+  const key = `${title}-${year}`;
+  if (posterCache[key]) return posterCache[key];
+  try {
+    const url = `https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&apikey=${OMDB_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const poster = (data.Poster && data.Poster !== 'N/A') ? data.Poster : null;
+    posterCache[key] = poster;
+    return poster;
+  } catch(e) {
+    return null;
+  }
+}
 
 async function loadMovies() {
   try {
     const res = await fetch('movies.json');
-    if (res.ok) { movies = await res.json(); }
-    else { movies = getFallback(); }
+    movies = res.ok ? await res.json() : getFallback();
   } catch(e) { movies = getFallback(); }
   filtered = [...movies];
   render();
 }
 
 function getFallback() {
-  return [{"id":1,"title":"Blazing Saddles","year":1974,"runtime":"93 min","genre":"Comedy","genre2":"Western","subcat":"Brooks Comedy","director":"Mel Brooks","format":"4K UHD","discs":1,"rating":"R","imdb":"https://www.imdb.com/title/tt0071230/","shelf":"COM-A","image":"https://m.media-amazon.com/images/M/MV5BMmQ4NjgxNTYtZTMwYy00NmQ4LWI4ZTQtMDYyMGM0NjFmNTU3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg","notes":""},{"id":2,"title":"Mars Attacks!","year":1996,"runtime":"106 min","genre":"Sci-Fi","genre2":"Comedy","subcat":"Dark Comedy","director":"Tim Burton","format":"Blu-ray","discs":1,"rating":"PG-13","imdb":"https://www.imdb.com/title/tt0116996/","shelf":"SCI-A","image":"https://m.media-amazon.com/images/M/MV5BM2U3YjYxMjktY2M4OS00NWZkLWI4ZTQtNzhlMGZiNzlhZTJhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg","notes":""}];
+  return [{"id":1,"title":"Blazing Saddles","year":1974,"runtime":"93 min","genre":"Comedy","genre2":"Western","subcat":"Brooks Comedy","director":"Mel Brooks","format":"4K UHD","discs":1,"rating":"R","imdb":"https://www.imdb.com/title/tt0071230/","shelf":"COM-A","image":"","notes":""},{"id":2,"title":"Mars Attacks!","year":1996,"runtime":"106 min","genre":"Sci-Fi","genre2":"Comedy","subcat":"Dark Comedy","director":"Tim Burton","format":"Blu-ray","discs":1,"rating":"PG-13","imdb":"https://www.imdb.com/title/tt0116996/","shelf":"SCI-A","image":"","notes":""}];
 }
 
 function fmtClass(fmt) {
@@ -256,7 +244,8 @@ function fmtClass(fmt) {
 
 function render() {
   document.getElementById('totalCount').textContent = `${movies.length} title${movies.length!==1?'s':''}`;
-  document.getElementById('resultsInfo').textContent = filtered.length !== movies.length ? `Showing ${filtered.length} of ${movies.length} titles` : `${movies.length} title${movies.length!==1?'s':''}`;
+  document.getElementById('resultsInfo').textContent = filtered.length !== movies.length
+    ? `Showing ${filtered.length} of ${movies.length} titles` : `${movies.length} title${movies.length!==1?'s':''}`;
   const body = document.getElementById('movieBody');
   const empty = document.getElementById('emptyState');
   if (!filtered.length) { body.innerHTML=''; empty.style.display='block'; return; }
@@ -277,20 +266,31 @@ function render() {
     </tr>`).join('');
 }
 
-function toggleRow(i) {
+async function toggleRow(i) {
   if (activeIdx === i) { closeBanner(); return; }
   activeIdx = i;
   const m = filtered[i];
-  document.getElementById('bannerBg').style.backgroundImage = `url('${m.image}')`;
-  document.getElementById('bannerCovers').innerHTML = m.image
-    ? `<img class="banner-cover" src="${m.image}" alt="${m.title}" onerror="this.style.display='none'">`
-    : `<div style="width:160px;height:260px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-faint);font-size:12px">No image</div>`;
+  const covers = document.getElementById('bannerCovers');
+  const info = document.getElementById('bannerInfo');
+  const bg = document.getElementById('bannerBg');
+  covers.innerHTML = '<div class="poster-loading">Loading poster...</div>';
+  document.getElementById('banner').classList.add('open');
+  render();
+
+  // Fetch poster from OMDB if not stored
+  let imgUrl = m.image || await fetchPoster(m.title, m.year);
+
+  bg.style.backgroundImage = imgUrl ? `url('${imgUrl}')` : '';
+  covers.innerHTML = imgUrl
+    ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
+    : '<div class="poster-loading">No poster found</div>';
+
   const sub = [m.genre2, m.subcat].filter(Boolean).join(' · ');
-  document.getElementById('bannerInfo').innerHTML = `
+  info.innerHTML = `
     <div class="banner-title">${m.title}</div>
     <div class="banner-meta">
       <span class="banner-pill accent">${m.genre}</span>
-      ${sub?`<span class="banner-pill">${sub}</span>`:''}
+      ${sub?`<span class="banner-pill">${sub}`:''}
       <span class="banner-pill">${m.year}</span>
       <span class="banner-pill">${m.runtime}</span>
       <span class="banner-pill">${m.rating}</span>
@@ -302,8 +302,6 @@ function toggleRow(i) {
       <a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>
       <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>
     </div>`;
-  document.getElementById('banner').classList.add('open');
-  render();
 }
 
 function closeBanner() {
@@ -328,7 +326,7 @@ function applyFilters() {
 }
 
 function clearFilters() {
-  ['searchInput'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('searchInput').value = '';
   ['genreFilter','formatFilter','ratingFilter'].forEach(id=>document.getElementById(id).value='');
   filtered=[...movies]; activeIdx=null; closeBanner(); render();
 }
@@ -355,7 +353,7 @@ function openEdit(id) {
   const m = movies.find(x=>x.id===id);
   if (!m) return;
   editingId = id;
-  document.getElementById('modalTitle').textContent = 'Edit \u2014 ' + m.title;
+  document.getElementById('modalTitle').textContent = 'Edit — ' + m.title;
   document.getElementById('f-title').value = m.title;
   document.getElementById('f-year').value = m.year;
   document.getElementById('f-runtime').value = m.runtime;
@@ -368,7 +366,6 @@ function openEdit(id) {
   document.getElementById('f-rating').value = m.rating;
   document.getElementById('f-shelf').value = m.shelf;
   document.getElementById('f-imdb').value = m.imdb;
-  document.getElementById('f-image').value = m.image||'';
   document.getElementById('f-notes').value = m.notes||'';
   document.getElementById('modalBg').style.display = 'flex';
 }
@@ -394,26 +391,17 @@ function saveMovie() {
     rating: document.getElementById('f-rating').value,
     shelf: document.getElementById('f-shelf').value.trim(),
     imdb: document.getElementById('f-imdb').value.trim(),
-    image: document.getElementById('f-image').value.trim(),
     notes: document.getElementById('f-notes').value.trim()
   };
   filtered = filtered.map(m=>m.id===editingId?movies[idx]:m);
-  closeModal(); closeBanner(); render(); showSaveReminder();
+  closeModal(); closeBanner(); render();
 }
 
 function deleteMovie() {
   if (!confirm('Remove this movie from your collection?')) return;
   movies = movies.filter(x=>x.id!==editingId);
   filtered = filtered.filter(x=>x.id!==editingId);
-  closeModal(); closeBanner(); render(); showSaveReminder();
-}
-
-function showSaveReminder() {
-  const t = document.createElement('div');
-  t.style.cssText = 'position:fixed;bottom:2rem;right:2rem;background:var(--surface2);border:1px solid var(--accent);border-radius:var(--radius);padding:12px 18px;font-size:13px;color:var(--text);z-index:300;box-shadow:0 4px 20px rgba(0,0,0,.5)';
-  t.innerHTML = '✒ Saved locally. <span style="color:var(--text-dim)">Send Claude the updated list to sync.</span>';
-  document.body.appendChild(t);
-  setTimeout(()=>t.remove(), 4000);
+  closeModal(); closeBanner(); render();
 }
 
 loadMovies();
