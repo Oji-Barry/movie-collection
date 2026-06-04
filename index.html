@@ -316,8 +316,8 @@ function applyFilters() {
   const f = document.getElementById('formatFilter').value;
   const r = document.getElementById('ratingFilter').value;
   filtered = movies.filter(m => {
-    if (s && !m.title.toLowerCase().includes(s) && !m.director.toLowerCase().includes(s)) return false;
-    if (g && m.genre!==g && m.genre2!==g) return false;
+    if (s && !m.title.toLowerCase().includes(s) && !m.director.toLowerCase().includes(s) && !(m.category||'').toLowerCase().includes(s) && !String(m.year).includes(s)) return false;
+    if (g && m.genre!==g && m.genre2!==g && m.category!==g) return false;
     if (f && m.format!==f) return false;
     if (r && m.rating!==r) return false;
     return true;
