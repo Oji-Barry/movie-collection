@@ -181,6 +181,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
     <table id="movieTable">
       <thead>
         <tr>
+          <th onclick="sortBy('id',this)">ID ↕</th>
           <th onclick="sortBy('title',this)">Title ↕</th>
           <th onclick="sortBy('year',this)">Year ↕</th>
           <th onclick="sortBy('runtime',this)">Runtime ↕</th>
@@ -253,6 +254,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <div class="field"><label>Shelf Location</label><input id="f-shelf" placeholder="FAN-A"></div>
     </div>
     <div class="field"><label>IMDb URL</label><input id="f-imdb" type="url"></div>
+    <div class="field"><label>Poster Image URL <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(overrides auto-lookup)</span></label><input id="f-image" type="url" placeholder="https://…"></div>
     <div class="field"><label>Notes</label><textarea id="f-notes"></textarea></div>
     <div class="modal-actions">
       <button class="btn btn-danger" onclick="deleteMovie()">Delete</button>
@@ -320,6 +322,7 @@ function render() {
   empty.style.display = 'none';
   body.innerHTML = filtered.map((m,i) => `
     <tr onclick="toggleRow(${i})" id="row-${i}" class="${activeIdx===i?'active':''}">
+      <td style="color:var(--text-faint);font-size:11px;text-align:center">${m.id}</td>
       <td class="td-title">${m.title}</td>
       <td class="td-year">${m.year}</td>
       <td>${m.runtime}</td>
@@ -435,6 +438,7 @@ function openEdit(id) {
   document.getElementById('f-rating').value = m.rating;
   document.getElementById('f-shelf').value = m.shelf||'';
   document.getElementById('f-imdb').value = m.imdb;
+  document.getElementById('f-image').value = m.image||'';
   document.getElementById('f-notes').value = m.notes||'';
   document.getElementById('modalBg').style.display = 'flex';
 }
@@ -456,6 +460,7 @@ function saveMovie() {
     rating: document.getElementById('f-rating').value,
     shelf: document.getElementById('f-shelf').value.trim(),
     imdb: document.getElementById('f-imdb').value.trim(),
+    image: document.getElementById('f-image').value.trim(),
     notes: document.getElementById('f-notes').value.trim()
   };
   filtered = filtered.map(m=>m.id===editingId?movies[idx]:m);
