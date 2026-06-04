@@ -119,13 +119,13 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   thead th{padding:8px 10px;font-size:10px}
   tbody td{padding:9px 10px;font-size:13px}
   .td-title{min-width:120px}
-  /* Hide less critical columns on mobile */
-  th:nth-child(3),td:nth-child(3),
-  th:nth-child(5),td:nth-child(5),
-  th:nth-child(7),td:nth-child(7),
-  th:nth-child(9),td:nth-child(9),
-  th:nth-child(12),td:nth-child(12){display:none}
 }
+
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:300;cursor:zoom-out;backdrop-filter:blur(6px)}
+.lightbox img{max-height:90vh;max-width:90vw;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,.8);cursor:default}
+.lightbox-close{position:absolute;top:1.25rem;right:1.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50%;width:36px;height:36px;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lightbox-close:hover{background:rgba(192,57,43,.7)}
 </style>
 </head>
 <body>
@@ -262,6 +262,12 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   </div>
 </div>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" style="display:none" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="" onclick="closeLightbox()" style="cursor:zoom-out">
+</div>
+
 <script>
 const OMDB_KEY = '13c7cf73';
 const posterCache = {};
@@ -331,7 +337,7 @@ async function toggleRow(i) {
   let imgUrl = m.image || await fetchPoster(m.title, m.year);
   document.getElementById('bannerBg').style.backgroundImage = imgUrl ? `url('${imgUrl}')` : '';
   document.getElementById('bannerCovers').innerHTML = imgUrl
-    ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
+    ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" style="cursor:zoom-in" onclick="openLightbox('${imgUrl}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
     : '<div class="poster-loading">No poster found</div>';
   const sub = [m.genre2, m.category].filter(Boolean).join(' · ');
   document.getElementById('bannerInfo').innerHTML = `
@@ -351,6 +357,15 @@ async function toggleRow(i) {
       <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>
     </div>`;
 }
+
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
 
 function closeBanner() {
   document.getElementById('banner').classList.remove('open');
