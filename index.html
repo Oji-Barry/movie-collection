@@ -123,7 +123,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 
 /* LIGHTBOX */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:300;cursor:zoom-out;backdrop-filter:blur(6px)}
-.lightbox img{max-height:90vh;max-width:90vw;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,.8);cursor:default}
+.lightbox img{height:92vh;width:auto;max-width:95vw;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,.8);object-fit:contain}
 .lightbox-close{position:absolute;top:1.25rem;right:1.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50%;width:36px;height:36px;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .lightbox-close:hover{background:rgba(192,57,43,.7)}
 </style>
@@ -277,8 +277,16 @@ async function fetchPoster(title, year) {
   const key = `${title}-${year}`;
   if (posterCache[key] !== undefined) return posterCache[key];
   try {
+    // First get the IMDB ID from OMDB
     const res = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&apikey=${OMDB_KEY}`);
     const data = await res.json();
+    if (data.imdbID) {
+      // Use the poster API for full resolution
+      const posterUrl = `https://img.omdbapi.com/?i=${data.imdbID}&h=1000&apikey=${OMDB_KEY}`;
+      posterCache[key] = posterUrl;
+      return posterUrl;
+    }
+    // Fallback to standard poster if no IMDB ID
     const poster = (data.Poster && data.Poster !== 'N/A') ? data.Poster : null;
     posterCache[key] = poster;
     return poster;
