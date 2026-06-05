@@ -134,6 +134,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <option>Biography</option><option>Comedy</option><option>Crime</option><option>Dark Comedy</option>
       <option>Documentary</option><option>Drama</option><option>Dramedy</option><option>Family</option>
       <option>Fantasy</option><option>Film Noir</option><option>History</option><option>Horror</option>
+      <option>Indie</option>
       <option>Martial Arts</option><option>Music</option><option>Musical</option><option>Mystery</option>
       <option>Rom-Com</option><option>Romance</option><option>Sci-Fi</option><option>Short</option>
       <option>Sport</option><option>Supernatural</option><option>Thriller</option><option>TV Shows</option>
@@ -211,6 +212,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
           <option>Biography</option><option>Comedy</option><option>Crime</option><option>Dark Comedy</option>
           <option>Documentary</option><option>Drama</option><option>Dramedy</option><option>Family</option>
           <option>Fantasy</option><option>Film Noir</option><option>History</option><option>Horror</option>
+          <option>Indie</option>
           <option>Martial Arts</option><option>Music</option><option>Musical</option><option>Mystery</option>
           <option>Rom-Com</option><option>Romance</option><option>Sci-Fi</option><option>Short</option>
           <option>Sport</option><option>Supernatural</option><option>Thriller</option><option>TV Shows</option>
@@ -224,6 +226,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
           <option>Biography</option><option>Comedy</option><option>Crime</option><option>Dark Comedy</option>
           <option>Documentary</option><option>Drama</option><option>Dramedy</option><option>Family</option>
           <option>Fantasy</option><option>Film Noir</option><option>History</option><option>Horror</option>
+          <option>Indie</option>
           <option>Martial Arts</option><option>Music</option><option>Musical</option><option>Mystery</option>
           <option>Rom-Com</option><option>Romance</option><option>Sci-Fi</option><option>Short</option>
           <option>Sport</option><option>Supernatural</option><option>Thriller</option><option>TV Shows</option>
@@ -436,11 +439,6 @@ function openEdit(id) {
   document.getElementById('f-category').value = m.category||'';
   document.getElementById('f-director').value = m.director;
   const fmts = Array.isArray(m.format)?m.format:[m.format];
-  ALL_FORMATS.forEach(f => {
-    const id = 'fmt-'+f.toLowerCase().replace(/[\s+]/g,'-').replace('k-uhd','4k').replace('blu-ray','blu').replace('digital','dig').replace('vhs','vhs').replace('dvd','dvd');
-    const el = document.getElementById('fmt-'+f.toLowerCase().replace(' ','').replace('-ray','').replace('uhd','k').replace('k','4k'));
-    // simpler approach
-  });
   document.getElementById('fmt-4k').checked = fmts.includes('4K UHD');
   document.getElementById('fmt-blu').checked = fmts.includes('Blu-ray');
   document.getElementById('fmt-dvd').checked = fmts.includes('DVD');
