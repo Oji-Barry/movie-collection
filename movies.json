@@ -8,14 +8,17 @@
     "genre2": "Western",
     "category": "Brooks Comedy",
     "director": "Mel Brooks",
-    "format": ["4K UHD"],
+    "format": [
+      "4K UHD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0071230/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "93 min"
   },
   {
     "id": 2,
@@ -26,14 +29,17 @@
     "genre2": "Comedy",
     "category": "Dark Comedy",
     "director": "Tim Burton",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0116996/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "106 min"
   },
   {
     "id": 3,
@@ -44,14 +50,18 @@
     "genre2": "Sci-Fi",
     "category": "Family",
     "director": "Matthew Robbins",
-    "format": ["Blu-ray", "DVD"],
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0092494/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "106 min"
   },
   {
     "id": 4,
@@ -62,14 +72,17 @@
     "genre2": "Horror",
     "category": "Supernatural Comic",
     "director": "Stephen Norrington",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0120611/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set"
+    "notes": "Part of Blade Trilogy set",
+    "runtime": "120 min"
   },
   {
     "id": 5,
@@ -80,14 +93,17 @@
     "genre2": "Horror",
     "category": "Supernatural Comic",
     "director": "Guillermo del Toro",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0187738/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set"
+    "notes": "Part of Blade Trilogy set",
+    "runtime": "117 min"
   },
   {
     "id": 6,
@@ -98,14 +114,17 @@
     "genre2": "Adventure",
     "category": "Supernatural Comic",
     "director": "David S. Goyer",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0359013/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set"
+    "notes": "Part of Blade Trilogy set",
+    "runtime": "122 min"
   },
   {
     "id": 7,
@@ -116,14 +135,17 @@
     "genre2": "Adventure",
     "category": "Conan",
     "director": "John Milius",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0082198/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Conan: The Complete Quest set"
+    "notes": "Part of Conan: The Complete Quest set",
+    "runtime": "129 min"
   },
   {
     "id": 8,
@@ -134,14 +156,17 @@
     "genre2": "Adventure",
     "category": "Conan",
     "director": "Richard Fleischer",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0087082/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Conan: The Complete Quest set"
+    "notes": "Part of Conan: The Complete Quest set",
+    "runtime": "103 min"
   },
   {
     "id": 9,
@@ -152,14 +177,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0903624/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "182 min"
   },
   {
     "id": 10,
@@ -170,14 +198,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt1170358/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "186 min"
   },
   {
     "id": 11,
@@ -188,14 +219,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt2310332/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "164 min"
   },
   {
     "id": 12,
@@ -206,14 +240,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0120737/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "228 min"
   },
   {
     "id": 13,
@@ -224,14 +261,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0167261/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "235 min"
   },
   {
     "id": 14,
@@ -242,14 +282,17 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0167260/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "263 min"
   },
   {
     "id": 15,
@@ -260,32 +303,38 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 5,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt0112159/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/owAzdw2xWpbpxdM7HmG0tAT8Ea9.jpg",
-    "notes": "TV series, 26 episodes. Includes Death(True)\u00b2 and End of Evangelion"
+    "notes": "TV series, 26 episodes. Includes Death(True)² and End of Evangelion",
+    "runtime": "779 min"
   },
   {
     "id": 16,
-    "title": "Evangelion: Death(True)\u00b2",
+    "title": "Evangelion: Death(True)²",
     "year": 1998,
     "released": "Mar 7, 1998",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 5,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt0341234/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/pbPyiZbaiuO3M2YO5XaCKRim98A.jpg",
-    "notes": "Included in Complete Series set"
+    "notes": "Included in Complete Series set",
+    "runtime": "68 min"
   },
   {
     "id": 17,
@@ -296,14 +345,17 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 5,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt0169858/",
     "shelf": "",
     "image": "",
-    "notes": "Included in Complete Series set"
+    "notes": "Included in Complete Series set",
+    "runtime": "87 min"
   },
   {
     "id": 18,
@@ -314,14 +366,17 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "Special",
     "discs": 1,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt0870529/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/xzbGWKOGwgitPF4kxMhJ6NBsqdl.jpg",
-    "notes": "Rebuild of Evangelion film 1"
+    "notes": "Rebuild of Evangelion film 1",
+    "runtime": "100 min"
   },
   {
     "id": 19,
@@ -332,14 +387,17 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt1150928/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/7VLYN2CfJpB6PrcuzDKKqdGSUi6.jpg",
-    "notes": "Rebuild of Evangelion film 2"
+    "notes": "Rebuild of Evangelion film 2",
+    "runtime": "112 min"
   },
   {
     "id": 20,
@@ -350,14 +408,17 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt1650393/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/34Sz7vmGmjZw5zWshb6HUIEmXuW.jpg",
-    "notes": "Rebuild of Evangelion film 3"
+    "notes": "Rebuild of Evangelion film 3",
+    "runtime": "95 min"
   },
   {
     "id": 21,
@@ -368,14 +429,17 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": ["Blu-ray"],
+    "format": [
+      "Blu-ray"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt2458948/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/q034rbTWteRNA8sMSc2YjegmiUx.jpg",
-    "notes": "Rebuild of Evangelion film 4"
+    "notes": "Rebuild of Evangelion film 4",
+    "runtime": "155 min"
   },
   {
     "id": 22,
@@ -386,14 +450,17 @@
     "genre2": "Sport",
     "category": "Sport Comedy",
     "director": "John Berry",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0077252/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "92 min"
   },
   {
     "id": 23,
@@ -404,14 +471,17 @@
     "genre2": "Dramedy",
     "category": "Sandler",
     "director": "Peter Segal",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0343660/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "99 min"
   },
   {
     "id": 24,
@@ -422,14 +492,17 @@
     "genre2": "Sport",
     "category": "Sport Comedy",
     "director": "Jesse Dylan",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0384642/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "95 min"
   },
   {
     "id": 25,
@@ -440,14 +513,17 @@
     "genre2": "Action",
     "category": "Romero",
     "director": "George A. Romero",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "R",
     "imdb": "https://www.imdb.com/title/tt0082622/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "145 min"
   },
   {
     "id": 26,
@@ -458,14 +534,17 @@
     "genre2": "Thriller",
     "category": "Thriller",
     "director": "Michelangelo Antonioni",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0073580/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "126 min"
   },
   {
     "id": 27,
@@ -476,14 +555,17 @@
     "genre2": "TV Shows",
     "category": "Classics, TV",
     "director": "Red Skelton",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "NR",
     "imdb": "https://www.imdb.com/title/tt0043244/",
     "shelf": "",
-    "image": "",
-    "notes": "6 classic episodes"
+    "image": "https://red-skelton.info/wp-content/uploads/the-red-skelton-show.jpg",
+    "notes": "6 classic episodes",
+    "runtime": "150 min"
   },
   {
     "id": 28,
@@ -494,14 +576,17 @@
     "genre2": "Dramedy",
     "category": "Sandler",
     "director": "James L. Brooks",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0371246/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "131 min"
   },
   {
     "id": 29,
@@ -512,14 +597,17 @@
     "genre2": "Fantasy",
     "category": "Romance Comedy",
     "director": "Ron Howard",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "20th Anniversary",
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0088161/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "110 min"
   },
   {
     "id": 30,
@@ -530,13 +618,16 @@
     "genre2": "Fantasy",
     "category": "Robin Williams",
     "director": "Barry Levinson",
-    "format": ["DVD"],
+    "format": [
+      "DVD"
+    ],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
     "imdb": "https://www.imdb.com/title/tt0105658/",
     "shelf": "",
     "image": "",
-    "notes": ""
+    "notes": "",
+    "runtime": "121 min"
   }
 ]
