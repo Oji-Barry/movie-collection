@@ -9,9 +9,7 @@
     "genre2": "Western",
     "category": "Brooks Comedy",
     "director": "Mel Brooks",
-    "format": [
-      "4K UHD"
-    ],
+    "format": ["4K UHD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -30,9 +28,7 @@
     "genre2": "Comedy",
     "category": "Dark Comedy",
     "director": "Tim Burton",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -51,10 +47,7 @@
     "genre2": "Sci-Fi",
     "category": "Family",
     "director": "Matthew Robbins",
-    "format": [
-      "Blu-ray",
-      "DVD"
-    ],
+    "format": ["Blu-ray", "DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -73,9 +66,7 @@
     "genre2": "Horror",
     "category": "Supernatural Comic",
     "director": "Stephen Norrington",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -94,9 +85,7 @@
     "genre2": "Horror",
     "category": "Supernatural Comic",
     "director": "Guillermo del Toro",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -115,9 +104,7 @@
     "genre2": "Adventure",
     "category": "Supernatural Comic",
     "director": "David S. Goyer",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -136,9 +123,7 @@
     "genre2": "Adventure",
     "category": "Conan",
     "director": "John Milius",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -157,9 +142,7 @@
     "genre2": "Adventure",
     "category": "Conan",
     "director": "Richard Fleischer",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -178,9 +161,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
@@ -199,9 +180,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
@@ -220,9 +199,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 3,
     "rating": "PG-13",
@@ -241,9 +218,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
@@ -262,9 +237,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
@@ -283,9 +256,7 @@
     "genre2": "Adventure",
     "category": "Tolkien",
     "director": "Peter Jackson",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Extended",
     "discs": 5,
     "rating": "PG-13",
@@ -304,9 +275,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 5,
     "rating": "NR",
@@ -325,9 +294,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 5,
     "rating": "NR",
@@ -346,9 +313,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 5,
     "rating": "NR",
@@ -367,9 +332,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "Special",
     "discs": 1,
     "rating": "NR",
@@ -388,9 +351,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -409,9 +370,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -430,9 +389,7 @@
     "genre2": "Action",
     "category": "NGE",
     "director": "Hideaki Anno",
-    "format": [
-      "Blu-ray"
-    ],
+    "format": ["Blu-ray"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -451,9 +408,7 @@
     "genre2": "Sport",
     "category": "Sport, Family",
     "director": "John Berry",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -472,9 +427,7 @@
     "genre2": "Dramedy",
     "category": "Sandler",
     "director": "Peter Segal",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -493,9 +446,7 @@
     "genre2": "Sport",
     "category": "Sport Comedy",
     "director": "Jesse Dylan",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -514,9 +465,7 @@
     "genre2": "Action",
     "category": "Romero",
     "director": "George A. Romero",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -535,9 +484,7 @@
     "genre2": "Thriller",
     "category": "Thriller",
     "director": "Michelangelo Antonioni",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -556,9 +503,7 @@
     "genre2": "TV Shows",
     "category": "Classics, TV",
     "director": "Red Skelton",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -577,9 +522,7 @@
     "genre2": "Dramedy",
     "category": "Sandler",
     "director": "James L. Brooks",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -598,9 +541,7 @@
     "genre2": "Fantasy",
     "category": "Romance Comedy",
     "director": "Ron Howard",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "20th Anniversary",
     "discs": 1,
     "rating": "PG",
@@ -619,9 +560,7 @@
     "genre2": "Fantasy",
     "category": "Robin Williams",
     "director": "Barry Levinson",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -640,9 +579,7 @@
     "genre2": "Rom-Com",
     "category": "Drama",
     "director": "James L. Brooks",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -661,9 +598,7 @@
     "genre2": "Family",
     "category": "Robin Williams",
     "director": "Barry Sonnenfeld",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -682,9 +617,7 @@
     "genre2": "Sport",
     "category": "Sport, Family",
     "director": "Michael Pressman",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -703,9 +636,7 @@
     "genre2": "Mystery",
     "category": "Shyamalan",
     "director": "M. Night Shyamalan",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -724,9 +655,7 @@
     "genre2": "Sport",
     "category": "Drama",
     "director": "Mike Tollin",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -745,9 +674,7 @@
     "genre2": "Romance",
     "category": "Drama",
     "director": "Randa Haines",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -766,9 +693,7 @@
     "genre2": "Sport",
     "category": "Sport, Family",
     "director": "Michael Ritchie",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -787,9 +712,7 @@
     "genre2": "History",
     "category": "Historical Epic",
     "director": "Ridley Scott",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -808,9 +731,7 @@
     "genre2": "Thriller",
     "category": "Thriller",
     "director": "Tony Scott",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -829,9 +750,7 @@
     "genre2": "Thriller",
     "category": "Thriller",
     "director": "Tony Scott",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -850,9 +769,7 @@
     "genre2": "Animation",
     "category": "Looney Tunes",
     "director": "Joe Dante",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -871,9 +788,7 @@
     "genre2": "Thriller",
     "category": "Thriller",
     "director": "Joe Roth",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -892,9 +807,7 @@
     "genre2": "History",
     "category": "Classics, TV",
     "director": "Robert Lieberman",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -913,9 +826,7 @@
     "genre2": "Indie",
     "category": "Comedy",
     "director": "Rob McKittrick",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Unrated",
     "discs": 2,
     "rating": "R",
@@ -934,9 +845,7 @@
     "genre2": "Family",
     "category": "Family",
     "director": "Steve Carr",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -955,9 +864,7 @@
     "genre2": "Fantasy",
     "category": "Family, Classics",
     "director": "Walter C. Miller",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Digitally Remastered",
     "discs": 1,
     "rating": "G",
@@ -976,9 +883,7 @@
     "genre2": "Dark Comedy",
     "category": "Dark Comedy",
     "director": "Danny DeVito",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -997,9 +902,7 @@
     "genre2": "Drama",
     "category": "Thriller",
     "director": "Joel Schumacher",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -1018,9 +921,7 @@
     "genre2": "Dramedy",
     "category": "Sandler",
     "director": "Frank Coraci",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Special",
     "discs": 1,
     "rating": "PG-13",
@@ -1039,9 +940,7 @@
     "genre2": "Family",
     "category": "Family",
     "director": "Brian Levant",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1060,9 +959,7 @@
     "genre2": "Comedy",
     "category": "Disney Animation",
     "director": "Chris Sanders",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1081,9 +978,7 @@
     "genre2": "Romance",
     "category": "Drama",
     "director": "Robert Zemeckis",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Special Collector's",
     "discs": 1,
     "rating": "PG-13",
@@ -1102,9 +997,7 @@
     "genre2": "Sport",
     "category": "Drama",
     "director": "John Gray",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1123,9 +1016,7 @@
     "genre2": "Action",
     "category": "John Wayne",
     "director": "John Wayne",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "G",
@@ -1144,9 +1035,7 @@
     "genre2": "Comedy",
     "category": "Disney Animation",
     "director": "Tony Craig",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "G",
@@ -1165,9 +1054,7 @@
     "genre2": "Animation",
     "category": "Looney Tunes",
     "director": "Joe Pytka",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Special",
     "discs": 2,
     "rating": "PG",
@@ -1186,9 +1073,7 @@
     "genre2": "Fantasy",
     "category": "Comics, Superhero",
     "director": "Peter Berg",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Unrated",
     "discs": 1,
     "rating": "NR",
@@ -1207,9 +1092,7 @@
     "genre2": "Sci-Fi",
     "category": "Eddie Murphy",
     "director": "Brian Robbins",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1228,9 +1111,7 @@
     "genre2": "Biography",
     "category": "Comedy",
     "director": "Betty Thomas",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -1249,9 +1130,7 @@
     "genre2": "",
     "category": "Comedy",
     "director": "George Roy Hill",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1270,9 +1149,7 @@
     "genre2": "Comics",
     "category": "Supernatural Comic",
     "director": "Lawrence Guterman",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1291,9 +1168,7 @@
     "genre2": "Comics",
     "category": "Supernatural Comic",
     "director": "Chuck Russell",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG-13",
@@ -1312,9 +1187,7 @@
     "genre2": "Comedy",
     "category": "Mannequin",
     "director": "Michael Gottlieb",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1333,9 +1206,7 @@
     "genre2": "Drama",
     "category": "Thriller",
     "director": "Robert De Niro",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "R",
@@ -1354,9 +1225,7 @@
     "genre2": "Comedy",
     "category": "Pixar",
     "director": "Brad Bird",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Walmart Exclusive",
     "discs": 1,
     "rating": "G",
@@ -1375,9 +1244,7 @@
     "genre2": "Family",
     "category": "Peter Pan",
     "director": "P.J. Hogan",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1396,9 +1263,7 @@
     "genre2": "Fantasy",
     "category": "Disney Animation",
     "director": "Robin Budd",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "Pixie-Powered",
     "discs": 1,
     "rating": "G",
@@ -1417,9 +1282,7 @@
     "genre2": "",
     "category": "Drama",
     "director": "Randal Kleiser",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "NR",
@@ -1438,9 +1301,7 @@
     "genre2": "Musical",
     "category": "Disney Animation",
     "director": "Don Chaffey",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "High-Flying",
     "discs": 1,
     "rating": "G",
@@ -1459,9 +1320,7 @@
     "genre2": "Family",
     "category": "Disney Animation",
     "director": "Ben Gluck",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "G",
@@ -1480,9 +1339,7 @@
     "genre2": "Comedy",
     "category": "Mannequin",
     "director": "Stewart Raffill",
-    "format": [
-      "DVD"
-    ],
+    "format": ["DVD"],
     "edition": "",
     "discs": 1,
     "rating": "PG",
@@ -1490,5 +1347,461 @@
     "shelf": "",
     "image": "https://flxt.tmsimg.com/assets/p13235_p_v10_ab.jpg",
     "notes": "Part of Mannequin double feature set"
+  },
+  {
+    "id": 72,
+    "title": "Black Sheep",
+    "year": 1996,
+    "released": "Feb 2, 1996",
+    "runtime": "87 min",
+    "genre": "Comedy",
+    "genre2": "",
+    "category": "Buddy Comedy",
+    "director": "Penelope Spheeris",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0115697/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 73,
+    "title": "Darby O'Gill and the Little People",
+    "year": 1959,
+    "released": "Jun 26, 1959",
+    "runtime": "93 min",
+    "genre": "Fantasy",
+    "genre2": "Family",
+    "category": "Disney Film",
+    "director": "Robert Stevenson",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0052722/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 74,
+    "title": "Shrek 2",
+    "year": 2004,
+    "released": "May 19, 2004",
+    "runtime": "93 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "DreamWorks",
+    "director": "Andrew Adamson",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0298148/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 75,
+    "title": "Snow White and the Seven Dwarfs",
+    "year": 1937,
+    "released": "Feb 4, 1938",
+    "runtime": "83 min",
+    "genre": "Animation",
+    "genre2": "Family",
+    "category": "Disney Animation",
+    "director": "David Hand",
+    "format": ["DVD"],
+    "edition": "Diamond Edition",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0029583/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 76,
+    "title": "Shrek",
+    "year": 2001,
+    "released": "May 18, 2001",
+    "runtime": "90 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "DreamWorks",
+    "director": "Andrew Adamson",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0126029/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 77,
+    "title": "Something's Gotta Give",
+    "year": 2003,
+    "released": "Dec 12, 2003",
+    "runtime": "128 min",
+    "genre": "Rom-Com",
+    "genre2": "Drama",
+    "category": "Nicholson",
+    "director": "Nancy Meyers",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0337741/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 78,
+    "title": "Shrek the Third",
+    "year": 2007,
+    "released": "May 18, 2007",
+    "runtime": "93 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "DreamWorks",
+    "director": "Chris Miller",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0413267/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 79,
+    "title": "The Road to El Dorado",
+    "year": 2000,
+    "released": "Mar 31, 2000",
+    "runtime": "89 min",
+    "genre": "Animation",
+    "genre2": "Adventure",
+    "category": "DreamWorks",
+    "director": "Eric Bergeron",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0138749/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 80,
+    "title": "Dinner for Schmucks",
+    "year": 2010,
+    "released": "Jul 30, 2010",
+    "runtime": "114 min",
+    "genre": "Comedy",
+    "genre2": "",
+    "category": "Buddy Comedy",
+    "director": "Jay Roach",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0427152/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 81,
+    "title": "Bowfinger",
+    "year": 1999,
+    "released": "Aug 13, 1999",
+    "runtime": "97 min",
+    "genre": "Comedy",
+    "genre2": "",
+    "category": "Buddy Comedy",
+    "director": "Frank Oz",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0131325/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 82,
+    "title": "Doogal",
+    "year": 2006,
+    "released": "Feb 24, 2006",
+    "runtime": "85 min",
+    "genre": "Animation",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Dave Borthwick",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0763417/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 83,
+    "title": "Coming to America",
+    "year": 1988,
+    "released": "Jun 29, 1988",
+    "runtime": "116 min",
+    "genre": "Comedy",
+    "genre2": "Romance",
+    "category": "Eddie Murphy",
+    "director": "John Landis",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0094898/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 84,
+    "title": "Yours, Mine & Ours",
+    "year": 2005,
+    "released": "Nov 23, 2005",
+    "runtime": "88 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Raja Gosnell",
+    "format": ["DVD"],
+    "edition": "Special Collector's",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0410969/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 85,
+    "title": "Firewall",
+    "year": 2006,
+    "released": "Feb 10, 2006",
+    "runtime": "105 min",
+    "genre": "Thriller",
+    "genre2": "Action",
+    "category": "Thriller",
+    "director": "Richard Loncraine",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0384544/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 86,
+    "title": "A Little Princess",
+    "year": 1995,
+    "released": "May 10, 1995",
+    "runtime": "97 min",
+    "genre": "Family",
+    "genre2": "Drama",
+    "category": "Family",
+    "director": "Alfonso Cuarón",
+    "format": ["DVD"],
+    "edition": "Double Feature",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0113670/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of A Little Princess / The Secret Garden double feature disc"
+  },
+  {
+    "id": 87,
+    "title": "The Secret Garden",
+    "year": 1993,
+    "released": "Aug 13, 1993",
+    "runtime": "101 min",
+    "genre": "Family",
+    "genre2": "Drama",
+    "category": "Family",
+    "director": "Agnieszka Holland",
+    "format": ["DVD"],
+    "edition": "Double Feature",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0108071/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of A Little Princess / The Secret Garden double feature disc"
+  },
+  {
+    "id": 88,
+    "title": "The Little Princess",
+    "year": 1939,
+    "released": "Mar 10, 1939",
+    "runtime": "93 min",
+    "genre": "Family",
+    "genre2": "Musical",
+    "category": "Classics",
+    "director": "Walter Lang",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0031725/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple. Includes short films Dora's Dunking Doughnuts and Kid in Africa on disc"
+  },
+  {
+    "id": 89,
+    "title": "Dora's Dunking Doughnuts",
+    "year": 1933,
+    "released": "Oct 14, 1933",
+    "runtime": "20 min",
+    "genre": "Short",
+    "genre2": "Comedy",
+    "category": "Classics",
+    "director": "Arthur Ripley",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0024916/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple short. Included on The Little Princess disc"
+  },
+  {
+    "id": 90,
+    "title": "Kid in Africa",
+    "year": 1933,
+    "released": "Nov 9, 1933",
+    "runtime": "20 min",
+    "genre": "Short",
+    "genre2": "Comedy",
+    "category": "Classics",
+    "director": "Alf Goulding",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0024253/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple short. Included on The Little Princess disc"
+  },
+  {
+    "id": 91,
+    "title": "Copper Mountain",
+    "year": 1983,
+    "released": "Jan 1, 1983",
+    "runtime": "60 min",
+    "genre": "Comedy",
+    "genre2": "",
+    "category": "TV Movie",
+    "director": "David Mitchell",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0085434/",
+    "shelf": "",
+    "image": "",
+    "notes": "Early Jim Carrey TV movie"
+  },
+  {
+    "id": 92,
+    "title": "Sleepless in Seattle",
+    "year": 1993,
+    "released": "Jun 25, 1993",
+    "runtime": "105 min",
+    "genre": "Rom-Com",
+    "genre2": "Drama",
+    "category": "Romance",
+    "director": "Nora Ephron",
+    "format": ["DVD"],
+    "edition": "Special",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0108160/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 93,
+    "title": "About Schmidt",
+    "year": 2002,
+    "released": "Dec 13, 2002",
+    "runtime": "124 min",
+    "genre": "Drama",
+    "genre2": "Comedy",
+    "category": "Nicholson",
+    "director": "Alexander Payne",
+    "format": ["DVD"],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0257360/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 94,
+    "title": "Problem Child",
+    "year": 1990,
+    "released": "Jul 27, 1990",
+    "runtime": "81 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Dennis Dugan",
+    "format": ["DVD"],
+    "edition": "Double Feature",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0100419/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Problem Child Tantrum Pack double feature disc"
+  },
+  {
+    "id": 95,
+    "title": "Problem Child 2",
+    "year": 1991,
+    "released": "Jul 31, 1991",
+    "runtime": "91 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Brian Levant",
+    "format": ["DVD"],
+    "edition": "Double Feature",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0102858/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Problem Child Tantrum Pack double feature disc"
   }
 ]
