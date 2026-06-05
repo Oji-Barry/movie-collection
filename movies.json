@@ -4,6 +4,7 @@
     "title": "Blazing Saddles",
     "year": 1974,
     "released": "Feb 7, 1974",
+    "runtime": "93 min",
     "genre": "Comedy",
     "genre2": "Western",
     "category": "Brooks Comedy",
@@ -17,14 +18,14 @@
     "imdb": "https://www.imdb.com/title/tt0071230/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "93 min"
+    "notes": ""
   },
   {
     "id": 2,
     "title": "Mars Attacks!",
     "year": 1996,
     "released": "Dec 13, 1996",
+    "runtime": "106 min",
     "genre": "Sci-Fi",
     "genre2": "Comedy",
     "category": "Dark Comedy",
@@ -38,14 +39,14 @@
     "imdb": "https://www.imdb.com/title/tt0116996/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "106 min"
+    "notes": ""
   },
   {
     "id": 3,
     "title": "*Batteries Not Included",
     "year": 1987,
     "released": "Nov 6, 1987",
+    "runtime": "106 min",
     "genre": "Comedy",
     "genre2": "Sci-Fi",
     "category": "Family",
@@ -60,14 +61,14 @@
     "imdb": "https://www.imdb.com/title/tt0092494/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "106 min"
+    "notes": ""
   },
   {
     "id": 4,
     "title": "Blade",
     "year": 1998,
     "released": "Aug 21, 1998",
+    "runtime": "120 min",
     "genre": "Action",
     "genre2": "Horror",
     "category": "Supernatural Comic",
@@ -81,14 +82,14 @@
     "imdb": "https://www.imdb.com/title/tt0120611/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set",
-    "runtime": "120 min"
+    "notes": "Part of Blade Trilogy set"
   },
   {
     "id": 5,
     "title": "Blade II",
     "year": 2002,
     "released": "Mar 22, 2002",
+    "runtime": "117 min",
     "genre": "Action",
     "genre2": "Horror",
     "category": "Supernatural Comic",
@@ -102,14 +103,14 @@
     "imdb": "https://www.imdb.com/title/tt0187738/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set",
-    "runtime": "117 min"
+    "notes": "Part of Blade Trilogy set"
   },
   {
     "id": 6,
     "title": "Blade: Trinity",
     "year": 2004,
     "released": "Dec 8, 2004",
+    "runtime": "122 min",
     "genre": "Action",
     "genre2": "Adventure",
     "category": "Supernatural Comic",
@@ -123,14 +124,14 @@
     "imdb": "https://www.imdb.com/title/tt0359013/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Blade Trilogy set",
-    "runtime": "122 min"
+    "notes": "Part of Blade Trilogy set"
   },
   {
     "id": 7,
     "title": "Conan the Barbarian",
     "year": 1982,
     "released": "May 14, 1982",
+    "runtime": "129 min",
     "genre": "Action",
     "genre2": "Adventure",
     "category": "Conan",
@@ -144,14 +145,14 @@
     "imdb": "https://www.imdb.com/title/tt0082198/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Conan: The Complete Quest set",
-    "runtime": "129 min"
+    "notes": "Part of Conan: The Complete Quest set"
   },
   {
     "id": 8,
     "title": "Conan the Destroyer",
     "year": 1984,
     "released": "Jun 29, 1984",
+    "runtime": "103 min",
     "genre": "Action",
     "genre2": "Adventure",
     "category": "Conan",
@@ -165,14 +166,14 @@
     "imdb": "https://www.imdb.com/title/tt0087082/",
     "shelf": "",
     "image": "",
-    "notes": "Part of Conan: The Complete Quest set",
-    "runtime": "103 min"
+    "notes": "Part of Conan: The Complete Quest set"
   },
   {
     "id": 9,
     "title": "The Hobbit: An Unexpected Journey",
     "year": 2012,
     "released": "Dec 14, 2012",
+    "runtime": "182 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -186,14 +187,14 @@
     "imdb": "https://www.imdb.com/title/tt0903624/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "182 min"
+    "notes": ""
   },
   {
     "id": 10,
     "title": "The Hobbit: The Desolation of Smaug",
     "year": 2013,
     "released": "Dec 13, 2013",
+    "runtime": "186 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -207,14 +208,14 @@
     "imdb": "https://www.imdb.com/title/tt1170358/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "186 min"
+    "notes": ""
   },
   {
     "id": 11,
     "title": "The Hobbit: The Battle of the Five Armies",
     "year": 2014,
     "released": "Dec 17, 2014",
+    "runtime": "164 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -228,14 +229,14 @@
     "imdb": "https://www.imdb.com/title/tt2310332/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "164 min"
+    "notes": ""
   },
   {
     "id": 12,
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "year": 2001,
     "released": "Dec 19, 2001",
+    "runtime": "228 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -249,14 +250,14 @@
     "imdb": "https://www.imdb.com/title/tt0120737/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "228 min"
+    "notes": ""
   },
   {
     "id": 13,
     "title": "The Lord of the Rings: The Two Towers",
     "year": 2002,
     "released": "Dec 18, 2002",
+    "runtime": "235 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -270,14 +271,14 @@
     "imdb": "https://www.imdb.com/title/tt0167261/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "235 min"
+    "notes": ""
   },
   {
     "id": 14,
     "title": "The Lord of the Rings: The Return of the King",
     "year": 2003,
     "released": "Dec 17, 2003",
+    "runtime": "263 min",
     "genre": "Fantasy",
     "genre2": "Adventure",
     "category": "Tolkien",
@@ -291,14 +292,14 @@
     "imdb": "https://www.imdb.com/title/tt0167260/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "263 min"
+    "notes": ""
   },
   {
     "id": 15,
     "title": "Neon Genesis Evangelion: The Complete Series",
     "year": 1995,
     "released": "1995-1996",
+    "runtime": "779 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -312,14 +313,14 @@
     "imdb": "https://www.imdb.com/title/tt0112159/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/owAzdw2xWpbpxdM7HmG0tAT8Ea9.jpg",
-    "notes": "TV series, 26 episodes. Includes Death(True)² and End of Evangelion",
-    "runtime": "779 min"
+    "notes": "TV series, 26 episodes. Includes Death(True)² and End of Evangelion"
   },
   {
     "id": 16,
     "title": "Evangelion: Death(True)²",
     "year": 1998,
     "released": "Mar 7, 1998",
+    "runtime": "68 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -333,14 +334,14 @@
     "imdb": "https://www.imdb.com/title/tt0341234/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/pbPyiZbaiuO3M2YO5XaCKRim98A.jpg",
-    "notes": "Included in Complete Series set",
-    "runtime": "68 min"
+    "notes": "Included in Complete Series set"
   },
   {
     "id": 17,
     "title": "Neon Genesis Evangelion: The End of Evangelion",
     "year": 1997,
     "released": "Jul 19, 1997",
+    "runtime": "87 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -354,14 +355,14 @@
     "imdb": "https://www.imdb.com/title/tt0169858/",
     "shelf": "",
     "image": "",
-    "notes": "Included in Complete Series set",
-    "runtime": "87 min"
+    "notes": "Included in Complete Series set"
   },
   {
     "id": 18,
     "title": "Evangelion: 1.11 You Are (Not) Alone",
     "year": 2009,
     "released": "Jan 23, 2009",
+    "runtime": "100 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -375,14 +376,14 @@
     "imdb": "https://www.imdb.com/title/tt0870529/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/xzbGWKOGwgitPF4kxMhJ6NBsqdl.jpg",
-    "notes": "Rebuild of Evangelion film 1",
-    "runtime": "100 min"
+    "notes": "Rebuild of Evangelion film 1"
   },
   {
     "id": 19,
     "title": "Evangelion: 2.22 You Can (Not) Advance",
     "year": 2009,
     "released": "Jun 27, 2009",
+    "runtime": "112 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -396,14 +397,14 @@
     "imdb": "https://www.imdb.com/title/tt1150928/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/7VLYN2CfJpB6PrcuzDKKqdGSUi6.jpg",
-    "notes": "Rebuild of Evangelion film 2",
-    "runtime": "112 min"
+    "notes": "Rebuild of Evangelion film 2"
   },
   {
     "id": 20,
     "title": "Evangelion: 3.33 You Can (Not) Redo",
     "year": 2012,
     "released": "Nov 17, 2012",
+    "runtime": "95 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -417,14 +418,14 @@
     "imdb": "https://www.imdb.com/title/tt1650393/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/34Sz7vmGmjZw5zWshb6HUIEmXuW.jpg",
-    "notes": "Rebuild of Evangelion film 3",
-    "runtime": "95 min"
+    "notes": "Rebuild of Evangelion film 3"
   },
   {
     "id": 21,
     "title": "Evangelion: 3.0+1.11 Thrice Upon a Time",
     "year": 2021,
     "released": "Mar 8, 2021",
+    "runtime": "155 min",
     "genre": "Animation",
     "genre2": "Action",
     "category": "NGE",
@@ -438,17 +439,17 @@
     "imdb": "https://www.imdb.com/title/tt2458948/",
     "shelf": "",
     "image": "https://image.tmdb.org/t/p/original/q034rbTWteRNA8sMSc2YjegmiUx.jpg",
-    "notes": "Rebuild of Evangelion film 4",
-    "runtime": "155 min"
+    "notes": "Rebuild of Evangelion film 4"
   },
   {
     "id": 22,
     "title": "The Bad News Bears Go to Japan",
     "year": 1978,
     "released": "Jul 14, 1978",
+    "runtime": "92 min",
     "genre": "Comedy",
     "genre2": "Sport",
-    "category": "Sport Comedy",
+    "category": "Sport, Family",
     "director": "John Berry",
     "format": [
       "DVD"
@@ -459,14 +460,14 @@
     "imdb": "https://www.imdb.com/title/tt0077252/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "92 min"
+    "notes": ""
   },
   {
     "id": 23,
     "title": "50 First Dates",
     "year": 2004,
     "released": "Feb 13, 2004",
+    "runtime": "99 min",
     "genre": "Rom-Com",
     "genre2": "Dramedy",
     "category": "Sandler",
@@ -480,14 +481,14 @@
     "imdb": "https://www.imdb.com/title/tt0343660/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "99 min"
+    "notes": ""
   },
   {
     "id": 24,
     "title": "Kicking & Screaming",
     "year": 2005,
     "released": "May 6, 2005",
+    "runtime": "95 min",
     "genre": "Comedy",
     "genre2": "Sport",
     "category": "Sport Comedy",
@@ -501,14 +502,14 @@
     "imdb": "https://www.imdb.com/title/tt0384642/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "95 min"
+    "notes": ""
   },
   {
     "id": 25,
     "title": "Knightriders",
     "year": 1981,
     "released": "May 1, 1981",
+    "runtime": "145 min",
     "genre": "Drama",
     "genre2": "Action",
     "category": "Romero",
@@ -522,14 +523,14 @@
     "imdb": "https://www.imdb.com/title/tt0082622/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "145 min"
+    "notes": ""
   },
   {
     "id": 26,
     "title": "The Passenger",
     "year": 1975,
     "released": "Apr 9, 1975",
+    "runtime": "126 min",
     "genre": "Drama",
     "genre2": "Thriller",
     "category": "Thriller",
@@ -543,14 +544,14 @@
     "imdb": "https://www.imdb.com/title/tt0073580/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "126 min"
+    "notes": ""
   },
   {
     "id": 27,
     "title": "The Red Skelton Show: Volume 2",
     "year": 1955,
     "released": "1955-1963",
+    "runtime": "150 min",
     "genre": "Comedy",
     "genre2": "TV Shows",
     "category": "Classics, TV",
@@ -564,14 +565,14 @@
     "imdb": "https://www.imdb.com/title/tt0043244/",
     "shelf": "",
     "image": "https://red-skelton.info/wp-content/uploads/the-red-skelton-show.jpg",
-    "notes": "6 classic episodes",
-    "runtime": "150 min"
+    "notes": "6 classic episodes"
   },
   {
     "id": 28,
     "title": "Spanglish",
     "year": 2004,
     "released": "Dec 17, 2004",
+    "runtime": "131 min",
     "genre": "Rom-Com",
     "genre2": "Dramedy",
     "category": "Sandler",
@@ -585,14 +586,14 @@
     "imdb": "https://www.imdb.com/title/tt0371246/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "131 min"
+    "notes": ""
   },
   {
     "id": 29,
     "title": "Splash",
     "year": 1984,
     "released": "Mar 9, 1984",
+    "runtime": "110 min",
     "genre": "Rom-Com",
     "genre2": "Fantasy",
     "category": "Romance Comedy",
@@ -606,14 +607,14 @@
     "imdb": "https://www.imdb.com/title/tt0088161/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "110 min"
+    "notes": ""
   },
   {
     "id": 30,
     "title": "Toys",
     "year": 1992,
     "released": "Dec 18, 1992",
+    "runtime": "121 min",
     "genre": "Comedy",
     "genre2": "Fantasy",
     "category": "Robin Williams",
@@ -627,7 +628,867 @@
     "imdb": "https://www.imdb.com/title/tt0105658/",
     "shelf": "",
     "image": "",
-    "notes": "",
-    "runtime": "121 min"
+    "notes": ""
+  },
+  {
+    "id": 31,
+    "title": "Terms of Endearment",
+    "year": 1983,
+    "released": "Nov 23, 1983",
+    "runtime": "132 min",
+    "genre": "Drama",
+    "genre2": "Rom-Com",
+    "category": "Drama",
+    "director": "James L. Brooks",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086425/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 32,
+    "title": "RV",
+    "year": 2006,
+    "released": "Apr 28, 2006",
+    "runtime": "99 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Robin Williams",
+    "director": "Barry Sonnenfeld",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0449088/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 33,
+    "title": "The Bad News Bears in Breaking Training",
+    "year": 1977,
+    "released": "Aug 19, 1977",
+    "runtime": "100 min",
+    "genre": "Comedy",
+    "genre2": "Sport",
+    "category": "Sport, Family",
+    "director": "Michael Pressman",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0075767/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 34,
+    "title": "Lady in the Water",
+    "year": 2006,
+    "released": "Jul 21, 2006",
+    "runtime": "110 min",
+    "genre": "Fantasy",
+    "genre2": "Mystery",
+    "category": "Shyamalan",
+    "director": "M. Night Shyamalan",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0452637/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 35,
+    "title": "Radio",
+    "year": 2003,
+    "released": "Oct 24, 2003",
+    "runtime": "109 min",
+    "genre": "Drama",
+    "genre2": "Sport",
+    "category": "Drama",
+    "director": "Mike Tollin",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0316465/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 36,
+    "title": "Children of a Lesser God",
+    "year": 1986,
+    "released": "Oct 3, 1986",
+    "runtime": "119 min",
+    "genre": "Drama",
+    "genre2": "Romance",
+    "category": "Drama",
+    "director": "Randa Haines",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0090830/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 37,
+    "title": "The Bad News Bears",
+    "year": 1976,
+    "released": "Apr 7, 1976",
+    "runtime": "102 min",
+    "genre": "Comedy",
+    "genre2": "Sport",
+    "category": "Sport, Family",
+    "director": "Michael Ritchie",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0074174/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 38,
+    "title": "Kingdom of Heaven",
+    "year": 2005,
+    "released": "May 6, 2005",
+    "runtime": "144 min",
+    "genre": "Action",
+    "genre2": "History",
+    "category": "Historical Epic",
+    "director": "Ridley Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0320661/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 39,
+    "title": "Man on Fire",
+    "year": 2004,
+    "released": "Apr 23, 2004",
+    "runtime": "146 min",
+    "genre": "Action",
+    "genre2": "Thriller",
+    "category": "Thriller",
+    "director": "Tony Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0328107/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 40,
+    "title": "The Taking of Pelham 123",
+    "year": 2009,
+    "released": "Jun 12, 2009",
+    "runtime": "106 min",
+    "genre": "Action",
+    "genre2": "Thriller",
+    "category": "Thriller",
+    "director": "Tony Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt1114980/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 41,
+    "title": "Looney Tunes: Back in Action",
+    "year": 2003,
+    "released": "Nov 14, 2003",
+    "runtime": "93 min",
+    "genre": "Comedy",
+    "genre2": "Animation",
+    "category": "Looney Tunes",
+    "director": "Joe Dante",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0318155/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 42,
+    "title": "Freedomland",
+    "year": 2006,
+    "released": "Feb 17, 2006",
+    "runtime": "113 min",
+    "genre": "Drama",
+    "genre2": "Thriller",
+    "category": "Thriller",
+    "director": "Joe Roth",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0408306/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 43,
+    "title": "The Titanic",
+    "year": 1996,
+    "released": "1996",
+    "runtime": "180 min",
+    "genre": "Drama",
+    "genre2": "History",
+    "category": "Classics, TV",
+    "director": "Robert Lieberman",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0117506/",
+    "shelf": "",
+    "image": "",
+    "notes": "TV mini-series, 2 parts"
+  },
+  {
+    "id": 44,
+    "title": "Waiting...",
+    "year": 2005,
+    "released": "Oct 7, 2005",
+    "runtime": "94 min",
+    "genre": "Comedy",
+    "genre2": "Indie",
+    "category": "Comedy",
+    "director": "Rob McKittrick",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Unrated",
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0382073/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 45,
+    "title": "Are We Done Yet?",
+    "year": 2007,
+    "released": "Apr 4, 2007",
+    "runtime": "92 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Steve Carr",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0455323/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 46,
+    "title": "The Borrowers",
+    "year": 1973,
+    "released": "Dec 14, 1973",
+    "runtime": "94 min",
+    "genre": "Family",
+    "genre2": "Fantasy",
+    "category": "Family, Classics",
+    "director": "Walter C. Miller",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Digitally Remastered",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0069706/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 47,
+    "title": "Throw Momma from the Train",
+    "year": 1987,
+    "released": "Dec 11, 1987",
+    "runtime": "88 min",
+    "genre": "Comedy",
+    "genre2": "Dark Comedy",
+    "category": "Dark Comedy",
+    "director": "Danny DeVito",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0094142/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 48,
+    "title": "The Client",
+    "year": 1994,
+    "released": "Jul 20, 1994",
+    "runtime": "119 min",
+    "genre": "Thriller",
+    "genre2": "Drama",
+    "category": "Thriller",
+    "director": "Joel Schumacher",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0109506/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 49,
+    "title": "Click",
+    "year": 2006,
+    "released": "Jun 23, 2006",
+    "runtime": "107 min",
+    "genre": "Comedy",
+    "genre2": "Dramedy",
+    "category": "Sandler",
+    "director": "Frank Coraci",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Special",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0389860/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 50,
+    "title": "Are We There Yet?",
+    "year": 2005,
+    "released": "Jan 21, 2005",
+    "runtime": "95 min",
+    "genre": "Comedy",
+    "genre2": "Family",
+    "category": "Family",
+    "director": "Brian Levant",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0368578/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 51,
+    "title": "Lilo & Stitch",
+    "year": 2002,
+    "released": "Jun 21, 2002",
+    "runtime": "85 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "Disney Animation",
+    "director": "Chris Sanders",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0275847/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 52,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "released": "Jul 6, 1994",
+    "runtime": "142 min",
+    "genre": "Drama",
+    "genre2": "Romance",
+    "category": "Drama",
+    "director": "Robert Zemeckis",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Special Collector's",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0109830/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 53,
+    "title": "Brian's Song",
+    "year": 2001,
+    "released": "Dec 2, 2001",
+    "runtime": "90 min",
+    "genre": "Drama",
+    "genre2": "Sport",
+    "category": "Drama",
+    "director": "John Gray",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0280491/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 54,
+    "title": "The Green Berets",
+    "year": 1968,
+    "released": "Jun 19, 1968",
+    "runtime": "141 min",
+    "genre": "War",
+    "genre2": "Action",
+    "category": "John Wayne",
+    "director": "John Wayne",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0062997/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 55,
+    "title": "Leroy & Stitch",
+    "year": 2006,
+    "released": "Jun 23, 2006",
+    "runtime": "73 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "Disney Animation",
+    "director": "Tony Craig",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0449086/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 56,
+    "title": "Space Jam",
+    "year": 1996,
+    "released": "Nov 15, 1996",
+    "runtime": "88 min",
+    "genre": "Comedy",
+    "genre2": "Animation",
+    "category": "Looney Tunes",
+    "director": "Joe Pytka",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Special",
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0117705/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 57,
+    "title": "Hancock",
+    "year": 2008,
+    "released": "Jul 2, 2008",
+    "runtime": "92 min",
+    "genre": "Action",
+    "genre2": "Fantasy",
+    "category": "Comics, Superhero",
+    "director": "Peter Berg",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Unrated",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0448157/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 58,
+    "title": "Meet Dave",
+    "year": 2008,
+    "released": "Jul 11, 2008",
+    "runtime": "90 min",
+    "genre": "Comedy",
+    "genre2": "Sci-Fi",
+    "category": "Eddie Murphy",
+    "director": "Brian Robbins",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0486544/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 59,
+    "title": "Private Parts",
+    "year": 1997,
+    "released": "Mar 7, 1997",
+    "runtime": "109 min",
+    "genre": "Comedy",
+    "genre2": "Biography",
+    "category": "Comedy",
+    "director": "Betty Thomas",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0119951/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 60,
+    "title": "Funny Farm",
+    "year": 1988,
+    "released": "Jun 3, 1988",
+    "runtime": "101 min",
+    "genre": "Comedy",
+    "genre2": "",
+    "category": "Comedy",
+    "director": "George Roy Hill",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0095250/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 61,
+    "title": "Son of the Mask",
+    "year": 2005,
+    "released": "Feb 18, 2005",
+    "runtime": "94 min",
+    "genre": "Comedy",
+    "genre2": "Comics",
+    "category": "Supernatural Comic",
+    "director": "Lawrence Guterman",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0351170/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 62,
+    "title": "The Mask",
+    "year": 1994,
+    "released": "Jul 29, 1994",
+    "runtime": "101 min",
+    "genre": "Comedy",
+    "genre2": "Comics",
+    "category": "Supernatural Comic",
+    "director": "Chuck Russell",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0110475/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 63,
+    "title": "Mannequin",
+    "year": 1987,
+    "released": "Feb 13, 1987",
+    "runtime": "90 min",
+    "genre": "Rom-Com",
+    "genre2": "Comedy",
+    "category": "Mannequin",
+    "director": "Michael Gottlieb",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0093493/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mannequin double feature set"
+  },
+  {
+    "id": 64,
+    "title": "The Good Shepherd",
+    "year": 2006,
+    "released": "Dec 22, 2006",
+    "runtime": "167 min",
+    "genre": "Thriller",
+    "genre2": "Drama",
+    "category": "Thriller",
+    "director": "Robert De Niro",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0343737/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 65,
+    "title": "Ratatouille",
+    "year": 2007,
+    "released": "Jun 29, 2007",
+    "runtime": "111 min",
+    "genre": "Animation",
+    "genre2": "Comedy",
+    "category": "Pixar",
+    "director": "Brad Bird",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Walmart Exclusive",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0382932/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 66,
+    "title": "Peter Pan",
+    "year": 2003,
+    "released": "Dec 25, 2003",
+    "runtime": "113 min",
+    "genre": "Fantasy",
+    "genre2": "Family",
+    "category": "Peter Pan",
+    "director": "P.J. Hogan",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0316396/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 67,
+    "title": "Peter Pan in Return to Never Land",
+    "year": 2002,
+    "released": "Feb 15, 2002",
+    "runtime": "72 min",
+    "genre": "Animation",
+    "genre2": "Fantasy",
+    "category": "Disney Animation",
+    "director": "Robin Budd",
+    "format": [
+      "DVD"
+    ],
+    "edition": "Pixie-Powered",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0283974/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 68,
+    "title": "The Boy in the Plastic Bubble",
+    "year": 1976,
+    "released": "Nov 12, 1976",
+    "runtime": "96 min",
+    "genre": "Drama",
+    "genre2": "",
+    "category": "Drama",
+    "director": "Randal Kleiser",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0074166/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 69,
+    "title": "Pete's Dragon",
+    "year": 1977,
+    "released": "Nov 3, 1977",
+    "runtime": "128 min",
+    "genre": "Family",
+    "genre2": "Musical",
+    "category": "Disney Animation",
+    "director": "Don Chaffey",
+    "format": [
+      "DVD"
+    ],
+    "edition": "High-Flying",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0076752/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 70,
+    "title": "Brother Bear 2",
+    "year": 2006,
+    "released": "Aug 29, 2006",
+    "runtime": "74 min",
+    "genre": "Animation",
+    "genre2": "Family",
+    "category": "Disney Animation",
+    "director": "Ben Gluck",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0479388/",
+    "shelf": "",
+    "image": "",
+    "notes": ""
+  },
+  {
+    "id": 71,
+    "title": "Mannequin 2: On the Move",
+    "year": 1991,
+    "released": "May 17, 1991",
+    "runtime": "95 min",
+    "genre": "Rom-Com",
+    "genre2": "Comedy",
+    "category": "Mannequin",
+    "director": "Stewart Raffill",
+    "format": [
+      "DVD"
+    ],
+    "edition": "",
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0102357/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mannequin double feature set"
   }
 ]
