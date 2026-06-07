@@ -60,14 +60,16 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .td-dim{color:var(--text-dim)}
 .genre-chip{display:inline-block;font-size:11px;font-weight:500;padding:2px 8px;border-radius:20px;background:var(--surface2);border:1px solid var(--border);color:var(--text-dim);white-space:nowrap;margin:1px}
 .genre-chip.primary{background:rgba(232,200,74,.1);border-color:rgba(232,200,74,.3);color:var(--accent)}
-.format-badge{display:block;font-size:10px;font-weight:600;letter-spacing:.06em;padding:2px 7px;border-radius:3px;text-transform:uppercase;margin:1px 0}
+.chips-wrap{display:flex;flex-wrap:wrap;gap:2px;min-width:120px}
+.format-badge{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;padding:2px 7px;border-radius:3px;text-transform:uppercase;margin:1px 0}
 .fmt-4k{background:rgba(232,200,74,.15);color:var(--accent);border:1px solid rgba(232,200,74,.3)}
 .fmt-blu{background:rgba(41,128,185,.15);color:#5dade2;border:1px solid rgba(41,128,185,.3)}
 .fmt-dvd{background:rgba(255,255,255,.05);color:var(--text-dim);border:1px solid var(--border)}
 .fmt-dig{background:rgba(46,204,113,.1);color:#58d68d;border:1px solid rgba(46,204,113,.3)}
 .fmt-vhs{background:rgba(155,89,182,.1);color:#c39bd3;border:1px solid rgba(155,89,182,.3)}
 .rating-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;border:1px solid var(--border);color:var(--text-dim);background:var(--surface2)}
-.edition-badge{font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px;background:rgba(232,200,74,.08);border:1px solid rgba(232,200,74,.2);color:rgba(232,200,74,.7);white-space:nowrap}
+.edition-badge{display:inline-block;font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px;background:rgba(232,200,74,.08);border:1px solid rgba(232,200,74,.2);color:rgba(232,200,74,.7);white-space:nowrap;margin:1px 0}
+.edition-wrap{display:flex;flex-wrap:wrap;gap:2px}
 .imdb-link{color:var(--accent);text-decoration:none;font-size:12px;font-weight:500;opacity:.8;transition:opacity .2s}
 .imdb-link:hover{opacity:1}
 .results-info{font-size:12px;color:var(--text-dim);padding:.75rem 2.5rem 0}
@@ -78,7 +80,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .lightbox-close{position:absolute;top:1.25rem;right:1.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50%;width:36px;height:36px;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .lightbox-close:hover{background:rgba(192,57,43,.7)}
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:200;padding:1rem;backdrop-filter:blur(4px)}
-.modal{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2rem;width:100%;max-width:520px;max-height:90vh;overflow-y:auto}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2rem;width:100%;max-width:560px;max-height:90vh;overflow-y:auto}
 .modal h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;margin-bottom:1.5rem;color:var(--accent)}
 .field{margin-bottom:1rem}
 .field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);margin-bottom:5px}
@@ -91,6 +93,13 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .format-checks{display:flex;gap:8px;flex-wrap:wrap}
 .format-check{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--text-dim);cursor:pointer}
 .format-check input{width:auto;cursor:pointer}
+.tag-input-wrap{display:flex;flex-wrap:wrap;gap:6px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:6px 8px;min-height:38px;cursor:text}
+.tag-input-wrap:focus-within{border-color:var(--accent)}
+.tag-pill{display:inline-flex;align-items:center;gap:4px;background:rgba(232,200,74,.12);border:1px solid rgba(232,200,74,.3);color:var(--accent);border-radius:20px;padding:2px 8px;font-size:12px;font-weight:500}
+.tag-pill.gray{background:var(--surface);border-color:var(--border);color:var(--text-dim)}
+.tag-pill button{background:none;border:none;color:inherit;cursor:pointer;font-size:14px;line-height:1;padding:0;opacity:.7}
+.tag-pill button:hover{opacity:1}
+.tag-bare-input{background:none;border:none;outline:none;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;min-width:80px;flex:1}
 .modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:1.5rem}
 .btn{padding:8px 18px;border-radius:var(--radius);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;border:1px solid var(--border)}
 .btn-primary{background:var(--accent);color:#000;border-color:var(--accent)}
@@ -99,6 +108,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .btn-ghost:hover{color:var(--text);border-color:var(--text-dim)}
 .btn-danger{background:none;color:var(--accent2);border-color:var(--accent2);margin-right:auto}
 .btn-danger:hover{background:var(--accent2);color:#fff}
+.field-hint{font-size:11px;color:var(--text-faint);margin-top:3px}
 @media(max-width:640px){
   .site-header{padding:1rem 1rem .75rem}
   .site-title{font-size:1.8rem}
@@ -125,7 +135,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   <div class="controls">
     <div class="search-wrap">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="text" id="searchInput" placeholder="Search titles, directors, year, category...">
+      <input type="text" id="searchInput" placeholder="Search titles, directors, genres, editions...">
     </div>
     <span class="filter-label">Genre</span>
     <select id="genreFilter">
@@ -144,6 +154,31 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
     <select id="formatFilter">
       <option value="">All Formats</option>
       <option>4K UHD</option><option>Blu-ray</option><option>DVD</option><option>Digital</option><option>VHS</option>
+    </select>
+    <span class="filter-label">Edition</span>
+    <select id="editionFilter">
+      <option value="">All Editions</option>
+      <option>Steelbook</option>
+      <option>Extended</option>
+      <option>Director's Cut</option>
+      <option>Unrated</option>
+      <option>Special</option>
+      <option>Collector's Edition</option>
+      <option>2-Disc Collector's Edition</option>
+      <option>Special Collector's</option>
+      <option>Diamond Edition</option>
+      <option>Platinum</option>
+      <option>Double Feature</option>
+      <option>Anniversary</option>
+      <option>20th Anniversary</option>
+      <option>25th Anniversary</option>
+      <option>30th Anniversary</option>
+      <option>70th Anniversary</option>
+      <option>Digitally Remastered</option>
+      <option>Walmart Exclusive</option>
+      <option>High-Flying</option>
+      <option>Pixie-Powered</option>
+      <option>Criterion Collection</option>
     </select>
     <span class="filter-label">Rating</span>
     <select id="ratingFilter">
@@ -175,7 +210,6 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
           <th onclick="sortBy('released',this)">Released ↕</th>
           <th onclick="sortBy('runtime',this)">Runtime ↕</th>
           <th onclick="sortBy('genre',this)">Genre ↕</th>
-          <th>Secondary Genre</th>
           <th onclick="sortBy('category',this)">Category ↕</th>
           <th onclick="sortBy('director',this)">Director ↕</th>
           <th onclick="sortBy('format',this)">Format ↕</th>
@@ -205,37 +239,18 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <div class="field"><label>Released</label><input id="f-released" placeholder="Mar 9, 1984"></div>
       <div class="field"><label>Runtime</label><input id="f-runtime" placeholder="93 min"></div>
     </div>
-    <div class="field-row">
-      <div class="field"><label>Primary Genre</label>
-        <select id="f-genre">
-          <option>Action</option><option>Adventure</option><option>Animation</option><option>Anime</option>
-          <option>Biography</option><option>Comedy</option><option>Crime</option><option>Dark Comedy</option>
-          <option>Documentary</option><option>Drama</option><option>Dramedy</option><option>Family</option>
-          <option>Fantasy</option><option>Film Noir</option><option>History</option><option>Horror</option>
-          <option>Indie</option>
-          <option>Martial Arts</option><option>Music</option><option>Musical</option><option>Mystery</option>
-          <option>Rom-Com</option><option>Romance</option><option>Sci-Fi</option><option>Short</option>
-          <option>Sport</option><option>Supernatural</option><option>Thriller</option><option>TV Shows</option>
-          <option>War</option><option>Western</option>
-        </select>
+
+    <div class="field">
+      <label>Genres <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(first = primary, shown in yellow)</span></label>
+      <div class="tag-input-wrap" id="genreTagWrap" onclick="document.getElementById('genreTagInput').focus()">
+        <input class="tag-bare-input" id="genreTagInput" placeholder="Type genre + Enter">
       </div>
-      <div class="field"><label>Secondary Genre</label>
-        <select id="f-genre2">
-          <option value="">— none —</option>
-          <option>Action</option><option>Adventure</option><option>Animation</option><option>Anime</option>
-          <option>Biography</option><option>Comedy</option><option>Crime</option><option>Dark Comedy</option>
-          <option>Documentary</option><option>Drama</option><option>Dramedy</option><option>Family</option>
-          <option>Fantasy</option><option>Film Noir</option><option>History</option><option>Horror</option>
-          <option>Indie</option>
-          <option>Martial Arts</option><option>Music</option><option>Musical</option><option>Mystery</option>
-          <option>Rom-Com</option><option>Romance</option><option>Sci-Fi</option><option>Short</option>
-          <option>Sport</option><option>Supernatural</option><option>Thriller</option><option>TV Shows</option>
-          <option>War</option><option>Western</option>
-        </select>
-      </div>
+      <div class="field-hint">e.g. Comedy → Enter, then Drama → Enter</div>
     </div>
+
     <div class="field"><label>Category</label><input id="f-category" placeholder="e.g. Tolkien, Brooks Comedy, NGE"></div>
     <div class="field"><label>Director</label><input id="f-director"></div>
+
     <div class="field">
       <label>Format</label>
       <div class="format-checks">
@@ -246,8 +261,15 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
         <label class="format-check"><input type="checkbox" id="fmt-vhs" value="VHS"> VHS</label>
       </div>
     </div>
+
+    <div class="field">
+      <label>Edition Tags <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(stackable)</span></label>
+      <div class="tag-input-wrap" id="editionTagWrap" onclick="document.getElementById('editionTagInput').focus()">
+        <input class="tag-bare-input" id="editionTagInput" placeholder="Type edition + Enter (e.g. Steelbook, Extended)">
+      </div>
+    </div>
+
     <div class="field-row">
-      <div class="field"><label>Edition</label><input id="f-edition" placeholder="e.g. Extended, 20th Anniversary"></div>
       <div class="field"><label>Disc Count</label><input id="f-discs" type="number" min="1"></div>
       <div class="field"><label>Rating (MPAA)</label>
         <select id="f-rating">
@@ -275,6 +297,41 @@ const posterCache = {};
 const ALL_FORMATS = ['4K UHD','Blu-ray','DVD','Digital','VHS'];
 let movies = [], filtered = [], activeIdx = null, sortCol = 'title', sortDir = 1, editingId = null;
 
+// ── Tag input helper ──────────────────────────────────────────────────────────
+function makeTagInput(wrapId, inputId, isPrimary) {
+  const wrap = document.getElementById(wrapId);
+  const input = document.getElementById(inputId);
+  let tags = [];
+
+  function render() {
+    Array.from(wrap.querySelectorAll('.tag-pill')).forEach(el => el.remove());
+    tags.forEach((tag, i) => {
+      const pill = document.createElement('span');
+      pill.className = 'tag-pill' + (isPrimary && i === 0 ? '' : ' gray');
+      pill.innerHTML = `${tag} <button onclick="removeTag_${wrapId}(${i})">×</button>`;
+      wrap.insertBefore(pill, input);
+    });
+  }
+
+  window[`getTags_${wrapId}`] = () => [...tags];
+  window[`setTags_${wrapId}`] = (arr) => { tags = arr || []; render(); };
+  window[`removeTag_${wrapId}`] = (i) => { tags.splice(i, 1); render(); };
+
+  input.addEventListener('keydown', e => {
+    if ((e.key === 'Enter' || e.key === ',') && input.value.trim()) {
+      e.preventDefault();
+      tags.push(input.value.trim());
+      input.value = '';
+      render();
+    }
+    if (e.key === 'Backspace' && !input.value && tags.length) {
+      tags.pop();
+      render();
+    }
+  });
+}
+
+// ── Poster fetch ──────────────────────────────────────────────────────────────
 async function fetchPoster(title, year) {
   const key = `${title}-${year}`;
   if (posterCache[key] !== undefined) return posterCache[key];
@@ -290,16 +347,23 @@ async function fetchPoster(title, year) {
   } catch(e) { posterCache[key] = null; return null; }
 }
 
+// ── Load ──────────────────────────────────────────────────────────────────────
 async function loadMovies() {
   try {
     const res = await fetch('movies.json');
     movies = res.ok ? await res.json() : [];
   } catch(e) { movies = []; }
+  // normalise: ensure genre and edition are always arrays
+  movies.forEach(m => {
+    if (!Array.isArray(m.genre)) m.genre = m.genre ? [m.genre] : [];
+    if (!Array.isArray(m.edition)) m.edition = m.edition ? [m.edition] : [];
+  });
   movies.sort((a,b) => a.title.localeCompare(b.title));
   filtered = [...movies];
   render();
 }
 
+// ── Render helpers ────────────────────────────────────────────────────────────
 function fmtClass(f) {
   if (f.includes('4K')) return 'fmt-4k';
   if (/blu/i.test(f)) return 'fmt-blu';
@@ -313,6 +377,19 @@ function formatBadges(formats) {
   return formats.map(f => `<span class="format-badge ${fmtClass(f)}">${f}</span>`).join('');
 }
 
+function genreChips(genres) {
+  if (!Array.isArray(genres) || !genres.length) return '<span style="color:var(--text-faint)">—</span>';
+  return `<div class="chips-wrap">${genres.map((g,i) =>
+    `<span class="genre-chip${i===0?' primary':''}">${g}</span>`
+  ).join('')}</div>`;
+}
+
+function editionBadges(editions) {
+  if (!Array.isArray(editions) || !editions.length) return '<span style="color:var(--text-faint)">—</span>';
+  return `<div class="edition-wrap">${editions.map(e => `<span class="edition-badge">${e}</span>`).join('')}</div>`;
+}
+
+// ── Render table ──────────────────────────────────────────────────────────────
 function render() {
   document.getElementById('totalCount').textContent = `${movies.length} title${movies.length!==1?'s':''}`;
   document.getElementById('resultsInfo').textContent = filtered.length !== movies.length
@@ -329,18 +406,18 @@ function render() {
       <td class="td-dim">${m.year}</td>
       <td class="td-dim" style="font-size:12px">${m.released||'—'}</td>
       <td class="td-dim">${m.runtime||'—'}</td>
-      <td><span class="genre-chip primary">${m.genre}</span></td>
-      <td>${m.genre2?`<span class="genre-chip">${m.genre2}</span>`:'<span style="color:var(--text-faint)">—</span>'}</td>
+      <td>${genreChips(m.genre)}</td>
       <td>${m.category?`<span class="genre-chip">${m.category}</span>`:'<span style="color:var(--text-faint)">—</span>'}</td>
       <td class="td-dim">${m.director}</td>
       <td>${formatBadges(m.format)}</td>
-      <td>${m.edition?`<span class="edition-badge">${m.edition}</span>`:'<span style="color:var(--text-faint)">—</span>'}</td>
+      <td>${editionBadges(m.edition)}</td>
       <td class="td-dim" style="text-align:center">${m.discs}</td>
       <td><a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a></td>
       <td class="td-dim" style="font-size:12px">${m.shelf||'—'}</td>
     </tr>`).join('');
 }
 
+// ── Banner ────────────────────────────────────────────────────────────────────
 async function toggleRow(i) {
   if (activeIdx === i) { closeBanner(); return; }
   activeIdx = i;
@@ -354,17 +431,20 @@ async function toggleRow(i) {
     ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" onclick="openLightbox('${imgUrl}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
     : '<div class="poster-loading">No poster found</div>';
   const formats = Array.isArray(m.format) ? m.format.join(' · ') : m.format;
-  const sub = [m.genre2, m.category].filter(Boolean).join(' · ');
+  const primaryGenre = Array.isArray(m.genre) ? m.genre[0] : m.genre;
+  const otherGenres = Array.isArray(m.genre) ? m.genre.slice(1).join(' · ') : '';
+  const editions = Array.isArray(m.edition) && m.edition.length ? m.edition.join(' · ') : '';
   document.getElementById('bannerInfo').innerHTML = `
     <div class="banner-title">${m.title}</div>
     <div class="banner-meta">
-      <span class="banner-pill accent">${m.genre}</span>
-      ${sub?`<span class="banner-pill">${sub}</span>`:''}
+      <span class="banner-pill accent">${primaryGenre}</span>
+      ${otherGenres ? `<span class="banner-pill">${otherGenres}</span>` : ''}
+      ${m.category ? `<span class="banner-pill">${m.category}</span>` : ''}
       <span class="banner-pill">${m.year}</span>
       <span class="banner-pill">${m.runtime||''}</span>
       <span class="banner-pill">${m.rating}</span>
       <span class="banner-pill">${formats}</span>
-      ${m.edition?`<span class="banner-pill">${m.edition}</span>`:''}
+      ${editions ? `<span class="banner-pill">${editions}</span>` : ''}
     </div>
     <div style="color:rgba(255,255,255,.6);font-size:13px;margin-top:4px">Directed by ${m.director}${m.shelf?' &nbsp;·&nbsp; Shelf: '+m.shelf:''}</div>
     ${m.notes?`<div style="color:rgba(255,255,255,.5);font-size:12px;margin-top:4px;font-style:italic">${m.notes}</div>`:''}
@@ -384,18 +464,42 @@ function openLightbox(src) {
   document.getElementById('lightbox').style.display = 'flex';
 }
 function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
-document.addEventListener('keydown', e => { if(e.key==='Escape') { closeLightbox(); } });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+
+// ── Search & filter ───────────────────────────────────────────────────────────
+function movieMatchesSearch(m, s) {
+  if (!s) return true;
+  const fields = [
+    m.title, m.director, m.category, String(m.year),
+    m.released, m.runtime, m.rating, m.shelf, m.notes,
+    ...(Array.isArray(m.genre) ? m.genre : [m.genre]),
+    ...(Array.isArray(m.format) ? m.format : [m.format]),
+    ...(Array.isArray(m.edition) ? m.edition : [m.edition])
+  ];
+  return fields.some(f => f && String(f).toLowerCase().includes(s));
+}
 
 function applyFilters() {
   const s = document.getElementById('searchInput').value.toLowerCase();
   const g = document.getElementById('genreFilter').value;
   const f = document.getElementById('formatFilter').value;
+  const ed = document.getElementById('editionFilter').value;
   const r = document.getElementById('ratingFilter').value;
   filtered = movies.filter(m => {
-    if (s && !m.title.toLowerCase().includes(s) && !m.director.toLowerCase().includes(s) && !(m.category||'').toLowerCase().includes(s) && !String(m.year).includes(s)) return false;
-    if (g && m.genre!==g && m.genre2!==g && m.category!==g) return false;
-    if (f) { const fmts = Array.isArray(m.format)?m.format:[m.format]; if(!fmts.includes(f)) return false; }
-    if (r && m.rating!==r) return false;
+    if (!movieMatchesSearch(m, s)) return false;
+    if (g) {
+      const genres = Array.isArray(m.genre) ? m.genre : [m.genre];
+      if (!genres.includes(g)) return false;
+    }
+    if (f) {
+      const fmts = Array.isArray(m.format) ? m.format : [m.format];
+      if (!fmts.includes(f)) return false;
+    }
+    if (ed) {
+      const eds = Array.isArray(m.edition) ? m.edition : [m.edition];
+      if (!eds.includes(ed)) return false;
+    }
+    if (r && m.rating !== r) return false;
     return true;
   });
   activeIdx = null; closeBanner(); render();
@@ -403,17 +507,23 @@ function applyFilters() {
 
 function clearFilters() {
   document.getElementById('searchInput').value = '';
-  ['genreFilter','formatFilter','ratingFilter'].forEach(id=>document.getElementById(id).value='');
-  filtered=[...movies]; activeIdx=null; closeBanner(); render();
+  ['genreFilter','formatFilter','editionFilter','ratingFilter'].forEach(id => document.getElementById(id).value = '');
+  filtered = [...movies]; activeIdx = null; closeBanner(); render();
 }
 
 function sortBy(col, th) {
   if (sortCol===col) sortDir*=-1; else {sortCol=col;sortDir=1;}
-  filtered.sort((a,b)=>{
-    let av=col==='format'?(Array.isArray(a.format)?a.format[0]:a.format):a[col]??'';
-    let bv=col==='format'?(Array.isArray(b.format)?b.format[0]:b.format):b[col]??'';
-    if(typeof av==='string') av=av.toLowerCase();
-    if(typeof bv==='string') bv=bv.toLowerCase();
+  filtered.sort((a,b) => {
+    let av = col==='format' ? (Array.isArray(a.format)?a.format[0]:a.format)
+           : col==='genre'  ? (Array.isArray(a.genre)?a.genre[0]:a.genre)
+           : col==='edition'? (Array.isArray(a.edition)?a.edition[0]:'')
+           : a[col] ?? '';
+    let bv = col==='format' ? (Array.isArray(b.format)?b.format[0]:b.format)
+           : col==='genre'  ? (Array.isArray(b.genre)?b.genre[0]:b.genre)
+           : col==='edition'? (Array.isArray(b.edition)?b.edition[0]:'')
+           : b[col] ?? '';
+    if (typeof av==='string') av=av.toLowerCase();
+    if (typeof bv==='string') bv=bv.toLowerCase();
     return av<bv?-sortDir:av>bv?sortDir:0;
   });
   document.querySelectorAll('thead th').forEach(t=>t.classList.remove('sorted'));
@@ -424,8 +534,10 @@ function sortBy(col, th) {
 document.getElementById('searchInput').addEventListener('input', applyFilters);
 document.getElementById('genreFilter').addEventListener('change', applyFilters);
 document.getElementById('formatFilter').addEventListener('change', applyFilters);
+document.getElementById('editionFilter').addEventListener('change', applyFilters);
 document.getElementById('ratingFilter').addEventListener('change', applyFilters);
 
+// ── Edit modal ────────────────────────────────────────────────────────────────
 function openEdit(id) {
   const m = movies.find(x=>x.id===id); if (!m) return;
   editingId = id;
@@ -434,8 +546,6 @@ function openEdit(id) {
   document.getElementById('f-year').value = m.year;
   document.getElementById('f-released').value = m.released||'';
   document.getElementById('f-runtime').value = m.runtime||'';
-  document.getElementById('f-genre').value = m.genre;
-  document.getElementById('f-genre2').value = m.genre2||'';
   document.getElementById('f-category').value = m.category||'';
   document.getElementById('f-director').value = m.director;
   const fmts = Array.isArray(m.format)?m.format:[m.format];
@@ -444,13 +554,19 @@ function openEdit(id) {
   document.getElementById('fmt-dvd').checked = fmts.includes('DVD');
   document.getElementById('fmt-dig').checked = fmts.includes('Digital');
   document.getElementById('fmt-vhs').checked = fmts.includes('VHS');
-  document.getElementById('f-edition').value = m.edition||'';
   document.getElementById('f-discs').value = m.discs;
   document.getElementById('f-rating').value = m.rating;
   document.getElementById('f-shelf').value = m.shelf||'';
   document.getElementById('f-imdb').value = m.imdb;
   document.getElementById('f-image').value = m.image||'';
   document.getElementById('f-notes').value = m.notes||'';
+
+  const genres = Array.isArray(m.genre) ? m.genre : (m.genre ? [m.genre] : []);
+  window['setTags_genreTagWrap'](genres);
+
+  const editions = Array.isArray(m.edition) ? m.edition : (m.edition ? [m.edition] : []);
+  window['setTags_editionTagWrap'](editions);
+
   document.getElementById('modalBg').style.display = 'flex';
 }
 
@@ -462,17 +578,18 @@ function saveMovie() {
     const map = {'4K UHD':'fmt-4k','Blu-ray':'fmt-blu','DVD':'fmt-dvd','Digital':'fmt-dig','VHS':'fmt-vhs'};
     return document.getElementById(map[f])?.checked;
   });
+  const genres = window['getTags_genreTagWrap']();
+  const editions = window['getTags_editionTagWrap']();
   movies[idx] = {...movies[idx],
     title: document.getElementById('f-title').value.trim(),
     year: parseInt(document.getElementById('f-year').value)||movies[idx].year,
     released: document.getElementById('f-released').value.trim(),
     runtime: document.getElementById('f-runtime').value.trim(),
-    genre: document.getElementById('f-genre').value,
-    genre2: document.getElementById('f-genre2').value,
+    genre: genres.length ? genres : movies[idx].genre,
     category: document.getElementById('f-category').value.trim(),
     director: document.getElementById('f-director').value.trim(),
     format: selFmts.length ? selFmts : movies[idx].format,
-    edition: document.getElementById('f-edition').value.trim(),
+    edition: editions,
     discs: parseInt(document.getElementById('f-discs').value)||1,
     rating: document.getElementById('f-rating').value,
     shelf: document.getElementById('f-shelf').value.trim(),
@@ -491,6 +608,9 @@ function deleteMovie() {
   closeModal(); closeBanner(); render();
 }
 
+// ── Init ──────────────────────────────────────────────────────────────────────
+makeTagInput('genreTagWrap', 'genreTagInput', true);
+makeTagInput('editionTagWrap', 'editionTagInput', false);
 loadMovies();
 </script>
 </body>
