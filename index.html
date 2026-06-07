@@ -77,6 +77,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .fmt-vhs{background:rgba(155,89,182,.1);color:#c39bd3;border:1px solid rgba(155,89,182,.3)}
 .rating-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;border:1px solid var(--border);color:var(--text-dim);background:var(--surface2)}
 .edition-badge{display:inline-block;font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px;background:rgba(232,200,74,.08);border:1px solid rgba(232,200,74,.2);color:rgba(232,200,74,.7);white-space:nowrap;margin:1px 0}
+.edition-badge.steelbook{background:rgba(180,190,200,.08);border-color:rgba(180,190,200,.3);color:rgba(190,200,210,.8)}
 .edition-wrap{display:flex;flex-wrap:wrap;gap:2px}
 .imdb-link{color:var(--accent);text-decoration:none;font-size:12px;font-weight:500;opacity:.8;transition:opacity .2s}
 .imdb-link:hover{opacity:1}
@@ -213,7 +214,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
           <th onclick="sortBy('director',this)">Director ↕</th>
           <th onclick="sortBy('format',this)">Format ↕</th>
           <th onclick="sortBy('edition',this)">Edition ↕</th>
-          <th>Discs</th>
+          <th style="padding:10px 8px">Discs</th>
           <th>IMDb</th>
           <th onclick="sortBy('shelf',this)">Shelf ↕</th>
         </tr>
@@ -426,7 +427,7 @@ function fmtClass(f) {
 }
 function formatBadges(formats) {
   if (!Array.isArray(formats)) formats = [formats];
-  return formats.map(f => `<span class="format-badge ${fmtClass(f)}">${f}</span>`).join('');
+  return `<div style="display:flex;flex-wrap:wrap;gap:2px">${formats.map(f => `<span class="format-badge ${fmtClass(f)}">${f}</span>`).join('')}</div>`;
 }
 function genreChips(genres) {
   if (!Array.isArray(genres) || !genres.length) return '<span style="color:var(--text-faint)">—</span>';
@@ -434,7 +435,7 @@ function genreChips(genres) {
 }
 function editionBadges(editions) {
   if (!Array.isArray(editions) || !editions.length) return '<span style="color:var(--text-faint)">—</span>';
-  return `<div class="edition-wrap">${editions.map(e => `<span class="edition-badge">${e}</span>`).join('')}</div>`;
+  return `<div class="edition-wrap">${editions.map(e => `<span class="edition-badge${e.toLowerCase().includes('steelbook') ? ' steelbook' : ''}">${e}</span>`).join('')}</div>`;
 }
 
 // ── Table render ──────────────────────────────────────────────────────────────
@@ -455,11 +456,11 @@ function render() {
       <td class="td-dim" style="font-size:12px">${m.released||'—'}</td>
       <td class="td-dim">${m.runtime||'—'}</td>
       <td>${genreChips(m.genre)}</td>
-      <td>${m.category?`<span class="genre-chip">${m.category}</span>`:'<span style="color:var(--text-faint)">—</span>'}</td>
+      <td>${Array.isArray(m.category) && m.category.length ? `<div class="chips-wrap">${m.category.map(c=>`<span class="genre-chip">${c}</span>`).join('')}</div>` : m.category ? `<span class="genre-chip">${m.category}</span>` : '<span style="color:var(--text-faint)">—</span>'}</td>
       <td class="td-dim">${m.director}</td>
       <td>${formatBadges(m.format)}</td>
       <td>${editionBadges(m.edition)}</td>
-      <td class="td-dim" style="text-align:center">${m.discs}</td>
+      <td class="td-dim" style="text-align:center;padding:11px 8px">${m.discs}</td>
       <td><a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a></td>
       <td class="td-dim" style="font-size:12px">${m.shelf||'—'}</td>
     </tr>`).join('');
@@ -561,7 +562,7 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox()
 function movieMatchesSearch(m, s) {
   if (!s) return true;
   const fields = [
-    m.title, m.director, m.category, String(m.year),
+    m.title, m.director, ...(Array.isArray(m.category)?m.category:[m.category||'']), String(m.year),
     m.released, m.runtime, m.rating, m.shelf, m.notes, m.plot, m.cast,
     ...(Array.isArray(m.genre) ? m.genre : [m.genre]),
     ...(Array.isArray(m.format) ? m.format : [m.format]),
