@@ -26,25 +26,39 @@ select:focus{border-color:var(--accent)}
 .filter-label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .clear-btn{background:none;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-dim);padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;cursor:pointer;transition:all .2s}
 .clear-btn:hover{border-color:var(--accent2);color:var(--accent2)}
+
+/* ── Banner ── */
 .banner{overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;background:var(--surface2);border-bottom:1px solid var(--border)}
 .banner.open{max-height:var(--banner-h);opacity:1}
 .banner-inner{display:flex;align-items:stretch;height:var(--banner-h);position:relative;overflow:hidden}
 .banner-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(40px) brightness(0.25);transform:scale(1.1);z-index:0}
-.banner-covers{display:flex;gap:1.5rem;padding:1.25rem 2.5rem;align-items:center;position:relative;z-index:1}
+.banner-covers{display:flex;gap:1.5rem;padding:1.25rem 2.5rem;align-items:center;position:relative;z-index:1;flex-shrink:0}
 .banner-cover{height:calc(var(--banner-h) - 2.5rem);width:auto;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,.7);object-fit:cover;cursor:zoom-in}
-.banner-info{display:flex;flex-direction:column;justify-content:center;gap:.4rem;padding:1.25rem 2rem 1.25rem 0;position:relative;z-index:1;flex:1;min-width:0}
+.banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 1.25rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
 .banner-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.04em;line-height:1;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .banner-meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
 .banner-pill{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;padding:2px 8px;border-radius:20px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8)}
 .banner-pill.accent{background:var(--accent);color:#000;border-color:var(--accent)}
-.banner-actions{display:flex;gap:8px;margin-top:.5rem;align-items:center}
+.banner-director{color:rgba(255,255,255,.6);font-size:13px}
+
+/* plot block */
+.banner-plot-wrap{flex:1;min-height:0;overflow:hidden;position:relative}
+.banner-plot{color:rgba(255,255,255,.55);font-size:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:none}
+.banner-plot.expanded{display:block;overflow-y:auto;max-height:90px}
+.plot-toggle{background:none;border:none;color:var(--accent);font-size:11px;font-weight:600;cursor:pointer;padding:2px 0 0;letter-spacing:.04em;text-transform:uppercase;display:inline-block}
+.plot-toggle:hover{text-decoration:underline}
+
+/* bottom-right actions */
+.banner-actions{position:absolute;bottom:1rem;right:1.25rem;display:flex;gap:8px;align-items:center;z-index:3}
 .banner-link{color:var(--accent);font-size:12px;font-weight:500;text-decoration:none;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid transparent;transition:border-color .2s}
 .banner-link:hover{border-color:var(--accent)}
 .edit-btn{background:none;border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);color:rgba(255,255,255,.7);font-family:'DM Sans',sans-serif;font-size:12px;padding:4px 10px;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;transition:all .2s}
 .edit-btn:hover{border-color:var(--accent);color:var(--accent)}
-.banner-close{position:absolute;top:.75rem;right:1.25rem;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:50%;width:28px;height:28px;color:white;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}
+.banner-close{position:absolute;top:.75rem;right:1.25rem;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:50%;width:28px;height:28px;color:white;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:4;transition:background .2s}
 .banner-close:hover{background:rgba(192,57,43,.6)}
 .poster-loading{width:140px;height:210px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-faint);font-size:11px;flex-shrink:0}
+
+/* ── Table ── */
 .scroll-zone{flex:1;overflow-y:auto;overflow-x:auto}
 .results-info{font-size:12px;color:var(--text-dim);padding:.6rem 2.5rem}
 table{width:100%;border-collapse:collapse;min-width:900px}
@@ -75,10 +89,14 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .results-info{font-size:12px;color:var(--text-dim);padding:.75rem 2.5rem 0}
 .empty-state{text-align:center;padding:4rem 2rem;color:var(--text-faint);font-size:15px}
 .table-pad{padding:0 0 3rem}
+
+/* ── Lightbox ── */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:300;cursor:zoom-out;backdrop-filter:blur(6px)}
 .lightbox img{height:92vh;width:auto;max-width:95vw;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,.8);object-fit:contain;cursor:zoom-out}
 .lightbox-close{position:absolute;top:1.25rem;right:1.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50%;width:36px;height:36px;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .lightbox-close:hover{background:rgba(192,57,43,.7)}
+
+/* ── Modal ── */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:200;padding:1rem;backdrop-filter:blur(4px)}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2rem;width:100%;max-width:560px;max-height:90vh;overflow-y:auto}
 .modal h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;margin-bottom:1.5rem;color:var(--accent)}
@@ -109,6 +127,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .btn-danger{background:none;color:var(--accent2);border-color:var(--accent2);margin-right:auto}
 .btn-danger:hover{background:var(--accent2);color:#fff}
 .field-hint{font-size:11px;color:var(--text-faint);margin-top:3px}
+
 @media(max-width:640px){
   .site-header{padding:1rem 1rem .75rem}
   .site-title{font-size:1.8rem}
@@ -158,26 +177,13 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
     <span class="filter-label">Edition</span>
     <select id="editionFilter">
       <option value="">All Editions</option>
-      <option>Steelbook</option>
-      <option>Extended</option>
-      <option>Director's Cut</option>
-      <option>Unrated</option>
-      <option>Special</option>
-      <option>Collector's Edition</option>
-      <option>2-Disc Collector's Edition</option>
-      <option>Special Collector's</option>
-      <option>Diamond Edition</option>
-      <option>Platinum</option>
-      <option>Double Feature</option>
-      <option>Anniversary</option>
-      <option>20th Anniversary</option>
-      <option>25th Anniversary</option>
-      <option>30th Anniversary</option>
-      <option>70th Anniversary</option>
-      <option>Digitally Remastered</option>
-      <option>Walmart Exclusive</option>
-      <option>High-Flying</option>
-      <option>Pixie-Powered</option>
+      <option>Steelbook</option><option>Extended</option><option>Director's Cut</option>
+      <option>Unrated</option><option>Special</option><option>Collector's Edition</option>
+      <option>2-Disc Collector's Edition</option><option>Special Collector's</option>
+      <option>Diamond Edition</option><option>Platinum</option><option>Double Feature</option>
+      <option>20th Anniversary</option><option>25th Anniversary</option><option>30th Anniversary</option>
+      <option>70th Anniversary</option><option>Digitally Remastered</option>
+      <option>Walmart Exclusive</option><option>High-Flying</option><option>Pixie-Powered</option>
       <option>Criterion Collection</option>
     </select>
     <span class="filter-label">Rating</span>
@@ -193,6 +199,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <button class="banner-close" onclick="closeBanner()">✕</button>
       <div class="banner-covers" id="bannerCovers"><div class="poster-loading">Loading...</div></div>
       <div class="banner-info" id="bannerInfo"></div>
+      <div class="banner-actions" id="bannerActions"></div>
     </div>
   </div>
 </div>
@@ -239,7 +246,6 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <div class="field"><label>Released</label><input id="f-released" placeholder="Mar 9, 1984"></div>
       <div class="field"><label>Runtime</label><input id="f-runtime" placeholder="93 min"></div>
     </div>
-
     <div class="field">
       <label>Genres <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(first = primary, shown in yellow)</span></label>
       <div class="tag-input-wrap" id="genreTagWrap" onclick="document.getElementById('genreTagInput').focus()">
@@ -247,10 +253,8 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       </div>
       <div class="field-hint">e.g. Comedy → Enter, then Drama → Enter</div>
     </div>
-
     <div class="field"><label>Category</label><input id="f-category" placeholder="e.g. Tolkien, Brooks Comedy, NGE"></div>
     <div class="field"><label>Director</label><input id="f-director"></div>
-
     <div class="field">
       <label>Format</label>
       <div class="format-checks">
@@ -261,14 +265,12 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
         <label class="format-check"><input type="checkbox" id="fmt-vhs" value="VHS"> VHS</label>
       </div>
     </div>
-
     <div class="field">
       <label>Edition Tags <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(stackable)</span></label>
       <div class="tag-input-wrap" id="editionTagWrap" onclick="document.getElementById('editionTagInput').focus()">
         <input class="tag-bare-input" id="editionTagInput" placeholder="Type edition + Enter (e.g. Steelbook, Extended)">
       </div>
     </div>
-
     <div class="field-row">
       <div class="field"><label>Disc Count</label><input id="f-discs" type="number" min="1"></div>
       <div class="field"><label>Rating (MPAA)</label>
@@ -294,15 +296,15 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 <script>
 const OMDB_KEY = '13c7cf73';
 const posterCache = {};
+const plotCache = {};
 const ALL_FORMATS = ['4K UHD','Blu-ray','DVD','Digital','VHS'];
 let movies = [], filtered = [], activeIdx = null, sortCol = 'title', sortDir = 1, editingId = null;
 
-// ── Tag input helper ──────────────────────────────────────────────────────────
+// ── Tag input ─────────────────────────────────────────────────────────────────
 function makeTagInput(wrapId, inputId, isPrimary) {
   const wrap = document.getElementById(wrapId);
   const input = document.getElementById(inputId);
   let tags = [];
-
   function render() {
     Array.from(wrap.querySelectorAll('.tag-pill')).forEach(el => el.remove());
     tags.forEach((tag, i) => {
@@ -312,23 +314,31 @@ function makeTagInput(wrapId, inputId, isPrimary) {
       wrap.insertBefore(pill, input);
     });
   }
-
   window[`getTags_${wrapId}`] = () => [...tags];
   window[`setTags_${wrapId}`] = (arr) => { tags = arr || []; render(); };
   window[`removeTag_${wrapId}`] = (i) => { tags.splice(i, 1); render(); };
-
   input.addEventListener('keydown', e => {
     if ((e.key === 'Enter' || e.key === ',') && input.value.trim()) {
-      e.preventDefault();
-      tags.push(input.value.trim());
-      input.value = '';
-      render();
+      e.preventDefault(); tags.push(input.value.trim()); input.value = ''; render();
     }
-    if (e.key === 'Backspace' && !input.value && tags.length) {
-      tags.pop();
-      render();
-    }
+    if (e.key === 'Backspace' && !input.value && tags.length) { tags.pop(); render(); }
   });
+}
+
+// ── Plot fetch ────────────────────────────────────────────────────────────────
+async function fetchPlot(title, year, imdbUrl) {
+  const key = `${title}-${year}`;
+  if (plotCache[key] !== undefined) return plotCache[key];
+  try {
+    const res = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&plot=full&apikey=${OMDB_KEY}`);
+    const data = await res.json();
+    if (data.Plot && data.Plot !== 'N/A') {
+      plotCache[key] = data.Plot; return data.Plot;
+    }
+  } catch(e) {}
+  // fallback: link to IMDb
+  plotCache[key] = null;
+  return null;
 }
 
 // ── Poster fetch ──────────────────────────────────────────────────────────────
@@ -353,7 +363,6 @@ async function loadMovies() {
     const res = await fetch('movies.json');
     movies = res.ok ? await res.json() : [];
   } catch(e) { movies = []; }
-  // normalise: ensure genre and edition are always arrays
   movies.forEach(m => {
     if (!Array.isArray(m.genre)) m.genre = m.genre ? [m.genre] : [];
     if (!Array.isArray(m.edition)) m.edition = m.edition ? [m.edition] : [];
@@ -371,25 +380,20 @@ function fmtClass(f) {
   if (/vhs/i.test(f)) return 'fmt-vhs';
   return 'fmt-dvd';
 }
-
 function formatBadges(formats) {
   if (!Array.isArray(formats)) formats = [formats];
   return formats.map(f => `<span class="format-badge ${fmtClass(f)}">${f}</span>`).join('');
 }
-
 function genreChips(genres) {
   if (!Array.isArray(genres) || !genres.length) return '<span style="color:var(--text-faint)">—</span>';
-  return `<div class="chips-wrap">${genres.map((g,i) =>
-    `<span class="genre-chip${i===0?' primary':''}">${g}</span>`
-  ).join('')}</div>`;
+  return `<div class="chips-wrap">${genres.map((g,i) => `<span class="genre-chip${i===0?' primary':''}">${g}</span>`).join('')}</div>`;
 }
-
 function editionBadges(editions) {
   if (!Array.isArray(editions) || !editions.length) return '<span style="color:var(--text-faint)">—</span>';
   return `<div class="edition-wrap">${editions.map(e => `<span class="edition-badge">${e}</span>`).join('')}</div>`;
 }
 
-// ── Render table ──────────────────────────────────────────────────────────────
+// ── Table render ──────────────────────────────────────────────────────────────
 function render() {
   document.getElementById('totalCount').textContent = `${movies.length} title${movies.length!==1?'s':''}`;
   document.getElementById('resultsInfo').textContent = filtered.length !== movies.length
@@ -418,22 +422,47 @@ function render() {
 }
 
 // ── Banner ────────────────────────────────────────────────────────────────────
+let bannerPlotExpanded = false;
+
 async function toggleRow(i) {
   if (activeIdx === i) { closeBanner(); return; }
   activeIdx = i;
+  bannerPlotExpanded = false;
   const m = filtered[i];
   document.getElementById('bannerCovers').innerHTML = '<div class="poster-loading">Loading poster...</div>';
+  document.getElementById('bannerInfo').innerHTML = '';
+  document.getElementById('bannerActions').innerHTML = '';
   document.getElementById('banner').classList.add('open');
   render();
-  let imgUrl = m.image || await fetchPoster(m.title, m.year);
+
+  // fetch poster and plot in parallel
+  const [imgUrl, plot] = await Promise.all([
+    m.image ? Promise.resolve(m.image) : fetchPoster(m.title, m.year),
+    fetchPlot(m.title, m.year, m.imdb)
+  ]);
+
   document.getElementById('bannerBg').style.backgroundImage = imgUrl ? `url('${imgUrl}')` : '';
   document.getElementById('bannerCovers').innerHTML = imgUrl
     ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" onclick="openLightbox('${imgUrl}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
     : '<div class="poster-loading">No poster found</div>';
+
   const formats = Array.isArray(m.format) ? m.format.join(' · ') : m.format;
   const primaryGenre = Array.isArray(m.genre) ? m.genre[0] : m.genre;
   const otherGenres = Array.isArray(m.genre) ? m.genre.slice(1).join(' · ') : '';
   const editions = Array.isArray(m.edition) && m.edition.length ? m.edition.join(' · ') : '';
+
+  // plot section
+  let plotHtml = '';
+  if (plot) {
+    plotHtml = `
+      <div class="banner-plot-wrap">
+        <div class="banner-plot" id="bannerPlotText">${plot}</div>
+        <button class="plot-toggle" id="plotToggleBtn" onclick="togglePlot()">Show more</button>
+      </div>`;
+  } else {
+    plotHtml = `<div style="color:rgba(255,255,255,.3);font-size:12px;font-style:italic">No plot summary available — <a href="${m.imdb}" target="_blank" style="color:var(--accent);text-decoration:none">view on IMDb ↗</a></div>`;
+  }
+
   document.getElementById('bannerInfo').innerHTML = `
     <div class="banner-title">${m.title}</div>
     <div class="banner-meta">
@@ -446,17 +475,41 @@ async function toggleRow(i) {
       <span class="banner-pill">${formats}</span>
       ${editions ? `<span class="banner-pill">${editions}</span>` : ''}
     </div>
-    <div style="color:rgba(255,255,255,.6);font-size:13px;margin-top:4px">Directed by ${m.director}${m.shelf?' &nbsp;·&nbsp; Shelf: '+m.shelf:''}</div>
-    ${m.notes?`<div style="color:rgba(255,255,255,.5);font-size:12px;margin-top:4px;font-style:italic">${m.notes}</div>`:''}
-    <div class="banner-actions">
-      <a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>
-      <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>
-    </div>`;
+    <div class="banner-director">Directed by ${m.director}${m.shelf ? ' &nbsp;·&nbsp; Shelf: '+m.shelf : ''}</div>
+    ${m.notes ? `<div style="color:rgba(255,255,255,.4);font-size:12px;font-style:italic">${m.notes}</div>` : ''}
+    ${plotHtml}`;
+
+  document.getElementById('bannerActions').innerHTML = `
+    <a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>
+    <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>`;
+
+  // check if plot is actually overflowing (toggle needed)
+  if (plot) {
+    const el = document.getElementById('bannerPlotText');
+    if (el && el.scrollHeight <= el.clientHeight + 4) {
+      const btn = document.getElementById('plotToggleBtn');
+      if (btn) btn.style.display = 'none';
+    }
+  }
+}
+
+function togglePlot() {
+  bannerPlotExpanded = !bannerPlotExpanded;
+  const el = document.getElementById('bannerPlotText');
+  const btn = document.getElementById('plotToggleBtn');
+  if (!el || !btn) return;
+  if (bannerPlotExpanded) {
+    el.classList.add('expanded');
+    btn.textContent = 'Show less';
+  } else {
+    el.classList.remove('expanded');
+    btn.textContent = 'Show more';
+  }
 }
 
 function closeBanner() {
   document.getElementById('banner').classList.remove('open');
-  activeIdx = null; render();
+  activeIdx = null; bannerPlotExpanded = false; render();
 }
 
 function openLightbox(src) {
@@ -487,18 +540,9 @@ function applyFilters() {
   const r = document.getElementById('ratingFilter').value;
   filtered = movies.filter(m => {
     if (!movieMatchesSearch(m, s)) return false;
-    if (g) {
-      const genres = Array.isArray(m.genre) ? m.genre : [m.genre];
-      if (!genres.includes(g)) return false;
-    }
-    if (f) {
-      const fmts = Array.isArray(m.format) ? m.format : [m.format];
-      if (!fmts.includes(f)) return false;
-    }
-    if (ed) {
-      const eds = Array.isArray(m.edition) ? m.edition : [m.edition];
-      if (!eds.includes(ed)) return false;
-    }
+    if (g) { const genres = Array.isArray(m.genre)?m.genre:[m.genre]; if (!genres.includes(g)) return false; }
+    if (f) { const fmts = Array.isArray(m.format)?m.format:[m.format]; if (!fmts.includes(f)) return false; }
+    if (ed) { const eds = Array.isArray(m.edition)?m.edition:[m.edition]; if (!eds.includes(ed)) return false; }
     if (r && m.rating !== r) return false;
     return true;
   });
@@ -514,14 +558,14 @@ function clearFilters() {
 function sortBy(col, th) {
   if (sortCol===col) sortDir*=-1; else {sortCol=col;sortDir=1;}
   filtered.sort((a,b) => {
-    let av = col==='format' ? (Array.isArray(a.format)?a.format[0]:a.format)
-           : col==='genre'  ? (Array.isArray(a.genre)?a.genre[0]:a.genre)
-           : col==='edition'? (Array.isArray(a.edition)?a.edition[0]:'')
-           : a[col] ?? '';
-    let bv = col==='format' ? (Array.isArray(b.format)?b.format[0]:b.format)
-           : col==='genre'  ? (Array.isArray(b.genre)?b.genre[0]:b.genre)
-           : col==='edition'? (Array.isArray(b.edition)?b.edition[0]:'')
-           : b[col] ?? '';
+    let av = col==='format'?(Array.isArray(a.format)?a.format[0]:a.format)
+           : col==='genre' ?(Array.isArray(a.genre)?a.genre[0]:a.genre)
+           : col==='edition'?(Array.isArray(a.edition)?a.edition[0]:'')
+           : a[col]??'';
+    let bv = col==='format'?(Array.isArray(b.format)?b.format[0]:b.format)
+           : col==='genre' ?(Array.isArray(b.genre)?b.genre[0]:b.genre)
+           : col==='edition'?(Array.isArray(b.edition)?b.edition[0]:'')
+           : b[col]??'';
     if (typeof av==='string') av=av.toLowerCase();
     if (typeof bv==='string') bv=bv.toLowerCase();
     return av<bv?-sortDir:av>bv?sortDir:0;
@@ -560,13 +604,8 @@ function openEdit(id) {
   document.getElementById('f-imdb').value = m.imdb;
   document.getElementById('f-image').value = m.image||'';
   document.getElementById('f-notes').value = m.notes||'';
-
-  const genres = Array.isArray(m.genre) ? m.genre : (m.genre ? [m.genre] : []);
-  window['setTags_genreTagWrap'](genres);
-
-  const editions = Array.isArray(m.edition) ? m.edition : (m.edition ? [m.edition] : []);
-  window['setTags_editionTagWrap'](editions);
-
+  window['setTags_genreTagWrap'](Array.isArray(m.genre)?m.genre:(m.genre?[m.genre]:[]));
+  window['setTags_editionTagWrap'](Array.isArray(m.edition)?m.edition:(m.edition?[m.edition]:[]));
   document.getElementById('modalBg').style.display = 'flex';
 }
 
