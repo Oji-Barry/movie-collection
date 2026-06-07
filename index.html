@@ -26,29 +26,23 @@ select:focus{border-color:var(--accent)}
 .filter-label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .clear-btn{background:none;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-dim);padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;cursor:pointer;transition:all .2s}
 .clear-btn:hover{border-color:var(--accent2);color:var(--accent2)}
-
-/* ── Banner ── */
 .banner{overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;background:var(--surface2);border-bottom:1px solid var(--border)}
 .banner.open{max-height:var(--banner-h);opacity:1}
 .banner-inner{display:flex;align-items:stretch;height:var(--banner-h);position:relative;overflow:hidden}
 .banner-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(40px) brightness(0.25);transform:scale(1.1);z-index:0}
 .banner-covers{display:flex;gap:1.5rem;padding:1.25rem 2.5rem;align-items:center;position:relative;z-index:1;flex-shrink:0}
 .banner-cover{height:calc(var(--banner-h) - 2.5rem);width:auto;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,.7);object-fit:cover;cursor:zoom-in}
-.banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 1.25rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
+.banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 3rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
 .banner-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.04em;line-height:1;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .banner-meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
 .banner-pill{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;padding:2px 8px;border-radius:20px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8)}
 .banner-pill.accent{background:var(--accent);color:#000;border-color:var(--accent)}
 .banner-director{color:rgba(255,255,255,.6);font-size:13px}
-
-/* plot block */
-.banner-plot-wrap{flex:1;min-height:0;overflow:hidden;position:relative}
-.banner-plot{color:rgba(255,255,255,.55);font-size:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:none}
+.banner-plot-wrap{min-height:0;overflow:hidden}
+.banner-plot{color:rgba(255,255,255,.55);font-size:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .banner-plot.expanded{display:block;overflow-y:auto;max-height:90px}
-.plot-toggle{background:none;border:none;color:var(--accent);font-size:11px;font-weight:600;cursor:pointer;padding:2px 0 0;letter-spacing:.04em;text-transform:uppercase;display:inline-block}
+.plot-toggle{background:none;border:none;color:var(--accent);font-size:11px;font-weight:600;cursor:pointer;padding:2px 0 0;letter-spacing:.04em;text-transform:uppercase}
 .plot-toggle:hover{text-decoration:underline}
-
-/* bottom-right actions */
 .banner-actions{position:absolute;bottom:1rem;right:1.25rem;display:flex;gap:8px;align-items:center;z-index:3}
 .banner-link{color:var(--accent);font-size:12px;font-weight:500;text-decoration:none;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid transparent;transition:border-color .2s}
 .banner-link:hover{border-color:var(--accent)}
@@ -57,8 +51,6 @@ select:focus{border-color:var(--accent)}
 .banner-close{position:absolute;top:.75rem;right:1.25rem;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:50%;width:28px;height:28px;color:white;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:4;transition:background .2s}
 .banner-close:hover{background:rgba(192,57,43,.6)}
 .poster-loading{width:140px;height:210px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-faint);font-size:11px;flex-shrink:0}
-
-/* ── Table ── */
 .scroll-zone{flex:1;overflow-y:auto;overflow-x:auto}
 .results-info{font-size:12px;color:var(--text-dim);padding:.6rem 2.5rem}
 table{width:100%;border-collapse:collapse;min-width:900px}
@@ -89,14 +81,10 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .results-info{font-size:12px;color:var(--text-dim);padding:.75rem 2.5rem 0}
 .empty-state{text-align:center;padding:4rem 2rem;color:var(--text-faint);font-size:15px}
 .table-pad{padding:0 0 3rem}
-
-/* ── Lightbox ── */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:300;cursor:zoom-out;backdrop-filter:blur(6px)}
 .lightbox img{height:92vh;width:auto;max-width:95vw;border-radius:var(--radius);box-shadow:0 20px 80px rgba(0,0,0,.8);object-fit:contain;cursor:zoom-out}
 .lightbox-close{position:absolute;top:1.25rem;right:1.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50%;width:36px;height:36px;color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .lightbox-close:hover{background:rgba(192,57,43,.7)}
-
-/* ── Modal ── */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:200;padding:1rem;backdrop-filter:blur(4px)}
 .modal{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2rem;width:100%;max-width:560px;max-height:90vh;overflow-y:auto}
 .modal h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;margin-bottom:1.5rem;color:var(--accent)}
@@ -107,7 +95,6 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .field textarea{height:60px;resize:vertical}
 .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%237a7a90' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:28px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.field-row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .format-checks{display:flex;gap:8px;flex-wrap:wrap}
 .format-check{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--text-dim);cursor:pointer}
 .format-check input{width:auto;cursor:pointer}
@@ -127,7 +114,6 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .btn-danger{background:none;color:var(--accent2);border-color:var(--accent2);margin-right:auto}
 .btn-danger:hover{background:var(--accent2);color:#fff}
 .field-hint{font-size:11px;color:var(--text-faint);margin-top:3px}
-
 @media(max-width:640px){
   .site-header{padding:1rem 1rem .75rem}
   .site-title{font-size:1.8rem}
@@ -138,7 +124,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   .banner-covers{padding:1rem}
   .banner-cover{height:160px}
   .banner-title{font-size:1.6rem}
-  .banner-info{padding:.75rem 1rem .75rem 0}
+  .banner-info{padding:.75rem 1rem 3rem 0}
   .results-info{padding:.5rem 1rem}
 }
 </style>
@@ -284,6 +270,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <div class="field"><label>IMDb URL</label><input id="f-imdb" type="url"></div>
     </div>
     <div class="field"><label>Poster Image URL <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(overrides auto-lookup)</span></label><input id="f-image" type="url" placeholder="https://…"></div>
+    <div class="field"><label>Plot <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(overrides auto-fetch)</span></label><textarea id="f-plot" style="height:80px" placeholder="Paste a plot summary here if APIs can't find one…"></textarea></div>
     <div class="field"><label>Notes</label><textarea id="f-notes"></textarea></div>
     <div class="modal-actions">
       <button class="btn btn-danger" onclick="deleteMovie()">Delete</button>
@@ -295,6 +282,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 
 <script>
 const OMDB_KEY = '13c7cf73';
+const TMDB_KEY = 'e8e4a43c88d2040167237e9343738a96';
 const posterCache = {};
 const plotCache = {};
 const ALL_FORMATS = ['4K UHD','Blu-ray','DVD','Digital','VHS'];
@@ -325,36 +313,86 @@ function makeTagInput(wrapId, inputId, isPrimary) {
   });
 }
 
-// ── Plot fetch ────────────────────────────────────────────────────────────────
-async function fetchPlot(title, year, imdbUrl) {
-  const key = `${title}-${year}`;
-  if (plotCache[key] !== undefined) return plotCache[key];
-  try {
-    const res = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&plot=full&apikey=${OMDB_KEY}`);
-    const data = await res.json();
-    if (data.Plot && data.Plot !== 'N/A') {
-      plotCache[key] = data.Plot; return data.Plot;
-    }
-  } catch(e) {}
-  // fallback: link to IMDb
-  plotCache[key] = null;
-  return null;
+// ── Extract IMDb ID from URL ───────────────────────────────────────────────────
+function extractImdbId(url) {
+  const m = (url || '').match(/tt\d+/);
+  return m ? m[0] : null;
 }
 
-// ── Poster fetch ──────────────────────────────────────────────────────────────
-async function fetchPoster(title, year) {
-  const key = `${title}-${year}`;
-  if (posterCache[key] !== undefined) return posterCache[key];
+// ── Media fetch: poster + plot ────────────────────────────────────────────────
+// Returns { poster, plot }
+async function fetchMedia(title, year, imdbUrl, manualPlot) {
+  const cacheKey = `${title}-${year}`;
+
+  // Use manual plot if provided (still fetch poster via APIs)
+  // Poster cache
+  if (posterCache[cacheKey] !== undefined && plotCache[cacheKey] !== undefined) {
+    return { poster: posterCache[cacheKey], plot: manualPlot || plotCache[cacheKey] };
+  }
+
+  let poster = null, plot = null;
+
+  // ── Step 1: OMDB by title + year ──────────────────────────────────────────
   try {
-    const res = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&apikey=${OMDB_KEY}`);
-    const data = await res.json();
-    if (data.imdbID) {
-      const url = `https://img.omdbapi.com/?i=${data.imdbID}&h=1000&apikey=${OMDB_KEY}`;
-      posterCache[key] = url; return url;
+    const r = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&plot=full&apikey=${OMDB_KEY}`);
+    const d = await r.json();
+    if (d.Response === 'True') {
+      if (d.imdbID) poster = `https://img.omdbapi.com/?i=${d.imdbID}&h=1000&apikey=${OMDB_KEY}`;
+      else if (d.Poster && d.Poster !== 'N/A') poster = d.Poster;
+      if (d.Plot && d.Plot !== 'N/A') plot = d.Plot;
     }
-    const p = (data.Poster && data.Poster !== 'N/A') ? data.Poster : null;
-    posterCache[key] = p; return p;
-  } catch(e) { posterCache[key] = null; return null; }
+  } catch(e) {}
+
+  // ── Step 2: TMDB by title + year ─────────────────────────────────────────
+  if (!poster || !plot) {
+    try {
+      // search movies first, then TV
+      let tmdbResult = null;
+      for (const type of ['movie', 'tv']) {
+        if (tmdbResult) break;
+        const searchParam = type === 'movie'
+          ? `query=${encodeURIComponent(title)}&year=${year}`
+          : `query=${encodeURIComponent(title)}&first_air_date_year=${year}`;
+        const r = await fetch(`https://api.themoviedb.org/3/search/${type}?${searchParam}&api_key=${TMDB_KEY}`);
+        const d = await r.json();
+        if (d.results && d.results.length > 0) tmdbResult = { type, item: d.results[0] };
+      }
+      if (tmdbResult) {
+        const { type, item } = tmdbResult;
+        if (!poster && item.poster_path) poster = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
+        if (!plot) {
+          // get full details for overview
+          const id = item.id;
+          const detailR = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_KEY}`);
+          const detailD = await detailR.json();
+          if (detailD.overview) plot = detailD.overview;
+        }
+      }
+    } catch(e) {}
+  }
+
+  // ── Step 3: OMDB by IMDb ID ───────────────────────────────────────────────
+  if (!poster || !plot) {
+    const imdbId = extractImdbId(imdbUrl);
+    if (imdbId) {
+      try {
+        const r = await fetch(`https://www.omdbapi.com/?i=${imdbId}&plot=full&apikey=${OMDB_KEY}`);
+        const d = await r.json();
+        if (d.Response === 'True') {
+          if (!poster) {
+            if (d.imdbID) poster = `https://img.omdbapi.com/?i=${d.imdbID}&h=1000&apikey=${OMDB_KEY}`;
+            else if (d.Poster && d.Poster !== 'N/A') poster = d.Poster;
+          }
+          if (!plot && d.Plot && d.Plot !== 'N/A') plot = d.Plot;
+        }
+      } catch(e) {}
+    }
+  }
+
+  posterCache[cacheKey] = poster;
+  plotCache[cacheKey] = plot;
+
+  return { poster, plot: manualPlot || plot };
 }
 
 // ── Load ──────────────────────────────────────────────────────────────────────
@@ -429,21 +467,30 @@ async function toggleRow(i) {
   activeIdx = i;
   bannerPlotExpanded = false;
   const m = filtered[i];
-  document.getElementById('bannerCovers').innerHTML = '<div class="poster-loading">Loading poster...</div>';
+  document.getElementById('bannerCovers').innerHTML = '<div class="poster-loading">Loading...</div>';
   document.getElementById('bannerInfo').innerHTML = '';
   document.getElementById('bannerActions').innerHTML = '';
   document.getElementById('banner').classList.add('open');
   render();
 
-  // fetch poster and plot in parallel
-  const [imgUrl, plot] = await Promise.all([
-    m.image ? Promise.resolve(m.image) : fetchPoster(m.title, m.year),
-    fetchPlot(m.title, m.year, m.imdb)
-  ]);
+  const manualPoster = m.image || null;
+  const manualPlot = m.plot || null;
 
-  document.getElementById('bannerBg').style.backgroundImage = imgUrl ? `url('${imgUrl}')` : '';
-  document.getElementById('bannerCovers').innerHTML = imgUrl
-    ? `<img class="banner-cover" src="${imgUrl}" alt="${m.title}" onclick="openLightbox('${imgUrl}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
+  // if manual poster, skip poster fetch but still fetch plot
+  let poster, plot;
+  if (manualPoster) {
+    poster = manualPoster;
+    const media = await fetchMedia(m.title, m.year, m.imdb, manualPlot);
+    plot = manualPlot || media.plot;
+  } else {
+    const media = await fetchMedia(m.title, m.year, m.imdb, manualPlot);
+    poster = media.poster;
+    plot = media.plot;
+  }
+
+  document.getElementById('bannerBg').style.backgroundImage = poster ? `url('${poster}')` : '';
+  document.getElementById('bannerCovers').innerHTML = poster
+    ? `<img class="banner-cover" src="${poster}" alt="${m.title}" onclick="openLightbox('${poster}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
     : '<div class="poster-loading">No poster found</div>';
 
   const formats = Array.isArray(m.format) ? m.format.join(' · ') : m.format;
@@ -451,7 +498,6 @@ async function toggleRow(i) {
   const otherGenres = Array.isArray(m.genre) ? m.genre.slice(1).join(' · ') : '';
   const editions = Array.isArray(m.edition) && m.edition.length ? m.edition.join(' · ') : '';
 
-  // plot section
   let plotHtml = '';
   if (plot) {
     plotHtml = `
@@ -460,7 +506,7 @@ async function toggleRow(i) {
         <button class="plot-toggle" id="plotToggleBtn" onclick="togglePlot()">Show more</button>
       </div>`;
   } else {
-    plotHtml = `<div style="color:rgba(255,255,255,.3);font-size:12px;font-style:italic">No plot summary available — <a href="${m.imdb}" target="_blank" style="color:var(--accent);text-decoration:none">view on IMDb ↗</a></div>`;
+    plotHtml = `<div style="color:rgba(255,255,255,.3);font-size:12px;font-style:italic">No plot summary found.</div>`;
   }
 
   document.getElementById('bannerInfo').innerHTML = `
@@ -475,7 +521,7 @@ async function toggleRow(i) {
       <span class="banner-pill">${formats}</span>
       ${editions ? `<span class="banner-pill">${editions}</span>` : ''}
     </div>
-    <div class="banner-director">Directed by ${m.director}${m.shelf ? ' &nbsp;·&nbsp; Shelf: '+m.shelf : ''}</div>
+    <div class="banner-director">Directed by ${m.director}${m.shelf?' &nbsp;·&nbsp; Shelf: '+m.shelf:''}</div>
     ${m.notes ? `<div style="color:rgba(255,255,255,.4);font-size:12px;font-style:italic">${m.notes}</div>` : ''}
     ${plotHtml}`;
 
@@ -483,13 +529,13 @@ async function toggleRow(i) {
     <a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>
     <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>`;
 
-  // check if plot is actually overflowing (toggle needed)
+  // hide toggle if plot fits without clipping
   if (plot) {
-    const el = document.getElementById('bannerPlotText');
-    if (el && el.scrollHeight <= el.clientHeight + 4) {
+    requestAnimationFrame(() => {
+      const el = document.getElementById('bannerPlotText');
       const btn = document.getElementById('plotToggleBtn');
-      if (btn) btn.style.display = 'none';
-    }
+      if (el && btn && el.scrollHeight <= el.clientHeight + 4) btn.style.display = 'none';
+    });
   }
 }
 
@@ -498,13 +544,8 @@ function togglePlot() {
   const el = document.getElementById('bannerPlotText');
   const btn = document.getElementById('plotToggleBtn');
   if (!el || !btn) return;
-  if (bannerPlotExpanded) {
-    el.classList.add('expanded');
-    btn.textContent = 'Show less';
-  } else {
-    el.classList.remove('expanded');
-    btn.textContent = 'Show more';
-  }
+  el.classList.toggle('expanded', bannerPlotExpanded);
+  btn.textContent = bannerPlotExpanded ? 'Show less' : 'Show more';
 }
 
 function closeBanner() {
@@ -524,7 +565,7 @@ function movieMatchesSearch(m, s) {
   if (!s) return true;
   const fields = [
     m.title, m.director, m.category, String(m.year),
-    m.released, m.runtime, m.rating, m.shelf, m.notes,
+    m.released, m.runtime, m.rating, m.shelf, m.notes, m.plot,
     ...(Array.isArray(m.genre) ? m.genre : [m.genre]),
     ...(Array.isArray(m.format) ? m.format : [m.format]),
     ...(Array.isArray(m.edition) ? m.edition : [m.edition])
@@ -603,6 +644,7 @@ function openEdit(id) {
   document.getElementById('f-shelf').value = m.shelf||'';
   document.getElementById('f-imdb').value = m.imdb;
   document.getElementById('f-image').value = m.image||'';
+  document.getElementById('f-plot').value = m.plot||'';
   document.getElementById('f-notes').value = m.notes||'';
   window['setTags_genreTagWrap'](Array.isArray(m.genre)?m.genre:(m.genre?[m.genre]:[]));
   window['setTags_editionTagWrap'](Array.isArray(m.edition)?m.edition:(m.edition?[m.edition]:[]));
@@ -634,8 +676,13 @@ function saveMovie() {
     shelf: document.getElementById('f-shelf').value.trim(),
     imdb: document.getElementById('f-imdb').value.trim(),
     image: document.getElementById('f-image').value.trim(),
+    plot: document.getElementById('f-plot').value.trim(),
     notes: document.getElementById('f-notes').value.trim()
   };
+  // bust cache so updated plot/image takes effect
+  const cacheKey = `${movies[idx].title}-${movies[idx].year}`;
+  delete posterCache[cacheKey];
+  delete plotCache[cacheKey];
   filtered = filtered.map(m=>m.id===editingId?movies[idx]:m);
   closeModal(); closeBanner(); render();
 }
