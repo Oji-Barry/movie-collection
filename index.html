@@ -6,7 +6,7 @@
 <title>Øjì's Film Database</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--row-hover:#16161e;--banner-h:300px;--radius:6px}
+:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--row-hover:#16161e;--banner-h:340px;--radius:6px}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;display:flex;flex-direction:column}
@@ -30,16 +30,19 @@ select:focus{border-color:var(--accent)}
 .refresh-btn:hover{color:var(--accent);border-color:var(--accent)}
 .banner{overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;background:var(--surface2);border-bottom:1px solid var(--border)}
 .banner.open{max-height:var(--banner-h);opacity:1}
-.banner-inner{display:flex;align-items:stretch;height:var(--banner-h);position:relative;overflow:hidden}
+.banner-inner{display:flex;align-items:stretch;min-height:var(--banner-h);position:relative;overflow:hidden}
 .banner-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(40px) brightness(0.25);transform:scale(1.1);z-index:0}
 .banner-covers{display:flex;gap:1.5rem;padding:1.25rem 2.5rem;align-items:center;position:relative;z-index:1;flex-shrink:0}
 .banner-cover{height:calc(var(--banner-h) - 2.5rem);width:auto;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,.7);object-fit:cover;cursor:zoom-in}
-.banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 3rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
-.banner-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.04em;line-height:1;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.banner-cast{color:rgba(255,255,255,.5);font-size:12px;font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 3.5rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
+.banner-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.04em;line-height:1.1;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.8);white-space:normal;word-break:break-word}
+.banner-cast{color:rgba(255,255,255,.5);font-size:12px;font-style:italic;white-space:normal;line-height:1.45}
+.banner-genres{display:flex;gap:5px;flex-wrap:nowrap;overflow:hidden;align-items:center}
+.banner-genre-chip{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;padding:2px 8px;border-radius:20px;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.75);white-space:nowrap;flex-shrink:0}
+.banner-genre-chip:first-child{background:rgba(232,200,74,.15);border-color:rgba(232,200,74,.4);color:var(--accent)}
 .banner-plot-wrap{min-height:0;overflow:hidden}
 .banner-plot{color:rgba(255,255,255,.55);font-size:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.banner-plot.expanded{display:block;overflow-y:auto;max-height:90px}
+.banner-plot.expanded{display:block;overflow-y:auto;max-height:160px}
 .plot-toggle{background:none;border:none;color:var(--accent);font-size:11px;font-weight:600;cursor:pointer;padding:2px 0 0;letter-spacing:.04em;text-transform:uppercase}
 .plot-toggle:hover{text-decoration:underline}
 .banner-actions{position:absolute;bottom:1rem;right:1.25rem;display:flex;gap:8px;align-items:center;z-index:3}
@@ -121,10 +124,12 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
   .filter-label{display:none}
   .search-wrap{max-width:100%;min-width:0;flex:1 1 100%}
   select{font-size:12px;padding:5px 24px 5px 8px}
-  .banner-covers{padding:1rem}
-  .banner-cover{height:160px}
-  .banner-title{font-size:1.6rem}
-  .banner-info{padding:.75rem 1rem 3rem 0}
+  .banner-covers{padding:.75rem 1rem}
+  .banner-cover{height:140px;width:auto}
+  .banner-title{font-size:1.4rem}
+  .banner-cast{font-size:11px}
+  .banner-info{padding:.75rem .75rem 3.5rem 0}
+  .banner-plot.expanded{max-height:130px}
   .results-info{padding:.5rem 1rem}
 }
 </style>
@@ -507,9 +512,14 @@ async function toggleRow(i) {
     plotHtml = `<div style="color:rgba(255,255,255,.3);font-size:12px;font-style:italic">No plot summary found.</div>`;
   }
 
+  const genres = Array.isArray(m.genre) ? m.genre.slice(0,3) : (m.genre ? [m.genre] : []);
+  const genreChipsHtml = genres.length
+    ? `<div class="banner-genres">${genres.map(g => `<span class="banner-genre-chip">${g}</span>`).join('')}</div>`
+    : '';
   document.getElementById('bannerInfo').innerHTML = `
     <div class="banner-title">${m.title}</div>
     ${cast ? `<div class="banner-cast">${cast}</div>` : ''}
+    ${genreChipsHtml}
     ${plotHtml}`;
 
   document.getElementById('bannerActions').innerHTML = `
