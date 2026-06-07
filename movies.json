@@ -9,10 +9,13 @@
       "Comedy",
       "Western"
     ],
-    "category": "Brooks Comedy",
+    "category": [
+      "Brooks Comedy"
+    ],
     "director": "Mel Brooks",
     "format": [
-      "4K UHD"
+      "4K UHD",
+      "Blu-ray"
     ],
     "edition": [],
     "discs": 1,
@@ -20,7 +23,7 @@
     "imdb": "https://www.imdb.com/title/tt0071230/",
     "shelf": "",
     "image": "",
-    "notes": "",
+    "notes": "Blu-ray copy part of Mel Brooks Collection set",
     "plot": ""
   },
   {
@@ -33,7 +36,9 @@
       "Sci-Fi",
       "Comedy"
     ],
-    "category": "Dark Comedy",
+    "category": [
+      "Dark Comedy"
+    ],
     "director": "Tim Burton",
     "format": [
       "Blu-ray"
@@ -58,7 +63,9 @@
       "Sci-Fi",
       "Fantasy"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Matthew Robbins",
     "format": [
       "Blu-ray",
@@ -84,7 +91,9 @@
       "Horror",
       "Thriller"
     ],
-    "category": "Supernatural Comic",
+    "category": [
+      "Supernatural Comic"
+    ],
     "director": "Stephen Norrington",
     "format": [
       "Blu-ray"
@@ -109,7 +118,9 @@
       "Horror",
       "Thriller"
     ],
-    "category": "Supernatural Comic",
+    "category": [
+      "Supernatural Comic"
+    ],
     "director": "Guillermo del Toro",
     "format": [
       "Blu-ray"
@@ -134,7 +145,9 @@
       "Horror",
       "Thriller"
     ],
-    "category": "Supernatural Comic",
+    "category": [
+      "Supernatural Comic"
+    ],
     "director": "David S. Goyer",
     "format": [
       "Blu-ray"
@@ -159,7 +172,9 @@
       "Adventure",
       "Fantasy"
     ],
-    "category": "Conan",
+    "category": [
+      "Conan"
+    ],
     "director": "John Milius",
     "format": [
       "Blu-ray"
@@ -184,7 +199,9 @@
       "Adventure",
       "Fantasy"
     ],
-    "category": "Conan",
+    "category": [
+      "Conan"
+    ],
     "director": "Richard Fleischer",
     "format": [
       "Blu-ray"
@@ -208,7 +225,9 @@
       "Fantasy",
       "Adventure"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -234,7 +253,9 @@
       "Fantasy",
       "Adventure"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -260,7 +281,9 @@
       "Fantasy",
       "Adventure"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -287,7 +310,9 @@
       "Adventure",
       "Drama"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -314,7 +339,9 @@
       "Adventure",
       "Drama"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -341,7 +368,9 @@
       "Adventure",
       "Drama"
     ],
-    "category": "Tolkien",
+    "category": [
+      "Tolkien"
+    ],
     "director": "Peter Jackson",
     "format": [
       "Blu-ray"
@@ -369,7 +398,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -394,7 +425,9 @@
       "Action",
       "Sci-Fi"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -420,7 +453,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -446,7 +481,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -474,7 +511,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -500,7 +539,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -526,7 +567,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "NGE",
+    "category": [
+      "NGE"
+    ],
     "director": "Hideaki Anno",
     "format": [
       "Blu-ray"
@@ -550,7 +593,9 @@
       "Comedy",
       "Sport"
     ],
-    "category": "Sport, Family",
+    "category": [
+      "Sport, Family"
+    ],
     "director": "John Berry",
     "format": [
       "DVD"
@@ -574,7 +619,9 @@
       "Rom-Com",
       "Dramedy"
     ],
-    "category": "Sandler",
+    "category": [
+      "Sandler"
+    ],
     "director": "Peter Segal",
     "format": [
       "DVD"
@@ -599,7 +646,9 @@
       "Sport",
       "Family"
     ],
-    "category": "Sport Comedy",
+    "category": [
+      "Sport Comedy"
+    ],
     "director": "Jesse Dylan",
     "format": [
       "DVD"
@@ -623,7 +672,9 @@
       "Drama",
       "Action"
     ],
-    "category": "Romero",
+    "category": [
+      "Romero"
+    ],
     "director": "George A. Romero",
     "format": [
       "DVD"
@@ -648,7 +699,9 @@
       "Thriller",
       "Mystery"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Michelangelo Antonioni",
     "format": [
       "DVD"
@@ -672,7 +725,9 @@
       "Comedy",
       "TV Shows"
     ],
-    "category": "Classics, TV",
+    "category": [
+      "Classics, TV"
+    ],
     "director": "Red Skelton",
     "format": [
       "DVD"
@@ -696,7 +751,9 @@
       "Rom-Com",
       "Dramedy"
     ],
-    "category": "Sandler",
+    "category": [
+      "Sandler"
+    ],
     "director": "James L. Brooks",
     "format": [
       "DVD"
@@ -721,7 +778,9 @@
       "Fantasy",
       "Comedy"
     ],
-    "category": "Romance Comedy",
+    "category": [
+      "Romance Comedy"
+    ],
     "director": "Ron Howard",
     "format": [
       "DVD"
@@ -748,7 +807,9 @@
       "Fantasy",
       "Drama"
     ],
-    "category": "Robin Williams",
+    "category": [
+      "Robin Williams"
+    ],
     "director": "Barry Levinson",
     "format": [
       "DVD"
@@ -772,7 +833,9 @@
       "Drama",
       "Rom-Com"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "James L. Brooks",
     "format": [
       "DVD"
@@ -797,7 +860,9 @@
       "Family",
       "Adventure"
     ],
-    "category": "Robin Williams",
+    "category": [
+      "Robin Williams"
+    ],
     "director": "Barry Sonnenfeld",
     "format": [
       "DVD"
@@ -821,7 +886,9 @@
       "Comedy",
       "Sport"
     ],
-    "category": "Sport, Family",
+    "category": [
+      "Sport, Family"
+    ],
     "director": "Michael Pressman",
     "format": [
       "DVD"
@@ -847,7 +914,9 @@
       "Drama",
       "Thriller"
     ],
-    "category": "Shyamalan",
+    "category": [
+      "Shyamalan"
+    ],
     "director": "M. Night Shyamalan",
     "format": [
       "DVD"
@@ -872,7 +941,9 @@
       "Sport",
       "Biography"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Mike Tollin",
     "format": [
       "DVD"
@@ -896,7 +967,9 @@
       "Drama",
       "Romance"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Randa Haines",
     "format": [
       "DVD"
@@ -921,7 +994,9 @@
       "Sport",
       "Drama"
     ],
-    "category": "Sport, Family",
+    "category": [
+      "Sport, Family"
+    ],
     "director": "Michael Ritchie",
     "format": [
       "DVD"
@@ -947,7 +1022,9 @@
       "Drama",
       "War"
     ],
-    "category": "Historical Epic",
+    "category": [
+      "Historical Epic"
+    ],
     "director": "Ridley Scott",
     "format": [
       "DVD"
@@ -973,7 +1050,9 @@
       "Crime",
       "Drama"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Tony Scott",
     "format": [
       "DVD"
@@ -998,7 +1077,9 @@
       "Thriller",
       "Crime"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Tony Scott",
     "format": [
       "DVD"
@@ -1024,7 +1105,9 @@
       "Adventure",
       "Family"
     ],
-    "category": "Looney Tunes",
+    "category": [
+      "Looney Tunes"
+    ],
     "director": "Joe Dante",
     "format": [
       "DVD"
@@ -1050,7 +1133,9 @@
       "Crime",
       "Mystery"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Joe Roth",
     "format": [
       "DVD"
@@ -1075,7 +1160,9 @@
       "History",
       "Romance"
     ],
-    "category": "Classics, TV",
+    "category": [
+      "Classics, TV"
+    ],
     "director": "Robert Lieberman",
     "format": [
       "DVD"
@@ -1099,7 +1186,9 @@
       "Comedy",
       "Indie"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Rob McKittrick",
     "format": [
       "DVD"
@@ -1125,7 +1214,9 @@
       "Comedy",
       "Family"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Steve Carr",
     "format": [
       "DVD"
@@ -1149,7 +1240,9 @@
       "Family",
       "Fantasy"
     ],
-    "category": "Family, Classics",
+    "category": [
+      "Family, Classics"
+    ],
     "director": "Walter C. Miller",
     "format": [
       "DVD"
@@ -1176,7 +1269,9 @@
       "Dark Comedy",
       "Crime"
     ],
-    "category": "Dark Comedy",
+    "category": [
+      "Dark Comedy"
+    ],
     "director": "Danny DeVito",
     "format": [
       "DVD"
@@ -1202,7 +1297,9 @@
       "Mystery",
       "Crime"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Joel Schumacher",
     "format": [
       "DVD"
@@ -1228,7 +1325,9 @@
       "Fantasy",
       "Sci-Fi"
     ],
-    "category": "Sandler",
+    "category": [
+      "Sandler"
+    ],
     "director": "Frank Coraci",
     "format": [
       "DVD"
@@ -1255,7 +1354,9 @@
       "Family",
       "Adventure"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Brian Levant",
     "format": [
       "DVD"
@@ -1281,7 +1382,9 @@
       "Family",
       "Sci-Fi"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Chris Sanders",
     "format": [
       "DVD"
@@ -1305,7 +1408,9 @@
       "Drama",
       "Romance"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Robert Zemeckis",
     "format": [
       "DVD"
@@ -1332,7 +1437,9 @@
       "Sport",
       "Biography"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "John Gray",
     "format": [
       "DVD"
@@ -1357,7 +1464,9 @@
       "Action",
       "Drama"
     ],
-    "category": "John Wayne",
+    "category": [
+      "John Wayne"
+    ],
     "director": "John Wayne",
     "format": [
       "DVD"
@@ -1383,7 +1492,9 @@
       "Family",
       "Sci-Fi"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Tony Craig",
     "format": [
       "DVD"
@@ -1409,7 +1520,9 @@
       "Sport",
       "Family"
     ],
-    "category": "Looney Tunes",
+    "category": [
+      "Looney Tunes"
+    ],
     "director": "Joe Pytka",
     "format": [
       "DVD"
@@ -1437,7 +1550,9 @@
       "Comedy",
       "Drama"
     ],
-    "category": "Comics, Superhero",
+    "category": [
+      "Comics, Superhero"
+    ],
     "director": "Peter Berg",
     "format": [
       "DVD"
@@ -1465,7 +1580,9 @@
       "Family",
       "Adventure"
     ],
-    "category": "Eddie Murphy",
+    "category": [
+      "Eddie Murphy"
+    ],
     "director": "Brian Robbins",
     "format": [
       "DVD"
@@ -1490,7 +1607,9 @@
       "Biography",
       "Drama"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Betty Thomas",
     "format": [
       "DVD"
@@ -1513,7 +1632,9 @@
     "genre": [
       "Comedy"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "George Roy Hill",
     "format": [
       "DVD"
@@ -1538,7 +1659,9 @@
       "Fantasy",
       "Family"
     ],
-    "category": "Supernatural Comic",
+    "category": [
+      "Supernatural Comic"
+    ],
     "director": "Lawrence Guterman",
     "format": [
       "DVD"
@@ -1563,7 +1686,9 @@
       "Crime",
       "Fantasy"
     ],
-    "category": "Supernatural Comic",
+    "category": [
+      "Supernatural Comic"
+    ],
     "director": "Chuck Russell",
     "format": [
       "DVD"
@@ -1588,7 +1713,9 @@
       "Comedy",
       "Fantasy"
     ],
-    "category": "Mannequin",
+    "category": [
+      "Mannequin"
+    ],
     "director": "Michael Gottlieb",
     "format": [
       "DVD"
@@ -1614,7 +1741,9 @@
       "History",
       "Mystery"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Robert De Niro",
     "format": [
       "DVD"
@@ -1640,7 +1769,9 @@
       "Family",
       "Drama"
     ],
-    "category": "Pixar",
+    "category": [
+      "Pixar"
+    ],
     "director": "Brad Bird",
     "format": [
       "DVD"
@@ -1667,7 +1798,9 @@
       "Family",
       "Adventure"
     ],
-    "category": "Peter Pan",
+    "category": [
+      "Peter Pan"
+    ],
     "director": "P.J. Hogan",
     "format": [
       "DVD"
@@ -1693,7 +1826,9 @@
       "Family",
       "Musical"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Robin Budd",
     "format": [
       "DVD"
@@ -1719,7 +1854,9 @@
       "Drama",
       "Romance"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Randal Kleiser",
     "format": [
       "DVD"
@@ -1745,7 +1882,9 @@
       "Fantasy",
       "Comedy"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Don Chaffey",
     "format": [
       "DVD"
@@ -1773,7 +1912,9 @@
       "Adventure",
       "Musical"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Ben Gluck",
     "format": [
       "DVD"
@@ -1798,7 +1939,9 @@
       "Comedy",
       "Fantasy"
     ],
-    "category": "Mannequin",
+    "category": [
+      "Mannequin"
+    ],
     "director": "Stewart Raffill",
     "format": [
       "DVD"
@@ -1821,7 +1964,9 @@
     "genre": [
       "Comedy"
     ],
-    "category": "Buddy Comedy",
+    "category": [
+      "Buddy Comedy"
+    ],
     "director": "Penelope Spheeris",
     "format": [
       "DVD"
@@ -1846,7 +1991,9 @@
       "Family",
       "Adventure"
     ],
-    "category": "Disney Film",
+    "category": [
+      "Disney Film"
+    ],
     "director": "Robert Stevenson",
     "format": [
       "DVD"
@@ -1873,7 +2020,9 @@
       "Adventure",
       "Family"
     ],
-    "category": "DreamWorks",
+    "category": [
+      "DreamWorks"
+    ],
     "director": "Andrew Adamson",
     "format": [
       "DVD"
@@ -1899,7 +2048,9 @@
       "Fantasy",
       "Musical"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "David Hand",
     "format": [
       "DVD"
@@ -1928,7 +2079,9 @@
       "Adventure",
       "Family"
     ],
-    "category": "DreamWorks",
+    "category": [
+      "DreamWorks"
+    ],
     "director": "Andrew Adamson",
     "format": [
       "DVD"
@@ -1953,7 +2106,9 @@
       "Drama",
       "Comedy"
     ],
-    "category": "Nicholson",
+    "category": [
+      "Nicholson"
+    ],
     "director": "Nancy Meyers",
     "format": [
       "DVD"
@@ -1980,7 +2135,9 @@
       "Adventure",
       "Family"
     ],
-    "category": "DreamWorks",
+    "category": [
+      "DreamWorks"
+    ],
     "director": "Chris Miller",
     "format": [
       "DVD"
@@ -2006,7 +2163,9 @@
       "Comedy",
       "Family"
     ],
-    "category": "DreamWorks",
+    "category": [
+      "DreamWorks"
+    ],
     "director": "Eric Bergeron",
     "format": [
       "DVD"
@@ -2029,7 +2188,9 @@
     "genre": [
       "Comedy"
     ],
-    "category": "Buddy Comedy",
+    "category": [
+      "Buddy Comedy"
+    ],
     "director": "Jay Roach",
     "format": [
       "DVD"
@@ -2052,7 +2213,9 @@
     "genre": [
       "Comedy"
     ],
-    "category": "Buddy Comedy",
+    "category": [
+      "Buddy Comedy"
+    ],
     "director": "Frank Oz",
     "format": [
       "DVD"
@@ -2078,7 +2241,9 @@
       "Adventure",
       "Comedy"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Dave Borthwick",
     "format": [
       "DVD"
@@ -2102,7 +2267,9 @@
       "Comedy",
       "Romance"
     ],
-    "category": "Eddie Murphy",
+    "category": [
+      "Eddie Murphy"
+    ],
     "director": "John Landis",
     "format": [
       "DVD"
@@ -2127,7 +2294,9 @@
       "Family",
       "Romance"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Raja Gosnell",
     "format": [
       "DVD"
@@ -2155,7 +2324,9 @@
       "Crime",
       "Drama"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Richard Loncraine",
     "format": [
       "DVD"
@@ -2180,7 +2351,9 @@
       "Drama",
       "Fantasy"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Alfonso Cuar\u00f3n",
     "format": [
       "DVD"
@@ -2206,7 +2379,9 @@
       "Family",
       "Drama"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Agnieszka Holland",
     "format": [
       "DVD"
@@ -2233,7 +2408,9 @@
       "Musical",
       "Drama"
     ],
-    "category": "Classics",
+    "category": [
+      "Classics"
+    ],
     "director": "Walter Lang",
     "format": [
       "DVD"
@@ -2257,7 +2434,9 @@
       "Short",
       "Comedy"
     ],
-    "category": "Classics",
+    "category": [
+      "Classics"
+    ],
     "director": "Arthur Ripley",
     "format": [
       "DVD"
@@ -2281,7 +2460,9 @@
       "Short",
       "Comedy"
     ],
-    "category": "Classics",
+    "category": [
+      "Classics"
+    ],
     "director": "Alf Goulding",
     "format": [
       "DVD"
@@ -2304,7 +2485,9 @@
     "genre": [
       "Comedy"
     ],
-    "category": "TV Movie",
+    "category": [
+      "TV Movie"
+    ],
     "director": "David Mitchell",
     "format": [
       "DVD"
@@ -2329,7 +2512,9 @@
       "Drama",
       "Comedy"
     ],
-    "category": "Romance",
+    "category": [
+      "Romance"
+    ],
     "director": "Nora Ephron",
     "format": [
       "DVD"
@@ -2355,7 +2540,9 @@
       "Drama",
       "Comedy"
     ],
-    "category": "Nicholson",
+    "category": [
+      "Nicholson"
+    ],
     "director": "Alexander Payne",
     "format": [
       "DVD"
@@ -2379,7 +2566,9 @@
       "Comedy",
       "Family"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Dennis Dugan",
     "format": [
       "DVD"
@@ -2405,7 +2594,9 @@
       "Comedy",
       "Family"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Brian Levant",
     "format": [
       "DVD"
@@ -2432,7 +2623,9 @@
       "Comedy",
       "Drama"
     ],
-    "category": "Romance Comedy",
+    "category": [
+      "Romance Comedy"
+    ],
     "director": "Chris Columbus",
     "format": [
       "DVD"
@@ -2457,7 +2650,9 @@
       "Adventure",
       "Drama"
     ],
-    "category": "Classics, TV",
+    "category": [
+      "Classics, TV"
+    ],
     "director": "Michael Anderson",
     "format": [
       "DVD"
@@ -2482,7 +2677,9 @@
       "Romance",
       "Drama"
     ],
-    "category": "Buddy Comedy",
+    "category": [
+      "Buddy Comedy"
+    ],
     "director": "Donald Petrie",
     "format": [
       "DVD"
@@ -2508,7 +2705,9 @@
       "Musical",
       "Romance"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Bradley Raymond",
     "format": [
       "DVD"
@@ -2533,7 +2732,9 @@
       "Drama",
       "Comedy"
     ],
-    "category": "Romance",
+    "category": [
+      "Romance"
+    ],
     "director": "Michael Hoffman",
     "format": [
       "DVD"
@@ -2558,7 +2759,9 @@
       "Music",
       "Comedy"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Michel Gondry",
     "format": [
       "DVD"
@@ -2582,7 +2785,9 @@
       "Drama",
       "Romance"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Michael Tuchner",
     "format": [
       "DVD"
@@ -2607,7 +2812,9 @@
       "Comedy",
       "Drama"
     ],
-    "category": "Romance",
+    "category": [
+      "Romance"
+    ],
     "director": "Joel Zwick",
     "format": [
       "DVD"
@@ -2633,7 +2840,9 @@
       "Comedy",
       "Drama"
     ],
-    "category": "Family",
+    "category": [
+      "Family"
+    ],
     "director": "Wil Shriner",
     "format": [
       "DVD"
@@ -2657,7 +2866,9 @@
       "Comedy",
       "Crime"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Hugh Wilson",
     "format": [
       "DVD"
@@ -2681,7 +2892,9 @@
       "Comedy",
       "Crime"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Jerry Paris",
     "format": [
       "DVD"
@@ -2705,7 +2918,9 @@
       "Comedy",
       "Crime"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Jerry Paris",
     "format": [
       "DVD"
@@ -2729,7 +2944,9 @@
       "Comedy",
       "Crime"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Jim Drake",
     "format": [
       "DVD"
@@ -2755,7 +2972,9 @@
       "Sci-Fi",
       "Drama"
     ],
-    "category": "Thriller Comic",
+    "category": [
+      "Thriller Comic"
+    ],
     "director": "James McTeigue",
     "format": [
       "DVD"
@@ -2779,7 +2998,9 @@
       "Drama",
       "Fantasy"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Mike Nichols",
     "format": [
       "DVD"
@@ -2803,7 +3024,9 @@
       "Drama",
       "Fantasy"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Mike Nichols",
     "format": [
       "DVD"
@@ -2828,7 +3051,9 @@
       "Drama",
       "Comedy"
     ],
-    "category": "Nicholson",
+    "category": [
+      "Nicholson"
+    ],
     "director": "James L. Brooks",
     "format": [
       "DVD"
@@ -2855,7 +3080,9 @@
       "Family",
       "Drama"
     ],
-    "category": "Pixar",
+    "category": [
+      "Pixar"
+    ],
     "director": "Andrew Stanton",
     "format": [
       "DVD"
@@ -2882,7 +3109,9 @@
       "Family",
       "Fantasy"
     ],
-    "category": "Comedy",
+    "category": [
+      "Comedy"
+    ],
     "director": "Brian Levant",
     "format": [
       "DVD"
@@ -2911,7 +3140,9 @@
       "Musical",
       "Adventure"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Ben Sharpsteen",
     "format": [
       "DVD"
@@ -2940,7 +3171,9 @@
       "Adventure",
       "Comedy"
     ],
-    "category": "Disney Film",
+    "category": [
+      "Disney Film"
+    ],
     "director": "Randal Kleiser",
     "format": [
       "DVD"
@@ -2967,7 +3200,9 @@
       "Mystery",
       "Crime"
     ],
-    "category": "Thriller",
+    "category": [
+      "Thriller"
+    ],
     "director": "Andrew Davis",
     "format": [
       "DVD"
@@ -2992,7 +3227,9 @@
       "Romance",
       "Drama"
     ],
-    "category": "Buddy Comedy",
+    "category": [
+      "Buddy Comedy"
+    ],
     "director": "Howard Deutch",
     "format": [
       "DVD"
@@ -3019,7 +3256,9 @@
       "Family",
       "Romance"
     ],
-    "category": "Disney Animation",
+    "category": [
+      "Disney Animation"
+    ],
     "director": "Gary Trousdale",
     "format": [
       "DVD"
@@ -3043,7 +3282,9 @@
       "Drama",
       "Crime"
     ],
-    "category": "Drama",
+    "category": [
+      "Drama"
+    ],
     "director": "Francis Ford Coppola",
     "format": [
       "DVD"
@@ -3055,6 +3296,1651 @@
     "shelf": "",
     "image": "",
     "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 121,
+    "title": "Wonder Woman",
+    "year": 2017,
+    "released": "Jun 2, 2017",
+    "runtime": "141 min",
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Patty Jenkins",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0451279/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 122,
+    "title": "The Spirit",
+    "year": 2008,
+    "released": "Dec 25, 2008",
+    "runtime": "103 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "Fantasy"
+    ],
+    "category": [
+      "Thriller Comic"
+    ],
+    "director": "Frank Miller",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0831887/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 123,
+    "title": "Batman Ninja",
+    "year": 2018,
+    "released": "Apr 24, 2018",
+    "runtime": "85 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Junpei Mizusaki",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt7451284/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 124,
+    "title": "Batman: Assault on Arkham",
+    "year": 2014,
+    "released": "Jul 25, 2014",
+    "runtime": "76 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Jay Oliva",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3139086/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 125,
+    "title": "Justice League: Throne of Atlantis",
+    "year": 2015,
+    "released": "Jan 27, 2015",
+    "runtime": "72 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Ethan Spaulding",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3878542/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 126,
+    "title": "Howard the Duck",
+    "year": 1986,
+    "released": "Aug 1, 1986",
+    "runtime": "110 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Action",
+      "Fantasy"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Willard Huyck",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0091225/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 127,
+    "title": "Watchmen",
+    "year": 2009,
+    "released": "Mar 6, 2009",
+    "runtime": "162 min",
+    "genre": [
+      "Action",
+      "Thriller",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "Thriller Comic"
+    ],
+    "director": "Zack Snyder",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Director's Cut"
+    ],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0409459/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 128,
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "released": "Aug 1, 2014",
+    "runtime": "121 min",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "James Gunn",
+    "format": [
+      "Blu-ray 3D",
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt2015381/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray 3D + Blu-ray + Digital HD",
+    "plot": ""
+  },
+  {
+    "id": 129,
+    "title": "The Twelve Chairs",
+    "year": 1970,
+    "released": "Oct 28, 1970",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0066495/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 130,
+    "title": "Young Frankenstein",
+    "year": 1974,
+    "released": "Dec 15, 1974",
+    "runtime": "106 min",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0072431/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 131,
+    "title": "Silent Movie",
+    "year": 1976,
+    "released": "Jul 2, 1976",
+    "runtime": "87 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0075222/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 132,
+    "title": "High Anxiety",
+    "year": 1977,
+    "released": "Dec 25, 1977",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Thriller"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0076141/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 133,
+    "title": "History of the World: Part I",
+    "year": 1981,
+    "released": "Jun 12, 1981",
+    "runtime": "92 min",
+    "genre": [
+      "Comedy",
+      "History"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082517/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 134,
+    "title": "To Be or Not to Be",
+    "year": 1983,
+    "released": "Dec 16, 1983",
+    "runtime": "108 min",
+    "genre": [
+      "Comedy",
+      "War"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Alan Johnson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086450/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 135,
+    "title": "Spaceballs",
+    "year": 1987,
+    "released": "Jun 24, 1987",
+    "runtime": "96 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0094012/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 136,
+    "title": "Robin Hood: Men in Tights",
+    "year": 1993,
+    "released": "Jul 28, 1993",
+    "runtime": "104 min",
+    "genre": [
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0107977/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": ""
+  },
+  {
+    "id": 137,
+    "title": "Final Fantasy: The Spirits Within",
+    "year": 2001,
+    "released": "Jul 11, 2001",
+    "runtime": "106 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Hironobu Sakaguchi",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0173840/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 138,
+    "title": "Akira",
+    "year": 1988,
+    "released": "Jul 16, 1988",
+    "runtime": "124 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Action",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Katsuhiro Otomo",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "4K Remaster",
+      "Booklet"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0094625/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray, Disc 3: Bonus Blu-ray. Includes booklet.",
+    "plot": ""
+  },
+  {
+    "id": 139,
+    "title": "Howl's Moving Castle",
+    "year": 2004,
+    "released": "Sep 5, 2004",
+    "runtime": "119 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Romance"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0347149/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Blu-ray, Disc 2: DVD",
+    "plot": ""
+  },
+  {
+    "id": 140,
+    "title": "The Lord of the Rings",
+    "year": 1978,
+    "released": "Nov 15, 1978",
+    "runtime": "132 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Ralph Bakshi",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Remastered Deluxe Edition"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0077869/",
+    "shelf": "",
+    "image": "",
+    "notes": "Animated film",
+    "plot": ""
+  },
+  {
+    "id": 141,
+    "title": "The Hobbit",
+    "year": 1977,
+    "released": "Nov 27, 1977",
+    "runtime": "77 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Musical"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Jules Bass",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0077687/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rankin/Bass animated TV film",
+    "plot": ""
+  },
+  {
+    "id": 142,
+    "title": "Spirited Away",
+    "year": 2001,
+    "released": "Jul 20, 2001",
+    "runtime": "125 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0245429/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD",
+    "plot": ""
+  },
+  {
+    "id": 143,
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "released": "Jul 12, 1997",
+    "runtime": "134 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0119698/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD",
+    "plot": ""
+  },
+  {
+    "id": 144,
+    "title": "Star Wars: Episode I \u2014 The Phantom Menace",
+    "year": 1999,
+    "released": "May 19, 1999",
+    "runtime": "136 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0120915/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 145,
+    "title": "Star Wars: Episode II \u2014 Attack of the Clones",
+    "year": 2002,
+    "released": "May 16, 2002",
+    "runtime": "142 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0121765/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 146,
+    "title": "Star Wars: Episode III \u2014 Revenge of the Sith",
+    "year": 2005,
+    "released": "May 19, 2005",
+    "runtime": "140 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0121766/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 147,
+    "title": "Star Wars: Episode IV \u2014 A New Hope",
+    "year": 1977,
+    "released": "May 25, 1977",
+    "runtime": "121 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0076759/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 148,
+    "title": "Star Wars: Episode V \u2014 The Empire Strikes Back",
+    "year": 1980,
+    "released": "May 21, 1980",
+    "runtime": "124 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Irvin Kershner",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0080684/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 149,
+    "title": "Star Wars: Episode VI \u2014 Return of the Jedi",
+    "year": 1983,
+    "released": "May 25, 1983",
+    "runtime": "131 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Richard Marquand",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086190/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": ""
+  },
+  {
+    "id": 150,
+    "title": "Star Wars: The Force Awakens",
+    "year": 2015,
+    "released": "Dec 18, 2015",
+    "runtime": "138 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "J.J. Abrams",
+    "format": [
+      "Blu-ray",
+      "DVD",
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt2488496/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD + Digital HD",
+    "plot": ""
+  },
+  {
+    "id": 151,
+    "title": "Solo: A Star Wars Story",
+    "year": 2018,
+    "released": "May 25, 2018",
+    "runtime": "135 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Ron Howard",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3778644/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 152,
+    "title": "Family Guy Presents: Blue Harvest",
+    "year": 2007,
+    "released": "Jan 15, 2008",
+    "runtime": "47 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Family Guy"
+    ],
+    "director": "Dominic Polcino",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1033747/",
+    "shelf": "",
+    "image": "",
+    "notes": "Family Guy Star Wars parody \u2014 A New Hope",
+    "plot": ""
+  },
+  {
+    "id": 153,
+    "title": "Star Wars: The Clone Wars",
+    "year": 2008,
+    "released": "Aug 15, 2008",
+    "runtime": "98 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Dave Filoni",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt1185834/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 154,
+    "title": "The Story of Star Wars",
+    "year": 2005,
+    "released": "2005",
+    "runtime": "60 min",
+    "genre": [
+      "Documentary"
+    ],
+    "category": [
+      "Bonus Material"
+    ],
+    "director": "",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "",
+    "shelf": "",
+    "image": "",
+    "notes": "Narrated bonus DVD. R2-D2 and C-3PO chronicle the Skywalker saga.",
+    "plot": ""
+  },
+  {
+    "id": 155,
+    "title": "Star Wars Trilogy Bonus Material",
+    "year": 2004,
+    "released": "2004",
+    "runtime": "",
+    "genre": [
+      "Documentary"
+    ],
+    "category": [
+      "Bonus Material"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "",
+    "shelf": "",
+    "image": "",
+    "notes": "Bonus disc from 2004 Star Wars Trilogy DVD set. Includes Empire of Dreams documentary.",
+    "plot": ""
+  },
+  {
+    "id": 156,
+    "title": "Family Guy: Something Something Something Dark Side",
+    "year": 2009,
+    "released": "Dec 22, 2009",
+    "runtime": "45 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Family Guy"
+    ],
+    "director": "Dominic Polcino",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1462055/",
+    "shelf": "",
+    "image": "",
+    "notes": "Family Guy Star Wars parody \u2014 The Empire Strikes Back",
+    "plot": ""
+  },
+  {
+    "id": 157,
+    "title": "The Last Unicorn",
+    "year": 1982,
+    "released": "Nov 19, 1982",
+    "runtime": "93 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Jules Bass",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "25th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0084237/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 158,
+    "title": "Man of Steel",
+    "year": 2013,
+    "released": "Jun 14, 2013",
+    "runtime": "143 min",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Zack Snyder",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0770828/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Blu-ray film, Disc 2: DVD film, Disc 3: Blu-ray special features",
+    "plot": ""
+  },
+  {
+    "id": 159,
+    "title": "Fullmetal Alchemist: The Curse",
+    "year": 2003,
+    "released": "Oct 4, 2003",
+    "runtime": "100 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Seiji Mizushima",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0421357/",
+    "shelf": "",
+    "image": "",
+    "notes": "Vol. 1 of Fullmetal Alchemist anime series",
+    "plot": ""
+  },
+  {
+    "id": 160,
+    "title": "The Princess Bride",
+    "year": 1987,
+    "released": "Sep 25, 1987",
+    "runtime": "98 min",
+    "genre": [
+      "Comedy",
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "category": [
+      "Classics",
+      "Comedy"
+    ],
+    "director": "Rob Reiner",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Criterion Collection"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0093779/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 161,
+    "title": "Heavy Metal",
+    "year": 1981,
+    "released": "Aug 7, 1981",
+    "runtime": "86 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Fantasy",
+      "Action"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Gerald Potterton",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Special"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082509/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD Heavy Metal, Disc 2: Blu-ray Heavy Metal, Disc 3: Blu-ray Heavy Metal 2000",
+    "plot": ""
+  },
+  {
+    "id": 162,
+    "title": "Heavy Metal 2000",
+    "year": 2000,
+    "released": "Jul 18, 2000",
+    "runtime": "88 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Fantasy",
+      "Action"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Michael Coldewey",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Special"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0201382/",
+    "shelf": "",
+    "image": "",
+    "notes": "Included on Disc 3 of Heavy Metal Steelbook set",
+    "plot": ""
+  },
+  {
+    "id": 163,
+    "title": "Back to the Future",
+    "year": 1985,
+    "released": "Jul 3, 1985",
+    "runtime": "116 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0088763/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": ""
+  },
+  {
+    "id": 164,
+    "title": "Back to the Future Part II",
+    "year": 1989,
+    "released": "Nov 22, 1989",
+    "runtime": "108 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0096874/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": ""
+  },
+  {
+    "id": 165,
+    "title": "Back to the Future Part III",
+    "year": 1990,
+    "released": "May 25, 1990",
+    "runtime": "118 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure",
+      "Western"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0099088/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": ""
+  },
+  {
+    "id": 166,
+    "title": "Willy Wonka & the Chocolate Factory",
+    "year": 1971,
+    "released": "Jun 30, 1971",
+    "runtime": "100 min",
+    "genre": [
+      "Family",
+      "Musical",
+      "Fantasy",
+      "Comedy"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Mel Stuart",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0067992/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 167,
+    "title": "The Dark Crystal",
+    "year": 1982,
+    "released": "Dec 17, 1982",
+    "runtime": "93 min",
+    "genre": [
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Jim Henson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet",
+      "Anniversary Edition"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0083791/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 168,
+    "title": "Justice League Dark",
+    "year": 2017,
+    "released": "Feb 7, 2017",
+    "runtime": "75 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Jay Oliva",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt2494376/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 169,
+    "title": "Batman and Harley Quinn",
+    "year": 2017,
+    "released": "Aug 15, 2017",
+    "runtime": "74 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Comedy"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Sam Liu",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt6556890/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 170,
+    "title": "Son of Batman",
+    "year": 2014,
+    "released": "Apr 22, 2014",
+    "runtime": "74 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Ethan Spaulding",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3139072/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": ""
+  },
+  {
+    "id": 171,
+    "title": "Suicide Squad",
+    "year": 2016,
+    "released": "Aug 5, 2016",
+    "runtime": "123 min",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "David Ayer",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Extended Cut"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1386697/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Extended Cut Blu-ray, Disc 2: Theatrical Cut Blu-ray",
+    "plot": ""
+  },
+  {
+    "id": 172,
+    "title": "Logan",
+    "year": 2017,
+    "released": "Mar 3, 2017",
+    "runtime": "137 min",
+    "genre": [
+      "Action",
+      "Drama",
+      "Sci-Fi",
+      "Western"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "James Mangold",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt3315342/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray",
+    "plot": ""
+  },
+  {
+    "id": 173,
+    "title": "Deadpool",
+    "year": 2016,
+    "released": "Feb 12, 2016",
+    "runtime": "108 min",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Tim Miller",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt1431045/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray",
+    "plot": ""
+  },
+  {
+    "id": 174,
+    "title": "Deadpool 2",
+    "year": 2018,
+    "released": "May 18, 2018",
+    "runtime": "119 min",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "David Leitch",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Super Duper Cut"
+    ],
+    "discs": 4,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt5463162/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD Theatrical, Disc 2: 4K UHD Super Duper Cut, Disc 3: Blu-ray Theatrical, Disc 4: Blu-ray Super Duper Cut",
+    "plot": ""
+  },
+  {
+    "id": 175,
+    "title": "Batman Begins",
+    "year": 2005,
+    "released": "Jun 15, 2005",
+    "runtime": "140 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0372784/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
+    "plot": ""
+  },
+  {
+    "id": 176,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "released": "Jul 18, 2008",
+    "runtime": "152 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0468569/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
+    "plot": ""
+  },
+  {
+    "id": 177,
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "released": "Jul 20, 2012",
+    "runtime": "164 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1345836/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
     "plot": ""
   }
 ]
