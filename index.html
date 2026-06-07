@@ -26,6 +26,8 @@ select:focus{border-color:var(--accent)}
 .filter-label{font-size:11px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .clear-btn{background:none;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-dim);padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:12px;cursor:pointer;transition:all .2s}
 .clear-btn:hover{border-color:var(--accent2);color:var(--accent2)}
+.refresh-btn{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-dim);padding:4px 10px;font-family:'DM Sans',sans-serif;font-size:20px;cursor:pointer;line-height:1;transition:all .2s;align-items:center}
+.refresh-btn:hover{color:var(--accent);border-color:var(--accent)}
 .banner{overflow:hidden;max-height:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;background:var(--surface2);border-bottom:1px solid var(--border)}
 .banner.open{max-height:var(--banner-h);opacity:1}
 .banner-inner{display:flex;align-items:stretch;height:var(--banner-h);position:relative;overflow:hidden}
@@ -34,10 +36,7 @@ select:focus{border-color:var(--accent)}
 .banner-cover{height:calc(var(--banner-h) - 2.5rem);width:auto;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,.7);object-fit:cover;cursor:zoom-in}
 .banner-info{display:flex;flex-direction:column;gap:.35rem;padding:1.25rem 1rem 3rem 0;position:relative;z-index:1;flex:1;min-width:0;overflow:hidden}
 .banner-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:.04em;line-height:1;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.banner-meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
-.banner-pill{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;padding:2px 8px;border-radius:20px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8)}
-.banner-pill.accent{background:var(--accent);color:#000;border-color:var(--accent)}
-.banner-director{color:rgba(255,255,255,.6);font-size:13px}
+.banner-cast{color:rgba(255,255,255,.5);font-size:12px;font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .banner-plot-wrap{min-height:0;overflow:hidden}
 .banner-plot{color:rgba(255,255,255,.55);font-size:12px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .banner-plot.expanded{display:block;overflow-y:auto;max-height:90px}
@@ -115,6 +114,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .btn-danger:hover{background:var(--accent2);color:#fff}
 .field-hint{font-size:11px;color:var(--text-faint);margin-top:3px}
 @media(max-width:640px){
+  .refresh-btn{display:flex}
   .site-header{padding:1rem 1rem .75rem}
   .site-title{font-size:1.8rem}
   .controls{padding:.6rem 1rem;gap:6px}
@@ -136,6 +136,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
       <span class="site-title">ØJÌ'S <span>FILM DATABASE</span></span>
       <span class="count-tag" id="totalCount">0 titles</span>
     </div>
+    <button class="refresh-btn" onclick="location.reload()" title="Refresh">↻</button>
   </header>
   <div class="controls">
     <div class="search-wrap">
@@ -330,7 +331,7 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
     return { poster: posterCache[cacheKey], plot: manualPlot || plotCache[cacheKey] };
   }
 
-  let poster = null, plot = null;
+  let poster = null, plot = null, cast = null;
 
   // ── Step 1: OMDB by title + year ──────────────────────────────────────────
   try {
@@ -340,13 +341,13 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
       if (d.imdbID) poster = `https://img.omdbapi.com/?i=${d.imdbID}&h=1000&apikey=${OMDB_KEY}`;
       else if (d.Poster && d.Poster !== 'N/A') poster = d.Poster;
       if (d.Plot && d.Plot !== 'N/A') plot = d.Plot;
+      if (d.Actors && d.Actors !== 'N/A') cast = d.Actors;
     }
   } catch(e) {}
 
   // ── Step 2: TMDB by title + year ─────────────────────────────────────────
   if (!poster || !plot) {
     try {
-      // search movies first, then TV
       let tmdbResult = null;
       for (const type of ['movie', 'tv']) {
         if (tmdbResult) break;
@@ -361,7 +362,6 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
         const { type, item } = tmdbResult;
         if (!poster && item.poster_path) poster = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
         if (!plot) {
-          // get full details for overview
           const id = item.id;
           const detailR = await fetch(`https://api.themoviedb.org/3/${type}/${id}?api_key=${TMDB_KEY}`);
           const detailD = await detailR.json();
@@ -384,6 +384,7 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
             else if (d.Poster && d.Poster !== 'N/A') poster = d.Poster;
           }
           if (!plot && d.Plot && d.Plot !== 'N/A') plot = d.Plot;
+          if (!cast && d.Actors && d.Actors !== 'N/A') cast = d.Actors;
         }
       } catch(e) {}
     }
@@ -392,7 +393,7 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
   posterCache[cacheKey] = poster;
   plotCache[cacheKey] = plot;
 
-  return { poster, plot: manualPlot || plot };
+  return { poster, plot: manualPlot || plot, cast };
 }
 
 // ── Load ──────────────────────────────────────────────────────────────────────
@@ -477,26 +478,23 @@ async function toggleRow(i) {
   const manualPlot = m.plot || null;
 
   // if manual poster, skip poster fetch but still fetch plot
-  let poster, plot;
+  let poster, plot, cast;
   if (manualPoster) {
     poster = manualPoster;
     const media = await fetchMedia(m.title, m.year, m.imdb, manualPlot);
     plot = manualPlot || media.plot;
+    cast = media.cast;
   } else {
     const media = await fetchMedia(m.title, m.year, m.imdb, manualPlot);
     poster = media.poster;
     plot = media.plot;
+    cast = media.cast;
   }
 
   document.getElementById('bannerBg').style.backgroundImage = poster ? `url('${poster}')` : '';
   document.getElementById('bannerCovers').innerHTML = poster
     ? `<img class="banner-cover" src="${poster}" alt="${m.title}" onclick="openLightbox('${poster}')" onerror="this.parentNode.innerHTML='<div class=\\'poster-loading\\'>No poster found</div>'">`
     : '<div class="poster-loading">No poster found</div>';
-
-  const formats = Array.isArray(m.format) ? m.format.join(' · ') : m.format;
-  const primaryGenre = Array.isArray(m.genre) ? m.genre[0] : m.genre;
-  const otherGenres = Array.isArray(m.genre) ? m.genre.slice(1).join(' · ') : '';
-  const editions = Array.isArray(m.edition) && m.edition.length ? m.edition.join(' · ') : '';
 
   let plotHtml = '';
   if (plot) {
@@ -511,18 +509,7 @@ async function toggleRow(i) {
 
   document.getElementById('bannerInfo').innerHTML = `
     <div class="banner-title">${m.title}</div>
-    <div class="banner-meta">
-      <span class="banner-pill accent">${primaryGenre}</span>
-      ${otherGenres ? `<span class="banner-pill">${otherGenres}</span>` : ''}
-      ${m.category ? `<span class="banner-pill">${m.category}</span>` : ''}
-      <span class="banner-pill">${m.year}</span>
-      <span class="banner-pill">${m.runtime||''}</span>
-      <span class="banner-pill">${m.rating}</span>
-      <span class="banner-pill">${formats}</span>
-      ${editions ? `<span class="banner-pill">${editions}</span>` : ''}
-    </div>
-    <div class="banner-director">Directed by ${m.director}${m.shelf?' &nbsp;·&nbsp; Shelf: '+m.shelf:''}</div>
-    ${m.notes ? `<div style="color:rgba(255,255,255,.4);font-size:12px;font-style:italic">${m.notes}</div>` : ''}
+    ${cast ? `<div class="banner-cast">${cast}</div>` : ''}
     ${plotHtml}`;
 
   document.getElementById('bannerActions').innerHTML = `
@@ -565,7 +552,7 @@ function movieMatchesSearch(m, s) {
   if (!s) return true;
   const fields = [
     m.title, m.director, m.category, String(m.year),
-    m.released, m.runtime, m.rating, m.shelf, m.notes, m.plot,
+    m.released, m.runtime, m.rating, m.shelf, m.notes, m.plot, m.cast,
     ...(Array.isArray(m.genre) ? m.genre : [m.genre]),
     ...(Array.isArray(m.format) ? m.format : [m.format]),
     ...(Array.isArray(m.edition) ? m.edition : [m.edition])
