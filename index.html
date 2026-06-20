@@ -75,6 +75,8 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
 .fmt-dvd{background:rgba(255,255,255,.05);color:var(--text-dim);border:1px solid var(--border)}
 .fmt-dig{background:rgba(46,204,113,.1);color:#58d68d;border:1px solid rgba(46,204,113,.3)}
 .fmt-vhs{background:rgba(155,89,182,.1);color:#c39bd3;border:1px solid rgba(155,89,182,.3)}
+a.format-badge{text-decoration:none;cursor:pointer;transition:filter .15s,box-shadow .15s}
+a.format-badge:hover{filter:brightness(1.25);box-shadow:0 0 0 1px rgba(46,204,113,.4)}
 .rating-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;border:1px solid var(--border);color:var(--text-dim);background:var(--surface2)}
 .edition-badge{display:inline-block;font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px;background:rgba(232,200,74,.08);border:1px solid rgba(232,200,74,.2);color:rgba(232,200,74,.7);white-space:nowrap;margin:1px 0}
 .edition-badge.steelbook{background:rgba(180,190,200,.08);border-color:rgba(180,190,200,.3);color:rgba(190,200,210,.8)}
@@ -258,6 +260,7 @@ tbody td{padding:11px 14px;color:var(--text);vertical-align:middle;white-space:n
         <label class="format-check"><input type="checkbox" id="fmt-vhs" value="VHS"> VHS</label>
       </div>
     </div>
+    <div class="field"><label>Google Drive File ID <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(makes the Digital badge a streaming link)</span></label><input id="f-drivefileid" placeholder="e.g. 1lrvSOn8Tiq7AYA6OYI0QZB-ttrvOWm1t"></div>
     <div class="field">
       <label>Edition Tags <span style="color:var(--text-faint);font-weight:400;text-transform:none;letter-spacing:0">(stackable)</span></label>
       <div class="tag-input-wrap" id="editionTagWrap" onclick="document.getElementById('editionTagInput').focus()">
@@ -425,9 +428,15 @@ function fmtClass(f) {
   if (/vhs/i.test(f)) return 'fmt-vhs';
   return 'fmt-dvd';
 }
-function formatBadges(formats) {
-  if (!Array.isArray(formats)) formats = [formats];
-  return `<div style="display:flex;flex-wrap:wrap;gap:2px">${formats.map(f => `<span class="format-badge ${fmtClass(f)}">${f}</span>`).join('')}</div>`;
+function formatBadges(m) {
+  let formats = Array.isArray(m.format) ? m.format : [m.format];
+  return `<div style="display:flex;flex-wrap:wrap;gap:2px">${formats.map(f => {
+    const cls = fmtClass(f);
+    if (cls === 'fmt-dig' && m.driveFileId) {
+      return `<a class="format-badge ${cls}" href="watch.html?id=${m.id}" target="_blank" onclick="event.stopPropagation()" title="Stream from your library">${f} ▶</a>`;
+    }
+    return `<span class="format-badge ${cls}">${f}</span>`;
+  }).join('')}</div>`;
 }
 function genreChips(genres) {
   if (!Array.isArray(genres) || !genres.length) return '<span style="color:var(--text-faint)">—</span>';
@@ -458,7 +467,7 @@ function render() {
       <td>${genreChips(m.genre)}</td>
       <td>${Array.isArray(m.category) && m.category.length ? `<div class="chips-wrap">${m.category.map(c=>`<span class="genre-chip">${c}</span>`).join('')}</div>` : m.category ? `<span class="genre-chip">${m.category}</span>` : '<span style="color:var(--text-faint)">—</span>'}</td>
       <td class="td-dim">${m.director}</td>
-      <td>${formatBadges(m.format)}</td>
+      <td>${formatBadges(m)}</td>
       <td>${editionBadges(m.edition)}</td>
       <td class="td-dim" style="text-align:center;padding:11px 8px">${m.discs}</td>
       <td><a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a></td>
@@ -641,6 +650,7 @@ function openEdit(id) {
   document.getElementById('f-rating').value = m.rating;
   document.getElementById('f-shelf').value = m.shelf||'';
   document.getElementById('f-imdb').value = m.imdb;
+  document.getElementById('f-drivefileid').value = m.driveFileId||'';
   document.getElementById('f-image').value = m.image||'';
   document.getElementById('f-plot').value = m.plot||'';
   document.getElementById('f-notes').value = m.notes||'';
@@ -673,6 +683,7 @@ function saveMovie() {
     rating: document.getElementById('f-rating').value,
     shelf: document.getElementById('f-shelf').value.trim(),
     imdb: document.getElementById('f-imdb').value.trim(),
+    driveFileId: document.getElementById('f-drivefileid').value.trim(),
     image: document.getElementById('f-image').value.trim(),
     plot: document.getElementById('f-plot').value.trim(),
     notes: document.getElementById('f-notes').value.trim()
