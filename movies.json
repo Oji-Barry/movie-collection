@@ -1,0 +1,5151 @@
+[
+  {
+    "id": 1,
+    "title": "Blazing Saddles",
+    "year": 1974,
+    "released": "Feb 7, 1974",
+    "runtime": "93 min",
+    "genre": [
+      "Comedy",
+      "Western"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0071230/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray copy part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Cleavon Little, Gene Wilder, Slim Pickens, Harvey Korman, Madeline Kahn"
+  },
+  {
+    "id": 2,
+    "title": "Mars Attacks!",
+    "year": 1996,
+    "released": "Dec 13, 1996",
+    "runtime": "106 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "category": [
+      "Dark Comedy"
+    ],
+    "director": "Tim Burton",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0116996/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Nicholson, Glenn Close, Annette Bening, Pierce Brosnan, Danny DeVito"
+  },
+  {
+    "id": 3,
+    "title": "*Batteries Not Included",
+    "year": 1987,
+    "released": "Nov 6, 1987",
+    "runtime": "106 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Matthew Robbins",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0092494/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Hume Cronyn, Jessica Tandy, Frank McRae, Elizabeth Pe\u00f1a, Michael Carmine"
+  },
+  {
+    "id": 4,
+    "title": "Blade",
+    "year": 1998,
+    "released": "Aug 21, 1998",
+    "runtime": "120 min",
+    "genre": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
+    "category": [
+      "Supernatural Comic"
+    ],
+    "director": "Stephen Norrington",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0120611/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Blade Trilogy set",
+    "plot": "",
+    "cast": "Wesley Snipes, Stephen Dorff, Kris Kristofferson, N'Bushe Wright, Donal Logue"
+  },
+  {
+    "id": 5,
+    "title": "Blade II",
+    "year": 2002,
+    "released": "Mar 22, 2002",
+    "runtime": "117 min",
+    "genre": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
+    "category": [
+      "Supernatural Comic"
+    ],
+    "director": "Guillermo del Toro",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0187738/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Blade Trilogy set",
+    "plot": "",
+    "cast": "Wesley Snipes, Kris Kristofferson, Ron Perlman, Leonor Varela, Norman Reedus"
+  },
+  {
+    "id": 6,
+    "title": "Blade: Trinity",
+    "year": 2004,
+    "released": "Dec 8, 2004",
+    "runtime": "122 min",
+    "genre": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
+    "category": [
+      "Supernatural Comic"
+    ],
+    "director": "David S. Goyer",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0359013/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Blade Trilogy set",
+    "plot": "",
+    "cast": "Wesley Snipes, Kris Kristofferson, Ryan Reynolds, Jessica Biel, Parker Posey"
+  },
+  {
+    "id": 7,
+    "title": "Conan the Barbarian",
+    "year": 1982,
+    "released": "May 14, 1982",
+    "runtime": "129 min",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "category": [
+      "Conan"
+    ],
+    "director": "John Milius",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082198/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Conan: The Complete Quest set",
+    "plot": "",
+    "cast": "Arnold Schwarzenegger, James Earl Jones, Max von Sydow, Sandahl Bergman, Ben Davidson"
+  },
+  {
+    "id": 8,
+    "title": "Conan the Destroyer",
+    "year": 1984,
+    "released": "Jun 29, 1984",
+    "runtime": "103 min",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "category": [
+      "Conan"
+    ],
+    "director": "Richard Fleischer",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0087082/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Conan: The Complete Quest set",
+    "plot": "",
+    "cast": "Arnold Schwarzenegger, Grace Jones, Wilt Chamberlain, Mako, Tracey Walter"
+  },
+  {
+    "id": 9,
+    "title": "The Hobbit: An Unexpected Journey",
+    "year": 2012,
+    "released": "Dec 14, 2012",
+    "runtime": "182 min",
+    "genre": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0903624/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott, Cate Blanchett"
+  },
+  {
+    "id": 10,
+    "title": "The Hobbit: The Desolation of Smaug",
+    "year": 2013,
+    "released": "Dec 13, 2013",
+    "runtime": "186 min",
+    "genre": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1170358/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ian McKellen, Martin Freeman, Richard Armitage, Benedict Cumberbatch, Lee Pace"
+  },
+  {
+    "id": 11,
+    "title": "The Hobbit: The Battle of the Five Armies",
+    "year": 2014,
+    "released": "Dec 17, 2014",
+    "runtime": "164 min",
+    "genre": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt2310332/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ian McKellen, Martin Freeman, Richard Armitage, Cate Blanchett, Orlando Bloom"
+  },
+  {
+    "id": 12,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "released": "Dec 19, 2001",
+    "runtime": "228 min",
+    "genre": [
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 5,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0120737/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Elijah Wood, Ian McKellen, Orlando Bloom, Sean Bean, Cate Blanchett"
+  },
+  {
+    "id": 13,
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "released": "Dec 18, 2002",
+    "runtime": "235 min",
+    "genre": [
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 5,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0167261/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom, Bernard Hill"
+  },
+  {
+    "id": 14,
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "released": "Dec 17, 2003",
+    "runtime": "263 min",
+    "genre": [
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Peter Jackson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Extended"
+    ],
+    "discs": 5,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0167260/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom, Bernard Hill"
+  },
+  {
+    "id": 15,
+    "title": "Neon Genesis Evangelion: The Complete Series",
+    "year": 1995,
+    "released": "1995-1996",
+    "runtime": "779 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0112159/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/owAzdw2xWpbpxdM7HmG0tAT8Ea9.jpg",
+    "notes": "TV series, 26 episodes. Includes Death(True)\u00b2 and End of Evangelion",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Amanda Winn-Lee, Tiffany Grant, Allison Keith, Tristan MacAvery"
+  },
+  {
+    "id": 16,
+    "title": "Evangelion: Death(True)\u00b2",
+    "year": 1998,
+    "released": "Mar 7, 1998",
+    "runtime": "68 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt28717062/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/pbPyiZbaiuO3M2YO5XaCKRim98A.jpg",
+    "notes": "Included in Complete Series set",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Amanda Winn-Lee, Tiffany Grant, Allison Keith, Tristan MacAvery"
+  },
+  {
+    "id": 17,
+    "title": "Neon Genesis Evangelion: The End of Evangelion",
+    "year": 1997,
+    "released": "Jul 19, 1997",
+    "runtime": "87 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 5,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0169858/",
+    "shelf": "",
+    "image": "",
+    "notes": "Included in Complete Series set",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Amanda Winn-Lee, Tiffany Grant, Allison Keith, Tristan MacAvery"
+  },
+  {
+    "id": 18,
+    "title": "Evangelion: 1.11 You Are (Not) Alone",
+    "year": 2009,
+    "released": "Jan 23, 2009",
+    "runtime": "100 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Special"
+    ],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0923811/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/xzbGWKOGwgitPF4kxMhJ6NBsqdl.jpg",
+    "notes": "Rebuild of Evangelion film 1",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Tiffany Grant, Allison Keith, Brina Palencia, John Swasey"
+  },
+  {
+    "id": 19,
+    "title": "Evangelion: 2.22 You Can (Not) Advance",
+    "year": 2009,
+    "released": "Jun 27, 2009",
+    "runtime": "112 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0860906/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/7VLYN2CfJpB6PrcuzDKKqdGSUi6.jpg",
+    "notes": "Rebuild of Evangelion film 2",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Tiffany Grant, Allison Keith, Brina Palencia, John Swasey"
+  },
+  {
+    "id": 20,
+    "title": "Evangelion: 3.33 You Can (Not) Redo",
+    "year": 2012,
+    "released": "Nov 17, 2012",
+    "runtime": "95 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0860907/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/34Sz7vmGmjZw5zWshb6HUIEmXuW.jpg",
+    "notes": "Rebuild of Evangelion film 3",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Tiffany Grant, Allison Keith, Brina Palencia, John Swasey"
+  },
+  {
+    "id": 21,
+    "title": "Evangelion: 3.0+1.11 Thrice Upon a Time",
+    "year": 2021,
+    "released": "Mar 8, 2021",
+    "runtime": "155 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "NGE"
+    ],
+    "director": "Hideaki Anno",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt2458948/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/q034rbTWteRNA8sMSc2YjegmiUx.jpg",
+    "notes": "Rebuild of Evangelion film 4",
+    "plot": "",
+    "cast": "Megumi Ogata, Megumi Hayashibara, Yuko Miyamura, Kotono Mitsuishi, Fumihiko Tachiki / Spike Spencer, Tiffany Grant, Allison Keith, Brina Palencia, John Swasey"
+  },
+  {
+    "id": 22,
+    "title": "The Bad News Bears Go to Japan",
+    "year": 1978,
+    "released": "Jul 14, 1978",
+    "runtime": "92 min",
+    "genre": [
+      "Comedy",
+      "Sport"
+    ],
+    "category": [
+      "Sport, Family"
+    ],
+    "director": "John Berry",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0077199/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tony Curtis, Jackie Earle Haley, Tomisaburo Wakayama, George Wyner, Lonny Chapman"
+  },
+  {
+    "id": 23,
+    "title": "50 First Dates",
+    "year": 2004,
+    "released": "Feb 13, 2004",
+    "runtime": "99 min",
+    "genre": [
+      "Rom-Com",
+      "Dramedy"
+    ],
+    "category": [
+      "Sandler"
+    ],
+    "director": "Peter Segal",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0343660/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Adam Sandler, Drew Barrymore, Rob Schneider, Sean Astin, Dan Aykroyd"
+  },
+  {
+    "id": 24,
+    "title": "Kicking & Screaming",
+    "year": 2005,
+    "released": "May 6, 2005",
+    "runtime": "95 min",
+    "genre": [
+      "Comedy",
+      "Sport",
+      "Family"
+    ],
+    "category": [
+      "Sport Comedy"
+    ],
+    "director": "Jesse Dylan",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0384642/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Will Ferrell, Robert Duvall, Mike Ditka, Kate Walsh, Musetta Vander"
+  },
+  {
+    "id": 25,
+    "title": "Knightriders",
+    "year": 1981,
+    "released": "May 1, 1981",
+    "runtime": "145 min",
+    "genre": [
+      "Drama",
+      "Action"
+    ],
+    "category": [
+      "Romero"
+    ],
+    "director": "George A. Romero",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082622/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ed Harris, Gary Busey, Tom Savini, Brother Martin, Patricia Tallman"
+  },
+  {
+    "id": 26,
+    "title": "The Passenger",
+    "year": 1975,
+    "released": "Apr 9, 1975",
+    "runtime": "126 min",
+    "genre": [
+      "Drama",
+      "Thriller",
+      "Mystery"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Michelangelo Antonioni",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0073580/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Nicholson, Maria Schneider, Jenny Runacre, Ian Hendry, Steven Berkoff"
+  },
+  {
+    "id": 27,
+    "title": "The Red Skelton Show: Volume 2",
+    "year": 1955,
+    "released": "1955-1963",
+    "runtime": "150 min",
+    "genre": [
+      "Comedy",
+      "TV Shows"
+    ],
+    "category": [
+      "Classics, TV"
+    ],
+    "director": "Red Skelton",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "",
+    "shelf": "",
+    "image": "https://red-skelton.info/wp-content/uploads/the-red-skelton-show.jpg",
+    "notes": "6 classic episodes",
+    "plot": "",
+    "cast": "Red Skelton, Ann Miller, Sid Caesar, Robert Q. Lewis, Freddie Martin"
+  },
+  {
+    "id": 28,
+    "title": "Spanglish",
+    "year": 2004,
+    "released": "Dec 17, 2004",
+    "runtime": "131 min",
+    "genre": [
+      "Rom-Com",
+      "Dramedy"
+    ],
+    "category": [
+      "Sandler"
+    ],
+    "director": "James L. Brooks",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0371246/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Adam Sandler, T\u00e9a Leoni, Paz Vega, Cloris Leachman, Shelbie Bruce"
+  },
+  {
+    "id": 29,
+    "title": "Splash",
+    "year": 1984,
+    "released": "Mar 9, 1984",
+    "runtime": "110 min",
+    "genre": [
+      "Rom-Com",
+      "Fantasy",
+      "Comedy"
+    ],
+    "category": [
+      "Romance Comedy"
+    ],
+    "director": "Ron Howard",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "20th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0088161/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tom Hanks, Daryl Hannah, Eugene Levy, John Candy, Dody Goodman"
+  },
+  {
+    "id": 30,
+    "title": "Toys",
+    "year": 1992,
+    "released": "Dec 18, 1992",
+    "runtime": "121 min",
+    "genre": [
+      "Comedy",
+      "Fantasy",
+      "Drama"
+    ],
+    "category": [
+      "Robin Williams"
+    ],
+    "director": "Barry Levinson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0105629/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Robin Williams, Joan Cusack, LL Cool J, Donald O'Connor, Robin Wright"
+  },
+  {
+    "id": 31,
+    "title": "Terms of Endearment",
+    "year": 1983,
+    "released": "Nov 23, 1983",
+    "runtime": "132 min",
+    "genre": [
+      "Drama",
+      "Rom-Com"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "James L. Brooks",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086425/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Shirley MacLaine, Debra Winger, Jack Nicholson, Danny DeVito, Jeff Daniels"
+  },
+  {
+    "id": 32,
+    "title": "RV",
+    "year": 2006,
+    "released": "Apr 28, 2006",
+    "runtime": "99 min",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Adventure"
+    ],
+    "category": [
+      "Robin Williams"
+    ],
+    "director": "Barry Sonnenfeld",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0449089/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Robin Williams, Jeff Daniels, Cheryl Hines, Josh Hutcherson, Joanna 'JoJo' Levesque"
+  },
+  {
+    "id": 33,
+    "title": "The Bad News Bears in Breaking Training",
+    "year": 1977,
+    "released": "Aug 19, 1977",
+    "runtime": "100 min",
+    "genre": [
+      "Comedy",
+      "Sport"
+    ],
+    "category": [
+      "Sport, Family"
+    ],
+    "director": "Michael Pressman",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0075718/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "William Devane, Jackie Earle Haley, Clifton James, Jimmy Baio, Chris Barnes"
+  },
+  {
+    "id": 34,
+    "title": "Lady in the Water",
+    "year": 2006,
+    "released": "Jul 21, 2006",
+    "runtime": "110 min",
+    "genre": [
+      "Fantasy",
+      "Mystery",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "Shyamalan"
+    ],
+    "director": "M. Night Shyamalan",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0452637/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Paul Giamatti, Bryce Dallas Howard, Jeffrey Wright, Bob Balaban, Sarita Choudhury"
+  },
+  {
+    "id": 35,
+    "title": "Radio",
+    "year": 2003,
+    "released": "Oct 24, 2003",
+    "runtime": "109 min",
+    "genre": [
+      "Drama",
+      "Sport",
+      "Biography"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Mike Tollin",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0316465/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Cuba Gooding Jr., Ed Harris, Debra Winger, S. Epatha Merkerson, Alfre Woodard"
+  },
+  {
+    "id": 36,
+    "title": "Children of a Lesser God",
+    "year": 1986,
+    "released": "Oct 3, 1986",
+    "runtime": "119 min",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Randa Haines",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0090830/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "William Hurt, Marlee Matlin, Piper Laurie, Philip Bosco, John F. Cleary"
+  },
+  {
+    "id": 37,
+    "title": "The Bad News Bears",
+    "year": 1976,
+    "released": "Apr 7, 1976",
+    "runtime": "102 min",
+    "genre": [
+      "Comedy",
+      "Sport",
+      "Drama"
+    ],
+    "category": [
+      "Sport, Family"
+    ],
+    "director": "Michael Ritchie",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0074174/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Walter Matthau, Tatum O'Neal, Vic Morrow, Joyce Van Patten, Ben Piazza"
+  },
+  {
+    "id": 38,
+    "title": "Kingdom of Heaven",
+    "year": 2005,
+    "released": "May 6, 2005",
+    "runtime": "144 min",
+    "genre": [
+      "Action",
+      "History",
+      "Drama",
+      "War"
+    ],
+    "category": [
+      "Historical Epic"
+    ],
+    "director": "Ridley Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0320661/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Orlando Bloom, Eva Green, Liam Neeson, Jeremy Irons, David Thewlis"
+  },
+  {
+    "id": 39,
+    "title": "Man on Fire",
+    "year": 2004,
+    "released": "Apr 23, 2004",
+    "runtime": "146 min",
+    "genre": [
+      "Action",
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Tony Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0328107/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Denzel Washington, Dakota Fanning, Marc Anthony, Radha Mitchell, Christopher Walken"
+  },
+  {
+    "id": 40,
+    "title": "The Taking of Pelham 123",
+    "year": 2009,
+    "released": "Jun 12, 2009",
+    "runtime": "106 min",
+    "genre": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Tony Scott",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt1114980/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Denzel Washington, John Travolta, James Gandolfini, Luis Guzm\u00e1n, Victor Gojcaj"
+  },
+  {
+    "id": 41,
+    "title": "Looney Tunes: Back in Action",
+    "year": 2003,
+    "released": "Nov 14, 2003",
+    "runtime": "93 min",
+    "genre": [
+      "Comedy",
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "category": [
+      "Looney Tunes"
+    ],
+    "director": "Joe Dante",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0318155/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Brendan Fraser, Jenna Elfman, Steve Martin, Timothy Dalton, Joan Cusack"
+  },
+  {
+    "id": 42,
+    "title": "Freedomland",
+    "year": 2006,
+    "released": "Feb 17, 2006",
+    "runtime": "113 min",
+    "genre": [
+      "Drama",
+      "Thriller",
+      "Crime",
+      "Mystery"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Joe Roth",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0349467/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Samuel L. Jackson, Julianne Moore, Edie Falco, Ron Eldard, William Forsythe"
+  },
+  {
+    "id": 43,
+    "title": "The Titanic",
+    "year": 1996,
+    "released": "1996",
+    "runtime": "180 min",
+    "genre": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "category": [
+      "Classics, TV"
+    ],
+    "director": "Robert Lieberman",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0115392/",
+    "shelf": "",
+    "image": "",
+    "notes": "TV mini-series, 2 parts",
+    "plot": "",
+    "cast": "Peter Gallagher, George C. Scott, Eva Marie Saint, Tim Curry, Catherine Zeta-Jones"
+  },
+  {
+    "id": 44,
+    "title": "Waiting...",
+    "year": 2005,
+    "released": "Oct 7, 2005",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Indie"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Rob McKittrick",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Unrated"
+    ],
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0348333/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ryan Reynolds, Anna Faris, Justin Long, Dane Cook, Luis Guzm\u00e1n"
+  },
+  {
+    "id": 45,
+    "title": "Are We Done Yet?",
+    "year": 2007,
+    "released": "Apr 4, 2007",
+    "runtime": "92 min",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Steve Carr",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0450164/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ice Cube, Nia Long, John C. McGinley, Jay Thomas, M.C. Gainey"
+  },
+  {
+    "id": 46,
+    "title": "The Borrowers",
+    "year": 1973,
+    "released": "Dec 14, 1973",
+    "runtime": "94 min",
+    "genre": [
+      "Family",
+      "Fantasy"
+    ],
+    "category": [
+      "Family, Classics"
+    ],
+    "director": "Walter C. Miller",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Digitally Remastered"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0069817/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ian Holm, Penelope Wilton, Sharon Maughan, Tony Doyle, Cyril Luckham"
+  },
+  {
+    "id": 47,
+    "title": "Throw Momma from the Train",
+    "year": 1987,
+    "released": "Dec 11, 1987",
+    "runtime": "88 min",
+    "genre": [
+      "Comedy",
+      "Dark Comedy",
+      "Crime"
+    ],
+    "category": [
+      "Dark Comedy"
+    ],
+    "director": "Danny DeVito",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0094142/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Danny DeVito, Billy Crystal, Kim Greist, Anne Ramsey, Kim Greist"
+  },
+  {
+    "id": 48,
+    "title": "The Client",
+    "year": 1994,
+    "released": "Jul 20, 1994",
+    "runtime": "119 min",
+    "genre": [
+      "Thriller",
+      "Drama",
+      "Mystery",
+      "Crime"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Joel Schumacher",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0109446/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tommy Lee Jones, Susan Sarandon, Tommy Lee Jones, Anthony LaPaglia, Brad Renfro"
+  },
+  {
+    "id": 49,
+    "title": "Click",
+    "year": 2006,
+    "released": "Jun 23, 2006",
+    "runtime": "107 min",
+    "genre": [
+      "Comedy",
+      "Dramedy",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Sandler"
+    ],
+    "director": "Frank Coraci",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Special"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0389860/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Adam Sandler, Kate Beckinsale, Christopher Walken, David Hasselhoff, Henry Winkler"
+  },
+  {
+    "id": 50,
+    "title": "Are We There Yet?",
+    "year": 2005,
+    "released": "Jan 21, 2005",
+    "runtime": "95 min",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Adventure"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Brian Levant",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0368578/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ice Cube, Nia Long, Jay Thomas, M.C. Gainey, Aleisha Allen"
+  },
+  {
+    "id": 51,
+    "title": "Lilo & Stitch",
+    "year": 2002,
+    "released": "Jun 21, 2002",
+    "runtime": "85 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Chris Sanders",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0275847/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Daveigh Chase, Chris Sanders, Tia Carrere, David Ogden Stiers, Kevin McDonald"
+  },
+  {
+    "id": 52,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "released": "Jul 6, 1994",
+    "runtime": "142 min",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Special Collector's"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0109830/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tom Hanks, Robin Wright, Gary Sinise, Sally Field, Mykelti Williamson"
+  },
+  {
+    "id": 53,
+    "title": "Brian's Song",
+    "year": 2001,
+    "released": "Dec 2, 2001",
+    "runtime": "90 min",
+    "genre": [
+      "Drama",
+      "Sport",
+      "Biography"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "John Gray",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0289873/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Sean Maher, Mekhi Phifer, Elise Neal, Salli Richardson-Whitfield, Damon Gupton"
+  },
+  {
+    "id": 54,
+    "title": "The Green Berets",
+    "year": 1968,
+    "released": "Jun 19, 1968",
+    "runtime": "141 min",
+    "genre": [
+      "War",
+      "Action",
+      "Drama"
+    ],
+    "category": [
+      "John Wayne"
+    ],
+    "director": "John Wayne",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0063035/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "John Wayne, David Janssen, Jim Hutton, Aldo Ray, Raymond St. Jacques"
+  },
+  {
+    "id": 55,
+    "title": "Leroy & Stitch",
+    "year": 2006,
+    "released": "Jun 23, 2006",
+    "runtime": "73 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Tony Craig",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0486761/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Daveigh Chase, Chris Sanders, Tia Carrere, David Ogden Stiers, Kevin McDonald"
+  },
+  {
+    "id": 56,
+    "title": "Space Jam",
+    "year": 1996,
+    "released": "Nov 15, 1996",
+    "runtime": "88 min",
+    "genre": [
+      "Comedy",
+      "Animation",
+      "Sport",
+      "Family"
+    ],
+    "category": [
+      "Looney Tunes"
+    ],
+    "director": "Joe Pytka",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Special"
+    ],
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0117705/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Michael Jordan, Bill Murray, Wayne Knight, Theresa Randle, Manner Washington"
+  },
+  {
+    "id": 57,
+    "title": "Hancock",
+    "year": 2008,
+    "released": "Jul 2, 2008",
+    "runtime": "92 min",
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Drama"
+    ],
+    "category": [
+      "Comics, Superhero"
+    ],
+    "director": "Peter Berg",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Unrated"
+    ],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0448157/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Will Smith, Jason Bateman, Charlize Theron, Eddie Marsan, Jae Head"
+  },
+  {
+    "id": 58,
+    "title": "Meet Dave",
+    "year": 2008,
+    "released": "Jul 11, 2008",
+    "runtime": "90 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Family",
+      "Adventure"
+    ],
+    "category": [
+      "Eddie Murphy"
+    ],
+    "director": "Brian Robbins",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt1007029/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Eddie Murphy, Elizabeth Banks, Gabrielle Union, Ed Helms, Kevin Hart"
+  },
+  {
+    "id": 59,
+    "title": "Private Parts",
+    "year": 1997,
+    "released": "Mar 7, 1997",
+    "runtime": "109 min",
+    "genre": [
+      "Comedy",
+      "Biography",
+      "Drama"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Betty Thomas",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0119951/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Howard Stern, Mary McCormack, Robin Quivers, Fred Norris, Paul Giamatti"
+  },
+  {
+    "id": 60,
+    "title": "Funny Farm",
+    "year": 1988,
+    "released": "Jun 3, 1988",
+    "runtime": "101 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "George Roy Hill",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0095188/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Chevy Chase, Madolyn Smith, Joseph Maher, Jack Gilpin, Brad Sullivan"
+  },
+  {
+    "id": 61,
+    "title": "Son of the Mask",
+    "year": 2005,
+    "released": "Feb 18, 2005",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Fantasy",
+      "Family"
+    ],
+    "category": [
+      "Supernatural Comic"
+    ],
+    "director": "Lawrence Guterman",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0367263/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jamie Kennedy, Alan Cumming, Traylor Howard, Kal Penn, Bob Hoskins"
+  },
+  {
+    "id": 62,
+    "title": "The Mask",
+    "year": 1994,
+    "released": "Jul 29, 1994",
+    "runtime": "101 min",
+    "genre": [
+      "Comedy",
+      "Crime",
+      "Fantasy"
+    ],
+    "category": [
+      "Supernatural Comic"
+    ],
+    "director": "Chuck Russell",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0110475/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jim Carrey, Cameron Diaz, Peter Riegert, Peter Greene, Amy Yasbeck"
+  },
+  {
+    "id": 63,
+    "title": "Mannequin",
+    "year": 1987,
+    "released": "Feb 13, 1987",
+    "runtime": "90 min",
+    "genre": [
+      "Rom-Com",
+      "Comedy",
+      "Fantasy"
+    ],
+    "category": [
+      "Mannequin"
+    ],
+    "director": "Michael Gottlieb",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0093493/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mannequin double feature set",
+    "plot": "",
+    "cast": "Andrew McCarthy, Kim Cattrall, Estelle Getty, James Spader, G.W. Bailey"
+  },
+  {
+    "id": 64,
+    "title": "The Good Shepherd",
+    "year": 2006,
+    "released": "Dec 22, 2006",
+    "runtime": "167 min",
+    "genre": [
+      "Thriller",
+      "Drama",
+      "History",
+      "Mystery"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Robert De Niro",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0343737/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Matt Damon, Angelina Jolie, Alec Baldwin, Tammy Blanchard, Billy Crudup"
+  },
+  {
+    "id": 65,
+    "title": "Ratatouille",
+    "year": 2007,
+    "released": "Jun 29, 2007",
+    "runtime": "111 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Drama"
+    ],
+    "category": [
+      "Pixar"
+    ],
+    "director": "Brad Bird",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Walmart Exclusive"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0382932/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Patton Oswalt, Ian Holm, Lou Romano, Brian Dennehy, Peter Sohn"
+  },
+  {
+    "id": 66,
+    "title": "Peter Pan",
+    "year": 2003,
+    "released": "Dec 25, 2003",
+    "runtime": "113 min",
+    "genre": [
+      "Fantasy",
+      "Family",
+      "Adventure"
+    ],
+    "category": [
+      "Peter Pan"
+    ],
+    "director": "P.J. Hogan",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0316396/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Bobby Driscoll, Kathryn Beaumont, Hans Conried, Bill Thompson, Heather Angel"
+  },
+  {
+    "id": 67,
+    "title": "Peter Pan in Return to Never Land",
+    "year": 2002,
+    "released": "Feb 15, 2002",
+    "runtime": "72 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Family",
+      "Musical"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Robin Budd",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Pixie-Powered"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0283013/",
+    "shelf": "",
+    "image": "https://wallpapercave.com/wp/wp11038391.jpg",
+    "notes": "",
+    "plot": "",
+    "cast": "Harriet Owen, Blayne Weaver, Corey Burton, Jeff Bennett, Kath Soucie"
+  },
+  {
+    "id": 68,
+    "title": "The Boy in the Plastic Bubble",
+    "year": 1976,
+    "released": "Nov 12, 1976",
+    "runtime": "96 min",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Randal Kleiser",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0074236/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "John Travolta, Glynnis O'Connor, Robert Reed, Diana Hyland, Ralph Bellamy"
+  },
+  {
+    "id": 69,
+    "title": "Pete's Dragon",
+    "year": 1977,
+    "released": "Nov 3, 1977",
+    "runtime": "128 min",
+    "genre": [
+      "Family",
+      "Musical",
+      "Fantasy",
+      "Comedy"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Don Chaffey",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "High-Flying"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0076538/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Sean Marshall, Helen Reddy, Jim Dale, Mickey Rooney, Red Buttons"
+  },
+  {
+    "id": 70,
+    "title": "Brother Bear 2",
+    "year": 2006,
+    "released": "Aug 29, 2006",
+    "runtime": "74 min",
+    "genre": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Musical"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Ben Gluck",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0424253/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Mandy Moore, Jeremy Suarez, Rick Moranis, Dave Thomas, Catherine O'Hara"
+  },
+  {
+    "id": 71,
+    "title": "Mannequin 2: On the Move",
+    "year": 1991,
+    "released": "May 17, 1991",
+    "runtime": "95 min",
+    "genre": [
+      "Rom-Com",
+      "Comedy",
+      "Fantasy"
+    ],
+    "category": [
+      "Mannequin"
+    ],
+    "director": "Stewart Raffill",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0102388/",
+    "shelf": "",
+    "image": "https://flxt.tmsimg.com/assets/p13235_p_v10_ab.jpg",
+    "notes": "Part of Mannequin double feature set",
+    "plot": "",
+    "cast": "William Ragsdale, Kristy Swanson, Mark Blankfield, Meshach Taylor, Terry Kiser"
+  },
+  {
+    "id": 72,
+    "title": "Black Sheep",
+    "year": 1996,
+    "released": "Feb 2, 1996",
+    "runtime": "87 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Buddy Comedy"
+    ],
+    "director": "Penelope Spheeris",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0115697/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Chris Farley, Tim Meadows, Christine Ebersole, Gary Busey, Tim Matheson"
+  },
+  {
+    "id": 73,
+    "title": "Darby O'Gill and the Little People",
+    "year": 1959,
+    "released": "Jun 26, 1959",
+    "runtime": "93 min",
+    "genre": [
+      "Fantasy",
+      "Family",
+      "Adventure"
+    ],
+    "category": [
+      "Disney Film"
+    ],
+    "director": "Robert Stevenson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0052722/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Albert Sharpe, Janet Munro, Sean Connery, Jimmy O'Dea, Kieron Moore"
+  },
+  {
+    "id": 74,
+    "title": "Shrek 2",
+    "year": 2004,
+    "released": "May 19, 2004",
+    "runtime": "93 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "category": [
+      "DreamWorks"
+    ],
+    "director": "Andrew Adamson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0298148/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas, Julie Andrews"
+  },
+  {
+    "id": 75,
+    "title": "Snow White and the Seven Dwarfs",
+    "year": 1937,
+    "released": "Feb 4, 1938",
+    "runtime": "83 min",
+    "genre": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Musical"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "David Hand",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Diamond Edition"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0029583/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Adriana Caselotti, Lucille La Verne, Roy Atwell, Pinto Colvig, Otis Harlan"
+  },
+  {
+    "id": 76,
+    "title": "Shrek",
+    "year": 2001,
+    "released": "May 18, 2001",
+    "runtime": "90 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "category": [
+      "DreamWorks"
+    ],
+    "director": "Andrew Adamson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0126029/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow, Vicki Lewis"
+  },
+  {
+    "id": 77,
+    "title": "Something's Gotta Give",
+    "year": 2003,
+    "released": "Dec 12, 2003",
+    "runtime": "128 min",
+    "genre": [
+      "Rom-Com",
+      "Drama",
+      "Comedy"
+    ],
+    "category": [
+      "Nicholson"
+    ],
+    "director": "Nancy Meyers",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0337741/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Nicholson, Diane Keaton, Keanu Reeves, Frances McDormand, Amanda Peet"
+  },
+  {
+    "id": 78,
+    "title": "Shrek the Third",
+    "year": 2007,
+    "released": "May 18, 2007",
+    "runtime": "93 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "category": [
+      "DreamWorks"
+    ],
+    "director": "Chris Miller",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0413267/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas, Julie Andrews"
+  },
+  {
+    "id": 79,
+    "title": "The Road to El Dorado",
+    "year": 2000,
+    "released": "Mar 31, 2000",
+    "runtime": "89 min",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Family"
+    ],
+    "category": [
+      "DreamWorks"
+    ],
+    "director": "Eric Bergeron",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0138749/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Kevin Kline, Kenneth Branagh, Rosie Perez, Armand Assante, Edward James Olmos"
+  },
+  {
+    "id": 80,
+    "title": "Dinner for Schmucks",
+    "year": 2010,
+    "released": "Jul 30, 2010",
+    "runtime": "114 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Buddy Comedy"
+    ],
+    "director": "Jay Roach",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0427152/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Steve Carell, Paul Rudd, Zach Galifianakis, Jemaine Clement, Bruce Greenwood"
+  },
+  {
+    "id": 81,
+    "title": "Bowfinger",
+    "year": 1999,
+    "released": "Aug 13, 1999",
+    "runtime": "97 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Buddy Comedy"
+    ],
+    "director": "Frank Oz",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0131325/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Steve Martin, Eddie Murphy, Heather Graham, Christine Baranski, Jamie Kennedy"
+  },
+  {
+    "id": 82,
+    "title": "Doogal",
+    "year": 2006,
+    "released": "Feb 24, 2006",
+    "runtime": "85 min",
+    "genre": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Comedy"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Dave Borthwick",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0763304/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ian McKellen, Jon Stewart, Judi Dench, Kylie Minogue, Jimmy Fallon"
+  },
+  {
+    "id": 83,
+    "title": "Coming to America",
+    "year": 1988,
+    "released": "Jun 29, 1988",
+    "runtime": "116 min",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "category": [
+      "Eddie Murphy"
+    ],
+    "director": "John Landis",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0094898/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Eddie Murphy, Arsenio Hall, James Earl Jones, John Amos, Madge Sinclair"
+  },
+  {
+    "id": 84,
+    "title": "Yours, Mine & Ours",
+    "year": 2005,
+    "released": "Nov 23, 2005",
+    "runtime": "88 min",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Romance"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Raja Gosnell",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Special Collector's"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0426099/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Dennis Quaid, Rene Russo, Rip Torn, Jenna Boyd, Drake Bell"
+  },
+  {
+    "id": 85,
+    "title": "Firewall",
+    "year": 2006,
+    "released": "Feb 10, 2006",
+    "runtime": "105 min",
+    "genre": [
+      "Thriller",
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Richard Loncraine",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0384544/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Harrison Ford, Virginia Madsen, Paul Bettany, Mary Lynn Rajskub, Robert Forster"
+  },
+  {
+    "id": 86,
+    "title": "A Little Princess",
+    "year": 1995,
+    "released": "May 10, 1995",
+    "runtime": "97 min",
+    "genre": [
+      "Family",
+      "Drama",
+      "Fantasy"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Alfonso Cuar\u00f3n",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Double Feature"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0113670/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of A Little Princess / The Secret Garden double feature disc",
+    "plot": "",
+    "cast": "Liesel Matthews, Eleanor Bron, Liam Cunningham, Rusty Schwimmer, Arthur Malet"
+  },
+  {
+    "id": 87,
+    "title": "The Secret Garden",
+    "year": 1993,
+    "released": "Aug 13, 1993",
+    "runtime": "101 min",
+    "genre": [
+      "Family",
+      "Drama"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Agnieszka Holland",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Double Feature"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0108071/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of A Little Princess / The Secret Garden double feature disc",
+    "plot": "",
+    "cast": "Kate Maberly, Heydon Prowse, Andrew Knott, Maggie Smith, Laura Crossley"
+  },
+  {
+    "id": 88,
+    "title": "The Little Princess",
+    "year": 1939,
+    "released": "Mar 10, 1939",
+    "runtime": "93 min",
+    "genre": [
+      "Family",
+      "Musical",
+      "Drama"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Walter Lang",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0031580/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple. Includes short films Dora's Dunking Doughnuts and Kid in Africa on disc",
+    "plot": "",
+    "cast": "Shirley Temple, Richard Greene, Anita Louise, Ian Hunter, Cesar Romero"
+  },
+  {
+    "id": 89,
+    "title": "Dora's Dunking Doughnuts",
+    "year": 1933,
+    "released": "Oct 14, 1933",
+    "runtime": "20 min",
+    "genre": [
+      "Short",
+      "Comedy"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Arthur Ripley",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0279784/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple short. Included on The Little Princess disc",
+    "plot": "",
+    "cast": "Shirley Temple, George Givot, Guinn Williams, Doris McMahon, Nella Walker"
+  },
+  {
+    "id": 90,
+    "title": "Kid in Africa",
+    "year": 1933,
+    "released": "Nov 9, 1933",
+    "runtime": "20 min",
+    "genre": [
+      "Short",
+      "Comedy"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Alf Goulding",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0023089/",
+    "shelf": "",
+    "image": "",
+    "notes": "Shirley Temple short. Included on The Little Princess disc",
+    "plot": "",
+    "cast": "Shirley Temple, Syd Saylor, Stepin Fetchit, John Lodge, Nydia Westman"
+  },
+  {
+    "id": 91,
+    "title": "Copper Mountain",
+    "year": 1983,
+    "released": "Jan 1, 1983",
+    "runtime": "60 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "TV Movie"
+    ],
+    "director": "David Mitchell",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0085363/",
+    "shelf": "",
+    "image": "",
+    "notes": "Early Jim Carrey TV movie",
+    "plot": "",
+    "cast": "Jim Carrey, Barry Flatman, Alan Scarfe, Marilyn Lightstone, John Hemphill"
+  },
+  {
+    "id": 92,
+    "title": "Sleepless in Seattle",
+    "year": 1993,
+    "released": "Jun 25, 1993",
+    "runtime": "105 min",
+    "genre": [
+      "Rom-Com",
+      "Drama",
+      "Comedy"
+    ],
+    "category": [
+      "Romance"
+    ],
+    "director": "Nora Ephron",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Special"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0108160/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tom Hanks, Meg Ryan, Bill Pullman, Ross Malinger, Rosie O'Donnell"
+  },
+  {
+    "id": 93,
+    "title": "About Schmidt",
+    "year": 2002,
+    "released": "Dec 13, 2002",
+    "runtime": "124 min",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "category": [
+      "Nicholson"
+    ],
+    "director": "Alexander Payne",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0257360/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Nicholson, Kathy Bates, Hope Davis, Dermot Mulroney, June Squibb"
+  },
+  {
+    "id": 94,
+    "title": "Problem Child",
+    "year": 1990,
+    "released": "Jul 27, 1990",
+    "runtime": "81 min",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Dennis Dugan",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Double Feature"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0100419/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Problem Child Tantrum Pack double feature disc",
+    "plot": "",
+    "cast": "John Ritter, Michael Oliver, Jack Warden, Gilbert Gottfried, Michael Richards"
+  },
+  {
+    "id": 95,
+    "title": "Problem Child 2",
+    "year": 1991,
+    "released": "Jul 31, 1991",
+    "runtime": "91 min",
+    "genre": [
+      "Comedy",
+      "Family"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Brian Levant",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Double Feature"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0102873/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Problem Child Tantrum Pack double feature disc",
+    "plot": "",
+    "cast": "John Ritter, Michael Oliver, Jack Warden, Laraine Newman, Gilbert Gottfried"
+  },
+  {
+    "id": 96,
+    "title": "Nine Months",
+    "year": 1995,
+    "released": "Jul 12, 1995",
+    "runtime": "103 min",
+    "genre": [
+      "Rom-Com",
+      "Comedy",
+      "Drama"
+    ],
+    "category": [
+      "Romance Comedy"
+    ],
+    "director": "Chris Columbus",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0113986/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Hugh Grant, Julianne Moore, Tom Arnold, Joan Cusack, Jeff Goldblum"
+  },
+  {
+    "id": 97,
+    "title": "20,000 Leagues Under the Sea",
+    "year": 1997,
+    "released": "May 11, 1997",
+    "runtime": "176 min",
+    "genre": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Classics, TV"
+    ],
+    "director": "Michael Anderson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0118247/",
+    "shelf": "",
+    "image": "",
+    "notes": "TV miniseries",
+    "plot": "",
+    "cast": "Richard Crenna, Ben Cross, John Schuck, Michael Jayston, Alan Scarfe"
+  },
+  {
+    "id": 98,
+    "title": "Grumpy Old Men",
+    "year": 1993,
+    "released": "Dec 25, 1993",
+    "runtime": "103 min",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "category": [
+      "Buddy Comedy"
+    ],
+    "director": "Donald Petrie",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0107050/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Lemmon, Walter Matthau, Ann-Margret, Sophia Loren, Kevin Pollak"
+  },
+  {
+    "id": 99,
+    "title": "The Hunchback of Notre Dame II",
+    "year": 2002,
+    "released": "Mar 19, 2002",
+    "runtime": "68 min",
+    "genre": [
+      "Animation",
+      "Family",
+      "Musical",
+      "Romance"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Bradley Raymond",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0257778/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/5jtZ032EK1LwdxjegMQFAaT7t9A.jpg",
+    "notes": "",
+    "plot": "",
+    "cast": "Jennifer Love Hewitt, Jason Alexander, Mary Kay Bergman, Tom Hulce, Haley Joel Osment"
+  },
+  {
+    "id": 100,
+    "title": "One Fine Day",
+    "year": 1996,
+    "released": "Dec 20, 1996",
+    "runtime": "108 min",
+    "genre": [
+      "Rom-Com",
+      "Drama",
+      "Comedy"
+    ],
+    "category": [
+      "Romance"
+    ],
+    "director": "Michael Hoffman",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0117247/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Michelle Pfeiffer, George Clooney, Mae Whitman, Alex D. Linz, Charles Durning"
+  },
+  {
+    "id": 101,
+    "title": "Dave Chappelle's Block Party",
+    "year": 2005,
+    "released": "Mar 3, 2006",
+    "runtime": "103 min",
+    "genre": [
+      "Documentary",
+      "Music",
+      "Comedy"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Michel Gondry",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0425598/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Dave Chappelle, Kanye West, Mos Def, Dead Prez, Talib Kweli"
+  },
+  {
+    "id": 102,
+    "title": "The Hunchback of Notre Dame",
+    "year": 1982,
+    "released": "Feb 4, 1982",
+    "runtime": "102 min",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Michael Tuchner",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0083968/",
+    "shelf": "",
+    "image": "",
+    "notes": "Anthony Hopkins",
+    "plot": "",
+    "cast": "Tom Hulce, Demi Moore, Tony Jay, Jason Alexander, Mary Kay Bergman"
+  },
+  {
+    "id": 103,
+    "title": "My Big Fat Greek Wedding",
+    "year": 2002,
+    "released": "Apr 19, 2002",
+    "runtime": "95 min",
+    "genre": [
+      "Rom-Com",
+      "Comedy",
+      "Drama"
+    ],
+    "category": [
+      "Romance"
+    ],
+    "director": "Joel Zwick",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0259446/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Nia Vardalos, John Corbett, Michael Constantine, Lainie Kazan, Andrea Martin"
+  },
+  {
+    "id": 104,
+    "title": "Hoot",
+    "year": 2006,
+    "released": "May 5, 2006",
+    "runtime": "90 min",
+    "genre": [
+      "Family",
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "category": [
+      "Family"
+    ],
+    "director": "Wil Shriner",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0453494/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Logan Lerman, Brie Larson, Luke Wilson, Tim Blake Nelson, Neil Flynn"
+  },
+  {
+    "id": 105,
+    "title": "Police Academy",
+    "year": 1984,
+    "released": "Mar 23, 1984",
+    "runtime": "96 min",
+    "genre": [
+      "Comedy",
+      "Crime"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Hugh Wilson",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0087928/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Police Academy 1-4 Collection set",
+    "plot": "",
+    "cast": "Steve Guttenberg, Kim Cattrall, G.W. Bailey, Bubba Smith, Donovan Scott"
+  },
+  {
+    "id": 106,
+    "title": "Police Academy 2: Their First Assignment",
+    "year": 1985,
+    "released": "Mar 29, 1985",
+    "runtime": "87 min",
+    "genre": [
+      "Comedy",
+      "Crime"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Jerry Paris",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0089732/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Police Academy 1-4 Collection set",
+    "plot": "",
+    "cast": "Steve Guttenberg, Bubba Smith, David Graf, Michael Winslow, Art Metrano"
+  },
+  {
+    "id": 107,
+    "title": "Police Academy 3: Back in Training",
+    "year": 1986,
+    "released": "Mar 21, 1986",
+    "runtime": "83 min",
+    "genre": [
+      "Comedy",
+      "Crime"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Jerry Paris",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0091078/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Police Academy 1-4 Collection set",
+    "plot": "",
+    "cast": "Steve Guttenberg, Bubba Smith, David Graf, Michael Winslow, Marion Ramsey"
+  },
+  {
+    "id": 108,
+    "title": "Police Academy 4: Citizens on Patrol",
+    "year": 1987,
+    "released": "Apr 3, 1987",
+    "runtime": "87 min",
+    "genre": [
+      "Comedy",
+      "Crime"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Jim Drake",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0093799/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Police Academy 1-4 Collection set",
+    "plot": "",
+    "cast": "Steve Guttenberg, Bubba Smith, David Graf, Michael Winslow, Sharon Stone"
+  },
+  {
+    "id": 109,
+    "title": "V for Vendetta",
+    "year": 2005,
+    "released": "Mar 17, 2006",
+    "runtime": "132 min",
+    "genre": [
+      "Action",
+      "Thriller",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "Thriller Comic"
+    ],
+    "director": "James McTeigue",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0434409/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/piZOwjyk1g51oPHonc7zaQY3WOv.jpg",
+    "notes": "",
+    "plot": "",
+    "cast": "Natalie Portman, Hugo Weaving, Stephen Rea, John Hurt, Stephen Fry"
+  },
+  {
+    "id": 110,
+    "title": "Angels in America: Part 1",
+    "year": 2003,
+    "released": "Dec 7, 2003",
+    "runtime": "185 min",
+    "genre": [
+      "Drama",
+      "Fantasy"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Mike Nichols",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0318997/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/rrV0kCmzcP8oB00gemSZDns90rb.jpg",
+    "notes": "TV miniseries, Part 1",
+    "plot": "",
+    "cast": "Al Pacino, Meryl Streep, Mary-Louise Parker, Emma Thompson, Jeffrey Wright"
+  },
+  {
+    "id": 111,
+    "title": "Angels in America: Part 2",
+    "year": 2003,
+    "released": "Dec 14, 2003",
+    "runtime": "187 min",
+    "genre": [
+      "Drama",
+      "Fantasy"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Mike Nichols",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0318997/",
+    "shelf": "",
+    "image": "https://image.tmdb.org/t/p/original/rrV0kCmzcP8oB00gemSZDns90rb.jpg",
+    "notes": "TV miniseries, Part 2",
+    "plot": "",
+    "cast": "Al Pacino, Meryl Streep, Mary-Louise Parker, Emma Thompson, Jeffrey Wright"
+  },
+  {
+    "id": 112,
+    "title": "As Good as It Gets",
+    "year": 1997,
+    "released": "Dec 25, 1997",
+    "runtime": "138 min",
+    "genre": [
+      "Rom-Com",
+      "Drama",
+      "Comedy"
+    ],
+    "category": [
+      "Nicholson"
+    ],
+    "director": "James L. Brooks",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0119822/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Nicholson, Helen Hunt, Greg Kinnear, Cuba Gooding Jr., Skeet Ulrich"
+  },
+  {
+    "id": 113,
+    "title": "Finding Nemo",
+    "year": 2003,
+    "released": "May 30, 2003",
+    "runtime": "100 min",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Drama"
+    ],
+    "category": [
+      "Pixar"
+    ],
+    "director": "Andrew Stanton",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "2-Disc Collector's Edition"
+    ],
+    "discs": 2,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0266543/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe, Brad Garrett"
+  },
+  {
+    "id": 114,
+    "title": "The Flintstones",
+    "year": 1994,
+    "released": "May 27, 1994",
+    "runtime": "91 min",
+    "genre": [
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ],
+    "category": [
+      "Comedy"
+    ],
+    "director": "Brian Levant",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Collector's Edition"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0109813/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "John Goodman, Elizabeth Perkins, Rick Moranis, Rosie O'Donnell, Kyle MacLachlan"
+  },
+  {
+    "id": 115,
+    "title": "Pinocchio",
+    "year": 1940,
+    "released": "Feb 7, 1940",
+    "runtime": "88 min",
+    "genre": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Musical",
+      "Adventure"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Ben Sharpsteen",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "70th Anniversary",
+      "Platinum"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0032910/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Dickie Jones, Cliff Edwards, Christian Rub, Evelyn Venable, Walter Catlett"
+  },
+  {
+    "id": 116,
+    "title": "Flight of the Navigator",
+    "year": 1986,
+    "released": "Aug 1, 1986",
+    "runtime": "90 min",
+    "genre": [
+      "Family",
+      "Sci-Fi",
+      "Adventure",
+      "Comedy"
+    ],
+    "category": [
+      "Disney Film"
+    ],
+    "director": "Randal Kleiser",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0091059/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Joey Cramer, Veronica Cartwright, Cliff De Young, Sarah Jessica Parker, Matt Adler"
+  },
+  {
+    "id": 117,
+    "title": "The Fugitive",
+    "year": 1993,
+    "released": "Aug 6, 1993",
+    "runtime": "130 min",
+    "genre": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "Mystery",
+      "Crime"
+    ],
+    "category": [
+      "Thriller"
+    ],
+    "director": "Andrew Davis",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0106977/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Harrison Ford, Tommy Lee Jones, Sela Ward, Joe Pantoliano, Andreas Katsulas"
+  },
+  {
+    "id": 118,
+    "title": "Grumpier Old Men",
+    "year": 1995,
+    "released": "Dec 22, 1995",
+    "runtime": "101 min",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ],
+    "category": [
+      "Buddy Comedy"
+    ],
+    "director": "Howard Deutch",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0113228/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jack Lemmon, Walter Matthau, Sophia Loren, Ann-Margret, Daryl Hannah"
+  },
+  {
+    "id": 119,
+    "title": "The Hunchback of Notre Dame",
+    "year": 1996,
+    "released": "Jun 21, 1996",
+    "runtime": "91 min",
+    "genre": [
+      "Animation",
+      "Musical",
+      "Drama",
+      "Family",
+      "Romance"
+    ],
+    "category": [
+      "Disney Animation"
+    ],
+    "director": "Gary Trousdale",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0084100/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Tom Hulce, Demi Moore, Tony Jay, Jason Alexander, Mary Kay Bergman"
+  },
+  {
+    "id": 120,
+    "title": "The Outsiders",
+    "year": 1983,
+    "released": "Mar 25, 1983",
+    "runtime": "91 min",
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "category": [
+      "Drama"
+    ],
+    "director": "Francis Ford Coppola",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086066/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Matt Dillon, Ralph Macchio, C. Thomas Howell, Patrick Swayze, Rob Lowe"
+  },
+  {
+    "id": 121,
+    "title": "Wonder Woman",
+    "year": 2017,
+    "released": "Jun 2, 2017",
+    "runtime": "141 min",
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Patty Jenkins",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0451279/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Gal Gadot, Chris Pine, Robin Wright, Danny Huston, David Thewlis"
+  },
+  {
+    "id": 122,
+    "title": "The Spirit",
+    "year": 2008,
+    "released": "Dec 25, 2008",
+    "runtime": "103 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "Fantasy"
+    ],
+    "category": [
+      "Thriller Comic"
+    ],
+    "director": "Frank Miller",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0831887/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Gabriel Macht, Samuel L. Jackson, Scarlett Johansson, Eva Mendes, Sarah Paulson"
+  },
+  {
+    "id": 123,
+    "title": "Batman Ninja",
+    "year": 2018,
+    "released": "Apr 24, 2018",
+    "runtime": "85 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Junpei Mizusaki",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt7451284/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Koichi Yamadera, Wataru Takagi, Ai Kakuma, Rie Kugimiya, Takehito Koyasu"
+  },
+  {
+    "id": 124,
+    "title": "Batman: Assault on Arkham",
+    "year": 2014,
+    "released": "Jul 25, 2014",
+    "runtime": "76 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Jay Oliva",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3139086/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Kevin Conroy, Neal McDonough, Hynden Walch, Matthew Gray Gubler, Troy Baker"
+  },
+  {
+    "id": 125,
+    "title": "Justice League: Throne of Atlantis",
+    "year": 2015,
+    "released": "Jan 27, 2015",
+    "runtime": "72 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Ethan Spaulding",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3878542/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jason O'Mara, Matt Lanter, Christopher Gorham, Rosario Dawson, Sean Astin"
+  },
+  {
+    "id": 126,
+    "title": "Howard the Duck",
+    "year": 1986,
+    "released": "Aug 1, 1986",
+    "runtime": "110 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Action",
+      "Fantasy"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Willard Huyck",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0091225/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Lea Thompson, Jeffrey Jones, Tim Robbins, Ed Gale, Chip Zien"
+  },
+  {
+    "id": 127,
+    "title": "Watchmen",
+    "year": 2009,
+    "released": "Mar 6, 2009",
+    "runtime": "162 min",
+    "genre": [
+      "Action",
+      "Thriller",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "Thriller Comic"
+    ],
+    "director": "Zack Snyder",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Director's Cut"
+    ],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0409459/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Malin \u00c5kerman, Billy Crudup, Matthew Goode, Jackie Earle Haley, Jeffrey Dean Morgan"
+  },
+  {
+    "id": 128,
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "released": "Aug 1, 2014",
+    "runtime": "121 min",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "James Gunn",
+    "format": [
+      "Blu-ray 3D",
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt2015381/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray 3D + Blu-ray + Digital HD",
+    "plot": "",
+    "cast": "Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper"
+  },
+  {
+    "id": 129,
+    "title": "The Twelve Chairs",
+    "year": 1970,
+    "released": "Oct 28, 1970",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0066495/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Ron Moody, Frank Langella, Dom DeLuise, Mel Brooks, Bridget Brice"
+  },
+  {
+    "id": 130,
+    "title": "Young Frankenstein",
+    "year": 1974,
+    "released": "Dec 15, 1974",
+    "runtime": "106 min",
+    "genre": [
+      "Comedy",
+      "Horror"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0072431/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Gene Wilder, Peter Boyle, Marty Feldman, Teri Garr, Cloris Leachman"
+  },
+  {
+    "id": 131,
+    "title": "Silent Movie",
+    "year": 1976,
+    "released": "Jul 2, 1976",
+    "runtime": "87 min",
+    "genre": [
+      "Comedy"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0075222/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Mel Brooks, Marty Feldman, Dom DeLuise, Bernadette Peters, Sid Caesar"
+  },
+  {
+    "id": 132,
+    "title": "High Anxiety",
+    "year": 1977,
+    "released": "Dec 25, 1977",
+    "runtime": "94 min",
+    "genre": [
+      "Comedy",
+      "Thriller"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0076141/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Mel Brooks, Madeline Kahn, Cloris Leachman, Harvey Korman, Ron Carey"
+  },
+  {
+    "id": 133,
+    "title": "History of the World: Part I",
+    "year": 1981,
+    "released": "Jun 12, 1981",
+    "runtime": "92 min",
+    "genre": [
+      "Comedy",
+      "History"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082517/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Mel Brooks, Dom DeLuise, Madeline Kahn, Harvey Korman, Cloris Leachman"
+  },
+  {
+    "id": 134,
+    "title": "To Be or Not to Be",
+    "year": 1983,
+    "released": "Dec 16, 1983",
+    "runtime": "108 min",
+    "genre": [
+      "Comedy",
+      "War"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Alan Johnson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086450/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Mel Brooks, Anne Bancroft, Tim Matheson, Charles Durning, Jos\u00e9 Ferrer"
+  },
+  {
+    "id": 135,
+    "title": "Spaceballs",
+    "year": 1987,
+    "released": "Jun 24, 1987",
+    "runtime": "96 min",
+    "genre": [
+      "Comedy",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0094012/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Mel Brooks, John Candy, Rick Moranis, Bill Pullman, Daphne Zuniga"
+  },
+  {
+    "id": 136,
+    "title": "Robin Hood: Men in Tights",
+    "year": 1993,
+    "released": "Jul 28, 1993",
+    "runtime": "104 min",
+    "genre": [
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Brooks Comedy"
+    ],
+    "director": "Mel Brooks",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0107977/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Mel Brooks Collection set",
+    "plot": "",
+    "cast": "Cary Elwes, Richard Lewis, Roger Rees, Amy Yasbeck, Dave Chappelle"
+  },
+  {
+    "id": 137,
+    "title": "Final Fantasy: The Spirits Within",
+    "year": 2001,
+    "released": "Jul 11, 2001",
+    "runtime": "106 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Hironobu Sakaguchi",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0173840/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Ming-Na Wen, Alec Baldwin, James Woods, Donald Sutherland, Ving Rhames"
+  },
+  {
+    "id": 138,
+    "title": "Akira",
+    "year": 1988,
+    "released": "Jul 16, 1988",
+    "runtime": "124 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Action",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Katsuhiro Otomo",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "4K Remaster",
+      "Booklet"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0094625/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray, Disc 3: Bonus Blu-ray. Includes booklet.",
+    "plot": "",
+    "cast": "Mitsuo Iwata, Nozomu Sasaki, Mami Koyama, Tessh\u00f4 Genda, Hiroshi Otake / Cam Clarke, Joshua Seth, Wendee Lee, Jamieson Price, Tony Pope"
+  },
+  {
+    "id": 139,
+    "title": "Howl's Moving Castle",
+    "year": 2004,
+    "released": "Sep 5, 2004",
+    "runtime": "119 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Romance"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0347149/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Blu-ray, Disc 2: DVD",
+    "plot": "",
+    "cast": "Chieko Baish\u00f4, Takuya Kimura, Akihiro Miwa, Tatsuya Gash\u00fbin, Ryunosuke Kamiki / Emily Mortimer, Christian Bale, Jean Simmons, Lauren Bacall, Billy Crystal"
+  },
+  {
+    "id": 140,
+    "title": "The Lord of the Rings",
+    "year": 1978,
+    "released": "Nov 15, 1978",
+    "runtime": "132 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Ralph Bakshi",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Remastered Deluxe Edition"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0077869/",
+    "shelf": "",
+    "image": "",
+    "notes": "Animated film",
+    "plot": "",
+    "cast": "Christopher Guard, William Squire, Michael Scholes, John Hurt, Simon Chandler"
+  },
+  {
+    "id": 141,
+    "title": "The Hobbit",
+    "year": 1977,
+    "released": "Nov 27, 1977",
+    "runtime": "77 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Musical"
+    ],
+    "category": [
+      "Tolkien"
+    ],
+    "director": "Jules Bass",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0077687/",
+    "shelf": "",
+    "image": "",
+    "notes": "Rankin/Bass animated TV film",
+    "plot": "",
+    "cast": "Orson Bean, Richard Boone, Hans Conried, John Huston, Otto Preminger"
+  },
+  {
+    "id": 142,
+    "title": "Spirited Away",
+    "year": 2001,
+    "released": "Jul 20, 2001",
+    "runtime": "125 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 2,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0245429/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD",
+    "plot": "",
+    "cast": "Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takashi Naito, Yasuko Sawaguchi / Daveigh Chase, Jason Marsden, Suzanne Pleshette, Susan Egan, David Ogden Stiers"
+  },
+  {
+    "id": 143,
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "released": "Jul 12, 1997",
+    "runtime": "134 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Hayao Miyazaki",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0119698/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD",
+    "plot": "",
+    "cast": "Y\u00f4ji Matsuda, Yuriko Ishida, Y\u00fbko Tanaka, Kaoru Kobayashi, Masahiko Nishimura / Billy Crudup, Claire Danes, Minnie Driver, Gillian Anderson, Billy Bob Thornton"
+  },
+  {
+    "id": 144,
+    "title": "Star Wars: Episode I \u2014 The Phantom Menace",
+    "year": 1999,
+    "released": "May 19, 1999",
+    "runtime": "136 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0120915/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Liam Neeson, Ewan McGregor, Natalie Portman, Jake Lloyd, Ian McDiarmid"
+  },
+  {
+    "id": 145,
+    "title": "Star Wars: Episode II \u2014 Attack of the Clones",
+    "year": 2002,
+    "released": "May 16, 2002",
+    "runtime": "142 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0121765/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Ewan McGregor, Natalie Portman, Hayden Christensen, Christopher Lee, Samuel L. Jackson"
+  },
+  {
+    "id": 146,
+    "title": "Star Wars: Episode III \u2014 Revenge of the Sith",
+    "year": 2005,
+    "released": "May 19, 2005",
+    "runtime": "140 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0121766/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Ewan McGregor, Natalie Portman, Hayden Christensen, Ian McDiarmid, Samuel L. Jackson"
+  },
+  {
+    "id": 147,
+    "title": "Star Wars: Episode IV \u2014 A New Hope",
+    "year": 1977,
+    "released": "May 25, 1977",
+    "runtime": "121 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0076759/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing, Alec Guinness"
+  },
+  {
+    "id": 148,
+    "title": "Star Wars: Episode V \u2014 The Empire Strikes Back",
+    "year": 1980,
+    "released": "May 21, 1980",
+    "runtime": "124 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Irvin Kershner",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0080684/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams, Anthony Daniels"
+  },
+  {
+    "id": 149,
+    "title": "Star Wars: Episode VI \u2014 Return of the Jedi",
+    "year": 1983,
+    "released": "May 25, 1983",
+    "runtime": "131 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Richard Marquand",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0086190/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Star Wars Complete Saga set",
+    "plot": "",
+    "cast": "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams, Anthony Daniels"
+  },
+  {
+    "id": 150,
+    "title": "Star Wars: The Force Awakens",
+    "year": 2015,
+    "released": "Dec 18, 2015",
+    "runtime": "138 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "J.J. Abrams",
+    "format": [
+      "Blu-ray",
+      "DVD",
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt2488496/",
+    "shelf": "",
+    "image": "",
+    "notes": "Blu-ray + DVD + Digital HD",
+    "plot": "",
+    "cast": "Daisy Ridley, John Boyega, Harrison Ford, Oscar Isaac, Adam Driver"
+  },
+  {
+    "id": 151,
+    "title": "Solo: A Star Wars Story",
+    "year": 2018,
+    "released": "May 25, 2018",
+    "runtime": "135 min",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Ron Howard",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3778644/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Alden Ehrenreich, Woody Harrelson, Emilia Clarke, Donald Glover, Thandiwe Newton"
+  },
+  {
+    "id": 152,
+    "title": "Family Guy Presents: Blue Harvest",
+    "year": 2007,
+    "released": "Jan 15, 2008",
+    "runtime": "47 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Family Guy"
+    ],
+    "director": "Dominic Polcino",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1033747/",
+    "shelf": "",
+    "image": "",
+    "notes": "Family Guy Star Wars parody \u2014 A New Hope",
+    "plot": "",
+    "cast": "Seth MacFarlane, Mike Henry, Seth Green, Mila Kunis, Alex Borstein"
+  },
+  {
+    "id": 153,
+    "title": "Star Wars: The Clone Wars",
+    "year": 2008,
+    "released": "Aug 15, 2008",
+    "runtime": "98 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "category": [
+      "Star Wars"
+    ],
+    "director": "Dave Filoni",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt1185834/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Matt Lanter, Ashley Eckstein, James Arnold Taylor, Dee Bradley Baker, Tom Kane"
+  },
+  {
+    "id": 154,
+    "title": "The Story of Star Wars",
+    "year": 2005,
+    "released": "2005",
+    "runtime": "60 min",
+    "genre": [
+      "Documentary"
+    ],
+    "category": [
+      "Bonus Material"
+    ],
+    "director": "",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "",
+    "shelf": "",
+    "image": "",
+    "notes": "Narrated bonus DVD. R2-D2 and C-3PO chronicle the Skywalker saga.",
+    "plot": "",
+    "cast": "Roscoe Lee Browne, Mark Hamill, Harrison Ford, Carrie Fisher, Anthony Daniels"
+  },
+  {
+    "id": 155,
+    "title": "Star Wars Trilogy Bonus Material",
+    "year": 2004,
+    "released": "2004",
+    "runtime": "",
+    "genre": [
+      "Documentary"
+    ],
+    "category": [
+      "Bonus Material"
+    ],
+    "director": "George Lucas",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "",
+    "shelf": "",
+    "image": "",
+    "notes": "Bonus disc from 2004 Star Wars Trilogy DVD set. Includes Empire of Dreams documentary.",
+    "plot": "",
+    "cast": "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams, Anthony Daniels"
+  },
+  {
+    "id": 156,
+    "title": "Family Guy: Something Something Something Dark Side",
+    "year": 2009,
+    "released": "Dec 22, 2009",
+    "runtime": "45 min",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Family Guy"
+    ],
+    "director": "Dominic Polcino",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt1462055/",
+    "shelf": "",
+    "image": "",
+    "notes": "Family Guy Star Wars parody \u2014 The Empire Strikes Back",
+    "plot": "",
+    "cast": "Seth MacFarlane, Mike Henry, Seth Green, Mila Kunis, Alex Borstein"
+  },
+  {
+    "id": 157,
+    "title": "The Last Unicorn",
+    "year": 1982,
+    "released": "Nov 19, 1982",
+    "runtime": "93 min",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Jules Bass",
+    "format": [
+      "DVD"
+    ],
+    "edition": [
+      "25th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0084237/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Mia Farrow, Jeff Bridges, Angela Lansbury, Christopher Lee, Tammy Grimes"
+  },
+  {
+    "id": 158,
+    "title": "Man of Steel",
+    "year": 2013,
+    "released": "Jun 14, 2013",
+    "runtime": "143 min",
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Zack Snyder",
+    "format": [
+      "Blu-ray",
+      "DVD"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 3,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0770828/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Blu-ray film, Disc 2: DVD film, Disc 3: Blu-ray special features",
+    "plot": "",
+    "cast": "Henry Cavill, Amy Adams, Michael Shannon, Diane Lane, Russell Crowe"
+  },
+  {
+    "id": 159,
+    "title": "Fullmetal Alchemist: The Curse",
+    "year": 2003,
+    "released": "Oct 4, 2003",
+    "runtime": "100 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "category": [
+      "Anime"
+    ],
+    "director": "Seiji Mizushima",
+    "format": [
+      "DVD"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "NR",
+    "imdb": "https://www.imdb.com/title/tt0421357/",
+    "shelf": "",
+    "image": "",
+    "notes": "Vol. 1 of Fullmetal Alchemist anime series",
+    "plot": "",
+    "cast": "Romi Park, Rie Kugimiya, Yoshino Takamori, Hikaru Midorikawa, T\u00f4ru \u00d4kawa / Vic Mignogna, Aaron Dismuke, Dameon Clarke, Caitlin Glass, Travis Willingham"
+  },
+  {
+    "id": 160,
+    "title": "The Princess Bride",
+    "year": 1987,
+    "released": "Sep 25, 1987",
+    "runtime": "98 min",
+    "genre": [
+      "Comedy",
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "category": [
+      "Classics",
+      "Comedy"
+    ],
+    "director": "Rob Reiner",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Criterion Collection"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0093779/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Cary Elwes, Robin Wright, Mandy Patinkin, Chris Sarandon, Christopher Guest"
+  },
+  {
+    "id": 161,
+    "title": "Heavy Metal",
+    "year": 1981,
+    "released": "Aug 7, 1981",
+    "runtime": "86 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Fantasy",
+      "Action"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Gerald Potterton",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Special"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0082509/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD Heavy Metal, Disc 2: Blu-ray Heavy Metal, Disc 3: Blu-ray Heavy Metal 2000",
+    "plot": "",
+    "cast": "John Candy, Joe Flaherty, Eugene Levy, Harold Ramis, Annie Potts"
+  },
+  {
+    "id": 162,
+    "title": "Heavy Metal 2000",
+    "year": 2000,
+    "released": "Jul 18, 2000",
+    "runtime": "88 min",
+    "genre": [
+      "Animation",
+      "Sci-Fi",
+      "Fantasy",
+      "Action"
+    ],
+    "category": [
+      "Sci-Fi"
+    ],
+    "director": "Michael Coldewey",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Special"
+    ],
+    "discs": 3,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0201382/",
+    "shelf": "",
+    "image": "",
+    "notes": "Included on Disc 3 of Heavy Metal Steelbook set",
+    "plot": "",
+    "cast": "Michael Ironside, Julie Strain, Billy Idol, Sonja Ball, Rick Jones"
+  },
+  {
+    "id": 163,
+    "title": "Back to the Future",
+    "year": 1985,
+    "released": "Jul 3, 1985",
+    "runtime": "116 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0088763/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": "",
+    "cast": "Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover, Thomas F. Wilson"
+  },
+  {
+    "id": 164,
+    "title": "Back to the Future Part II",
+    "year": 1989,
+    "released": "Nov 22, 1989",
+    "runtime": "108 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0096874/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": "",
+    "cast": "Michael J. Fox, Christopher Lloyd, Lea Thompson, Thomas F. Wilson, Harry Waters Jr."
+  },
+  {
+    "id": 165,
+    "title": "Back to the Future Part III",
+    "year": 1990,
+    "released": "May 25, 1990",
+    "runtime": "118 min",
+    "genre": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure",
+      "Western"
+    ],
+    "category": [
+      "Time Travel"
+    ],
+    "director": "Robert Zemeckis",
+    "format": [
+      "Blu-ray",
+      "Digital"
+    ],
+    "edition": [
+      "30th Anniversary"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0099088/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Back to the Future 30th Anniversary Trilogy set",
+    "plot": "",
+    "cast": "Michael J. Fox, Christopher Lloyd, Mary Steenburgen, Thomas F. Wilson, Lea Thompson"
+  },
+  {
+    "id": 166,
+    "title": "Willy Wonka & the Chocolate Factory",
+    "year": 1971,
+    "released": "Jun 30, 1971",
+    "runtime": "100 min",
+    "genre": [
+      "Family",
+      "Musical",
+      "Fantasy",
+      "Comedy"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Mel Stuart",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "G",
+    "imdb": "https://www.imdb.com/title/tt0067992/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Gene Wilder, Jack Albertson, Peter Ostrum, Roy Kinnear, Aubrey Woods"
+  },
+  {
+    "id": 167,
+    "title": "The Dark Crystal",
+    "year": 1982,
+    "released": "Dec 17, 1982",
+    "runtime": "93 min",
+    "genre": [
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "category": [
+      "Classics"
+    ],
+    "director": "Jim Henson",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet",
+      "Anniversary Edition"
+    ],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0083791/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Jim Henson, Kathryn Mullen, Frank Oz, Dave Goelz, Brian Muehl"
+  },
+  {
+    "id": 168,
+    "title": "Justice League Dark",
+    "year": 2017,
+    "released": "Feb 7, 2017",
+    "runtime": "75 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Jay Oliva",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt2494376/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Matt Ryan, Camilla Luddington, Jason O'Mara, Rosario Dawson, Nicholas Turturro"
+  },
+  {
+    "id": 169,
+    "title": "Batman and Harley Quinn",
+    "year": 2017,
+    "released": "Aug 15, 2017",
+    "runtime": "74 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Comedy"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Sam Liu",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt6556890/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Kevin Conroy, Melissa Rauch, Paget Brewster, Loren Lester, Kevin Michael Richardson"
+  },
+  {
+    "id": 170,
+    "title": "Son of Batman",
+    "year": 2014,
+    "released": "Apr 22, 2014",
+    "runtime": "74 min",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "category": [
+      "DC Animated"
+    ],
+    "director": "Ethan Spaulding",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt3139072/",
+    "shelf": "",
+    "image": "",
+    "notes": "",
+    "plot": "",
+    "cast": "Stuart Allan, Jason O'Mara, Thomas Gibson, Morena Baccarin, Giancarlo Esposito"
+  },
+  {
+    "id": 171,
+    "title": "Suicide Squad",
+    "year": 2016,
+    "released": "Aug 5, 2016",
+    "runtime": "123 min",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "David Ayer",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Extended Cut"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1386697/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: Extended Cut Blu-ray, Disc 2: Theatrical Cut Blu-ray",
+    "plot": "",
+    "cast": "Will Smith, Jared Leto, Margot Robbie, Viola Davis, Joel Kinnaman"
+  },
+  {
+    "id": 172,
+    "title": "Logan",
+    "year": 2017,
+    "released": "Mar 3, 2017",
+    "runtime": "137 min",
+    "genre": [
+      "Action",
+      "Drama",
+      "Sci-Fi",
+      "Western"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "James Mangold",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt3315342/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray",
+    "plot": "",
+    "cast": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook, Stephen Merchant"
+  },
+  {
+    "id": 173,
+    "title": "Deadpool",
+    "year": 2016,
+    "released": "Feb 12, 2016",
+    "runtime": "108 min",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Tim Miller",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook"
+    ],
+    "discs": 2,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt1431045/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD, Disc 2: Blu-ray",
+    "plot": "",
+    "cast": "Ryan Reynolds, Morena Baccarin, Ed Skrein, T.J. Miller, Gina Carano"
+  },
+  {
+    "id": 174,
+    "title": "Deadpool 2",
+    "year": 2018,
+    "released": "May 18, 2018",
+    "runtime": "119 min",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "category": [
+      "Marvel",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "David Leitch",
+    "format": [
+      "4K UHD",
+      "Blu-ray"
+    ],
+    "edition": [
+      "Steelbook",
+      "Super Duper Cut"
+    ],
+    "discs": 4,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt5463162/",
+    "shelf": "",
+    "image": "",
+    "notes": "Disc 1: 4K UHD Theatrical, Disc 2: 4K UHD Super Duper Cut, Disc 3: Blu-ray Theatrical, Disc 4: Blu-ray Super Duper Cut",
+    "plot": "",
+    "cast": "Ryan Reynolds, Josh Brolin, Morena Baccarin, Julian Dennison, Zazie Beetz"
+  },
+  {
+    "id": 175,
+    "title": "Batman Begins",
+    "year": 2005,
+    "released": "Jun 15, 2005",
+    "runtime": "140 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0372784/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
+    "plot": "",
+    "cast": "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman"
+  },
+  {
+    "id": 176,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "released": "Jul 18, 2008",
+    "runtime": "152 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt0468569/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
+    "plot": "",
+    "cast": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine, Maggie Gyllenhaal"
+  },
+  {
+    "id": 177,
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "released": "Jul 20, 2012",
+    "runtime": "164 min",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "category": [
+      "DC",
+      "Superhero",
+      "Comic"
+    ],
+    "director": "Christopher Nolan",
+    "format": [
+      "Blu-ray"
+    ],
+    "edition": [
+      "Booklet"
+    ],
+    "discs": 2,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1345836/",
+    "shelf": "",
+    "image": "",
+    "notes": "Part of Dark Knight Trilogy set",
+    "plot": "",
+    "cast": "Christian Bale, Tom Hardy, Anne Hathaway, Gary Oldman, Joseph Gordon-Levitt"
+  },
+  {
+    "id": 178,
+    "title": "MirrorMask",
+    "year": 2005,
+    "released": "Sep 30, 2005",
+    "runtime": "101 min",
+    "genre": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "category": [
+      "Gaiman"
+    ],
+    "director": "Dave McKean",
+    "format": [
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG",
+    "imdb": "https://www.imdb.com/title/tt0366780/",
+    "shelf": "",
+    "image": "",
+    "notes": "Digital copy, 1080p. Written by Neil Gaiman & Dave McKean, produced by The Jim Henson Company.",
+    "plot": "",
+    "cast": "Stephanie Leonidas, Jason Barry, Rob Brydon, Gina McKee, Stephen Fry",
+    "driveFileId": "1lrvSOn8Tiq7AYA6OYI0QZB-ttrvOWm1t"
+  }
+]
