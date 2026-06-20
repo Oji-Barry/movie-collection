@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch — Øjì's Film Database</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--radius:6px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;display:flex;flex-direction:column;min-height:100vh}
+.top-bar{padding:1rem 2.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.site-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.04em;text-decoration:none;color:var(--text)}
+.site-title span{color:var(--accent)}
+.back-link{color:var(--text-dim);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
+.back-link:hover{color:var(--accent)}
+
+.gate-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem}
+.gate-box{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:2.5rem;width:100%;max-width:380px;text-align:center}
+.gate-box h2{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.04em;color:var(--accent);margin-bottom:.5rem}
+.gate-box p{color:var(--text-dim);font-size:13px;margin-bottom:1.5rem}
+.gate-box input{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);padding:10px 12px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;text-align:center;margin-bottom:1rem;transition:border-color .2s}
+.gate-box input:focus{border-color:var(--accent)}
+.gate-box button{width:100%;background:var(--accent);color:#000;border:none;border-radius:var(--radius);padding:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}
+.gate-box button:hover{background:#d4b340}
+.gate-error{color:var(--accent2);font-size:12px;margin-top:.75rem;min-height:16px}
+
+.player-wrap{flex:1;display:flex;flex-direction:column;align-items:center;padding:2rem;gap:1.1rem}
+.player-title{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.04em;text-align:center;color:#fff}
+.player-meta{color:var(--text-dim);font-size:13px;text-align:center}
+.player-frame-wrap{width:100%;max-width:1100px;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.6)}
+.player-frame-wrap iframe{width:100%;height:100%;border:none}
+.loading-msg{flex:1;display:flex;align-items:center;justify-content:center;color:var(--text-dim)}
+.not-found{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;text-align:center;padding:2rem}
+.not-found h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--accent2);letter-spacing:.04em}
+.not-found p{color:var(--text-dim);font-size:13px}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <a class="site-title" href="index.html">ØJÌ'S <span>FILM DATABASE</span></a>
+  <a class="back-link" href="index.html">← Back to catalog</a>
+</div>
+
+<div id="gate" class="gate-wrap">
+  <div class="gate-box">
+    <h2>Private Screening</h2>
+    <p>Enter the password to stream this title.</p>
+    <input type="password" id="pwInput" placeholder="Password" autocomplete="off">
+    <button onclick="checkPassword()">Unlock</button>
+    <div class="gate-error" id="gateError"></div>
+  </div>
+</div>
+
+<div id="playerArea" style="display:none"></div>
+
+<script>
+const PASSWORD = "Movies!";
+const params = new URLSearchParams(location.search);
+const movieId = parseInt(params.get('id'));
+
+document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
+
+function checkPassword() {
+  const val = document.getElementById('pwInput').value;
+  if (val === PASSWORD) {
+    sessionStorage.setItem('watchAuth', 'true');
+    unlock();
+  } else {
+    document.getElementById('gateError').textContent = 'Incorrect password.';
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwInput').focus();
+  }
+}
+
+function unlock() {
+  document.getElementById('gate').style.display = 'none';
+  const area = document.getElementById('playerArea');
+  area.style.display = 'flex';
+  area.className = 'player-wrap';
+  loadMovie();
+}
+
+async function loadMovie() {
+  const area = document.getElementById('playerArea');
+
+  if (!movieId) {
+    area.innerHTML = `
+      <div class="not-found">
+        <h2>No Title Specified</h2>
+        <p>This page needs a movie ID, e.g. watch.html?id=178</p>
+        <a class="back-link" href="index.html">← Back to catalog</a>
+      </div>`;
+    return;
+  }
+
+  area.innerHTML = '<div class="loading-msg">Loading…</div>';
+
+  try {
+    const res = await fetch('movies.json');
+    const movies = await res.json();
+    const m = movies.find(x => x.id === movieId);
+
+    if (!m || !m.driveFileId) {
+      area.innerHTML = `
+        <div class="not-found">
+          <h2>Not Available</h2>
+          <p>No streaming copy is linked for this title yet.</p>
+          <a class="back-link" href="index.html">← Back to catalog</a>
+        </div>`;
+      return;
+    }
+
+    area.innerHTML = `
+      <div class="player-title">${m.title}</div>
+      <div class="player-meta">${m.year} · ${m.director}</div>
+      <div class="player-frame-wrap">
+        <iframe src="https://drive.google.com/file/d/${m.driveFileId}/preview" allow="autoplay" allowfullscreen></iframe>
+      </div>`;
+  } catch (e) {
+    area.innerHTML = `
+      <div class="not-found">
+        <h2>Something Went Wrong</h2>
+        <p>Could not load the catalog data.</p>
+        <a class="back-link" href="index.html">← Back to catalog</a>
+      </div>`;
+  }
+}
+
+if (sessionStorage.getItem('watchAuth') === 'true') {
+  unlock();
+}
+</script>
+</body>
+</html>
