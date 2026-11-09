@@ -615,7 +615,8 @@
       "Sport"
     ],
     "category": [
-      "Sport, Family"
+      "Sport",
+      "Family"
     ],
     "director": "John Berry",
     "format": [
@@ -752,7 +753,8 @@
       "TV Shows"
     ],
     "category": [
-      "Classics, TV"
+      "Classics",
+      "TV"
     ],
     "director": "Red Skelton",
     "format": [
@@ -919,7 +921,8 @@
       "Sport"
     ],
     "category": [
-      "Sport, Family"
+      "Sport",
+      "Family"
     ],
     "director": "Michael Pressman",
     "format": [
@@ -1031,7 +1034,8 @@
       "Drama"
     ],
     "category": [
-      "Sport, Family"
+      "Sport",
+      "Family"
     ],
     "director": "Michael Ritchie",
     "format": [
@@ -1203,7 +1207,8 @@
       "Romance"
     ],
     "category": [
-      "Classics, TV"
+      "Classics",
+      "TV"
     ],
     "director": "Robert Lieberman",
     "format": [
@@ -1286,7 +1291,8 @@
       "Fantasy"
     ],
     "category": [
-      "Family, Classics"
+      "Family",
+      "Classics"
     ],
     "director": "Walter C. Miller",
     "format": [
@@ -1607,7 +1613,8 @@
       "Drama"
     ],
     "category": [
-      "Comics, Superhero"
+      "Comic",
+      "Superhero"
     ],
     "director": "Peter Berg",
     "format": [
@@ -2747,7 +2754,8 @@
       "Drama"
     ],
     "category": [
-      "Classics, TV"
+      "Classics",
+      "TV"
     ],
     "director": "Michael Anderson",
     "format": [
