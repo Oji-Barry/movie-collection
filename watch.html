@@ -31,6 +31,12 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 .player-meta{color:var(--text-dim);font-size:13px;text-align:center}
 .player-frame-wrap{width:100%;max-width:1100px;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.6)}
 .player-frame-wrap iframe{width:100%;height:100%;border:none}
+.alt-play{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+.alt-play button{background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:var(--radius);padding:9px 16px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:border-color .2s,color .2s}
+.alt-play button:hover{border-color:var(--accent);color:var(--accent)}
+.alt-play button.vlc{background:#f08a24;color:#000;border-color:#f08a24}
+.alt-play button.vlc:hover{background:#ff9d3d;color:#000}
+.alt-hint{color:var(--text-faint);font-size:12px;text-align:center;max-width:620px;line-height:1.5}
 .loading-msg{flex:1;display:flex;align-items:center;justify-content:center;color:var(--text-dim)}
 .not-found{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;text-align:center;padding:2rem}
 .not-found h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--accent2);letter-spacing:.04em}
@@ -117,7 +123,13 @@ async function loadMovie() {
       <div class="player-meta">${m.year} · ${m.director}</div>
       <div class="player-frame-wrap">
         <iframe src="https://drive.google.com/file/d/${m.driveFileId}/preview" allow="autoplay" allowfullscreen></iframe>
-      </div>`;
+      </div>
+      <div class="alt-play">
+        <button class="vlc" id="vlcBtn">▶ Open in VLC</button>
+        <button id="copyBtn">Copy Stream Link</button>
+      </div>
+      <div class="alt-hint">If the player above won't play this file, use VLC. On a computer, Open in VLC downloads a small playlist file: open it and VLC starts streaming. If that doesn't work, click Copy Stream Link, then in VLC choose Media → Open Network Stream and paste it.</div>`;
+    setupVLC(m);
   } catch (e) {
     area.innerHTML = `
       <div class="not-found">
@@ -126,6 +138,34 @@ async function loadMovie() {
         <a class="back-link" href="index.html">← Back to catalog</a>
       </div>`;
   }
+}
+
+function streamUrl(id) {
+  return `https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`;
+}
+
+function setupVLC(m) {
+  const url = streamUrl(m.driveFileId);
+  const ua = navigator.userAgent;
+  document.getElementById('vlcBtn').onclick = () => {
+    if (/Android/i.test(ua)) {
+      location.href = `intent:${url}#Intent;package=org.videolan.vlc;type=video/*;S.title=${encodeURIComponent(m.title)};end`;
+    } else if (/iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+      location.href = `vlc-x-callback://x-callback-url/stream?url=${encodeURIComponent(url)}`;
+    } else {
+      const m3u = `#EXTM3U\n#EXTINF:-1,${m.title} (${m.year})\n${url}\n`;
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([m3u], {type: 'audio/x-mpegurl'}));
+      a.download = `${m.title} (${m.year}).m3u`.replace(/[\\/:*?"<>|]/g, '');
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+  };
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.onclick = async () => {
+    try { await navigator.clipboard.writeText(url); copyBtn.textContent = 'Copied!'; }
+    catch (e) { prompt('Copy this link:', url); }
+    setTimeout(() => copyBtn.textContent = 'Copy Stream Link', 2000);
+  };
 }
 
 if (sessionStorage.getItem('watchAuth') === 'true') {
