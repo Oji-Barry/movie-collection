@@ -470,7 +470,7 @@ function render() {
       <td>${formatBadges(m)}</td>
       <td>${editionBadges(m.edition)}</td>
       <td class="td-dim" style="text-align:center;padding:11px 8px">${m.discs}</td>
-      <td><a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a></td>
+      <td>${m.imdb ? `<a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a>` : ''}</td>
       <td class="td-dim" style="font-size:12px">${m.shelf||'—'}</td>
     </tr>`).join('');
 }
@@ -533,7 +533,7 @@ async function toggleRow(i) {
     ${plotHtml}`;
 
   document.getElementById('bannerActions').innerHTML = `
-    <a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>
+    ${m.imdb ? `<a class="banner-link" href="${m.imdb}" target="_blank">View on IMDb ↗</a>` : ''}
     <button class="edit-btn" onclick="openEdit(${m.id})">✏ Edit</button>`;
 
   // hide toggle if plot fits without clipping
