@@ -71,7 +71,7 @@ document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key 
 function checkPassword() {
   const val = document.getElementById('pwInput').value;
   if (val === PASSWORD) {
-    sessionStorage.setItem('watchAuth', 'true');
+    rememberDevice();
     unlock();
   } else {
     document.getElementById('gateError').textContent = 'Incorrect password.';
@@ -168,7 +168,30 @@ function setupVLC(m) {
   };
 }
 
-if (sessionStorage.getItem('watchAuth') === 'true') {
+// Remember this device for 30 days. Every visit resets the clock,
+// so the password is only asked again after 30 days without use.
+const AUTH_KEY = 'watchAuthLastUsed';
+const AUTH_DAYS = 30;
+
+function rememberDevice() {
+  try { localStorage.setItem(AUTH_KEY, String(Date.now())); } catch (e) {}
+  try { sessionStorage.setItem('watchAuth', 'true'); } catch (e) {}
+}
+
+function deviceRemembered() {
+  try {
+    if (sessionStorage.getItem('watchAuth') === 'true') return true;
+  } catch (e) {}
+  try {
+    const last = parseInt(localStorage.getItem(AUTH_KEY), 10);
+    if (last && Date.now() - last < AUTH_DAYS * 24 * 60 * 60 * 1000) return true;
+    localStorage.removeItem(AUTH_KEY);
+  } catch (e) {}
+  return false;
+}
+
+if (deviceRemembered()) {
+  rememberDevice();
   unlock();
 }
 </script>
