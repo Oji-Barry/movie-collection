@@ -13028,5 +13028,31 @@
     "plot": "",
     "cast": "Bill Skarsg\u00e5rd, FKA twigs, Danny Huston, Josette Simon",
     "driveFileId": "1PWyCZVjEmBNJZE0MKOI6Lx80Owr6W39N"
+  },
+  {
+    "id": 466,
+    "title": "The Perks of Being a Wallflower",
+    "year": 2012,
+    "released": "",
+    "runtime": "103 min",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "category": [],
+    "director": "Stephen Chbosky",
+    "format": [
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "PG-13",
+    "imdb": "https://www.imdb.com/title/tt1659337/",
+    "shelf": "",
+    "image": "",
+    "notes": "Digital copy.",
+    "plot": "",
+    "cast": "Logan Lerman, Emma Watson, Ezra Miller, Paul Rudd",
+    "driveFileId": "1lrDCfVNVkkSjwCmgYV3ARJXhKCDAz07O"
   }
 ]
