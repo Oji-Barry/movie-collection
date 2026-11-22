@@ -3849,9 +3849,12 @@
     ],
     "director": "Mel Brooks",
     "format": [
-      "Blu-ray"
+      "Blu-ray",
+      "Digital"
     ],
-    "edition": [],
+    "edition": [
+      "Remastered"
+    ],
     "discs": 1,
     "rating": "PG",
     "imdb": "https://www.imdb.com/title/tt0094012/",
@@ -3859,7 +3862,8 @@
     "image": "",
     "notes": "Part of Mel Brooks Collection set",
     "plot": "",
-    "cast": "Mel Brooks, John Candy, Rick Moranis, Bill Pullman, Daphne Zuniga"
+    "cast": "Mel Brooks, John Candy, Rick Moranis, Bill Pullman, Daphne Zuniga",
+    "driveFileId": "1njrezmQ0OR6HKhNCPxZRKPD50ok8wP7o"
   },
   {
     "id": 136,
@@ -13355,5 +13359,32 @@
     "plot": "",
     "cast": "Lise Danvers, Fabrice Luchini, Charlotte Alexandra, Paloma Picasso",
     "driveFileId": "1uk6zKEPOxFZv6XJFf73ztAVuJo9AJgg9"
+  },
+  {
+    "id": 478,
+    "title": "Red State",
+    "year": 2011,
+    "released": "",
+    "runtime": "88 min",
+    "genre": [
+      "Horror",
+      "Crime",
+      "Thriller"
+    ],
+    "category": [],
+    "director": "Kevin Smith",
+    "format": [
+      "Digital"
+    ],
+    "edition": [],
+    "discs": 1,
+    "rating": "R",
+    "imdb": "https://www.imdb.com/title/tt0873886/",
+    "shelf": "",
+    "image": "",
+    "notes": "Digital copy.",
+    "plot": "",
+    "cast": "Michael Parks, Melissa Leo, John Goodman, Michael Angarano",
+    "driveFileId": "1Q2KauXY-J95TJTMuNUhS3QeaNv-2Btq7"
   }
 ]
