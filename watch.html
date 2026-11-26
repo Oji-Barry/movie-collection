@@ -141,7 +141,7 @@ async function loadMovie() {
   area.innerHTML = '<div class="loading-msg">Loading…</div>';
 
   try {
-    const res = await fetch('movies.json');
+    const res = await fetch('movies.json', {cache: 'no-cache'});
     const movies = await res.json();
     const m = movies.find(x => x.id === movieId);
 

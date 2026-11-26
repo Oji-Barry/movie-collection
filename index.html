@@ -461,7 +461,7 @@ async function fetchMedia(title, year, imdbUrl, manualPlot) {
 // ── Load ──────────────────────────────────────────────────────────────────────
 async function loadMovies() {
   try {
-    const res = await fetch('movies.json');
+    const res = await fetch('movies.json', {cache: 'no-cache'});
     movies = res.ok ? await res.json() : [];
   } catch(e) { movies = []; }
   movies.forEach(m => {
@@ -469,7 +469,7 @@ async function loadMovies() {
     if (!Array.isArray(m.edition)) m.edition = m.edition ? [m.edition] : [];
   });
   try {
-    const sr = await fetch('shows.json');
+    const sr = await fetch('shows.json', {cache: 'no-cache'});
     const shows = sr.ok ? await sr.json() : [];
     shows.forEach(sh => {
       sh.isShow = true;
@@ -790,6 +790,6 @@ makeTagInput('genreTagWrap', 'genreTagInput', true);
 makeTagInput('editionTagWrap', 'editionTagInput', false);
 loadMovies();
 </script>
-<script src="shows.js?v=4"></script>
+<script src="shows.js?v=5"></script>
 </body>
 </html>

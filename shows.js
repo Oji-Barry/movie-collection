@@ -41,7 +41,7 @@ async function collectVideos(folderId, path, acc, depth) {
   const subs = [];
   for (const f of items) {
     if (f.mimeType === 'application/vnd.google-apps.folder') subs.push(f);
-    else if ((f.mimeType || '').startsWith('video/') || VIDEO_EXT.test(f.name)) {
+    else if (((f.mimeType || '').startsWith('video/') || VIDEO_EXT.test(f.name)) && !/\bsample\b/i.test(f.name)) {
       acc.push({ id: f.id, name: f.name, size: +f.size || 0, path });
     }
   }
@@ -85,7 +85,7 @@ function parseEpisode(file, rootName, show) {
     s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
   } else if ((m = n.match(/book[ ._-]*(\d{1,2}).*?chapter[ ._-]*(\d{1,3})/i))) {
     s = +m[1]; e = +m[2];
-  } else if ((m = n.match(/\bs(\d{1,2})[ ._-]+e?(\d{1,3})(?:[ ._-]*-?[ ._-]*e(\d{1,3}))?\b/i))) {
+  } else if ((m = n.match(/(?:^|[^a-z0-9])s(\d{1,2})[ ._-]+e?(\d{1,3})(?:[ ._-]*-?[ ._-]*e(\d{1,3}))?(?![0-9])/i))) {
     s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
   } else if ((m = n.match(/^(\d{1,2})-(\d{1,2})\b(?!\d)/))) {
     s = +m[1]; e = +m[2];
@@ -116,7 +116,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v3:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v4:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
