@@ -6,7 +6,7 @@
 <title>Øjì's Film Database</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--row-hover:#16161e;--banner-h:max(50vh,340px);--radius:6px}
+:root{--bg:#0a0a0c;--surface:#111116;--surface2:#18181f;--border:#2a2a35;--accent:#e8c84a;--accent2:#c0392b;--text:#e8e8f0;--text-dim:#7a7a90;--text-faint:#3a3a50;--row-hover:#16161e;--banner-h:max(50vh,340px);--show-h:max(72vh,520px);--radius:6px}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;display:flex;flex-direction:column}
@@ -119,6 +119,37 @@ a.format-badge:hover{filter:brightness(1.25);box-shadow:0 0 0 1px rgba(46,204,11
 .btn-danger{background:none;color:var(--accent2);border-color:var(--accent2);margin-right:auto}
 .btn-danger:hover{background:var(--accent2);color:#fff}
 .field-hint{font-size:11px;color:var(--text-faint);margin-top:3px}
+.banner.show-mode.open{max-height:var(--show-h)}
+.banner.show-mode .banner-inner{min-height:var(--show-h);height:var(--show-h)}
+.banner.show-mode .banner-cover{height:calc(var(--show-h) - 3rem)}
+.banner.show-mode .banner-info{justify-content:flex-start;padding-top:2rem;padding-bottom:4.5rem}
+.banner-still{width:min(46vw,calc((var(--show-h) - 3rem) * 1.6));aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,.7);cursor:zoom-in}
+.banner-kicker{color:rgba(255,255,255,.6);font-size:clamp(12px,1vw,22px);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.banner-kicker a{color:var(--accent);text-decoration:none}
+.banner-kicker a:hover{text-decoration:underline}
+.banner-title.ep-title{font-size:clamp(2.2rem,4vw,5.5rem)}
+.banner-plot.show-plot{-webkit-line-clamp:3}
+.ep-noplot{color:rgba(255,255,255,.35);font-style:italic;font-size:clamp(14px,1.2vw,26px)}
+.season-list{flex:1 1 auto;min-height:0;overflow-y:auto;margin-top:.25rem;padding-right:.5rem;max-width:110ch}
+.season-loading{color:rgba(255,255,255,.45);font-size:clamp(13px,1.1vw,24px);padding:.5rem 0}
+.season{border-top:1px solid rgba(255,255,255,.1)}
+.season-head{width:100%;display:flex;align-items:center;gap:1rem;background:none;border:none;color:#fff;cursor:pointer;padding:.6em .25em;font-family:'DM Sans',sans-serif;font-size:clamp(15px,1.35vw,30px);font-weight:600;text-align:left}
+.season-head:hover{color:var(--accent)}
+.season-name{flex:1}
+.season-count{color:rgba(255,255,255,.45);font-weight:400;font-size:.8em}
+.season-caret{transition:transform .2s;color:rgba(255,255,255,.5)}
+.season.open .season-caret{transform:rotate(180deg)}
+.ep-list{display:none;padding:0 0 .5rem .5rem}
+.season.open .ep-list{display:block}
+.ep-row{width:100%;display:flex;gap:1rem;align-items:baseline;background:none;border:none;border-radius:var(--radius);color:rgba(255,255,255,.82);cursor:pointer;padding:.45em .6em;font-family:'DM Sans',sans-serif;font-size:clamp(14px,1.2vw,27px);text-align:left}
+.ep-row:hover{background:rgba(255,255,255,.07);color:#fff}
+.ep-row.selected{background:rgba(232,200,74,.14);color:var(--accent)}
+.ep-num{color:rgba(255,255,255,.4);font-variant-numeric:tabular-nums;min-width:3.6em;font-size:.85em}
+.ep-row.selected .ep-num{color:var(--accent)}
+.ep-name{flex:1;min-width:0}
+.play-btn{background:var(--accent);color:#000;border-radius:var(--radius);padding:.45em 1.1em;font-size:clamp(13px,1.1vw,24px);font-weight:700;text-decoration:none;letter-spacing:.04em}
+.play-btn:hover{background:#d4b340}
+.show-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:2px;background:rgba(93,173,226,.12);color:#7fb8e6;border:1px solid rgba(93,173,226,.35)}
 @media(max-width:640px){
   .refresh-btn{display:flex}
   .site-header{padding:1rem 1rem .75rem}
@@ -141,6 +172,15 @@ a.format-badge:hover{filter:brightness(1.25);box-shadow:0 0 0 1px rgba(46,204,11
   .plot-toggle{font-size:13px}
   .banner-link,.edit-btn{font-size:14px}
   .banner-actions{left:1.25rem;right:1.25rem;justify-content:center}
+  .banner.show-mode .banner-inner{height:auto;min-height:50vh}
+  .banner.show-mode .banner-cover{height:auto;max-height:42vh}
+  .banner-still{width:92vw}
+  .banner.show-mode .banner-info{text-align:left;align-items:stretch}
+  .season-list{max-height:55vh;max-width:none}
+  .banner-kicker{text-align:center}
+  .season-head{font-size:16px}
+  .ep-row{font-size:15px}
+  .play-btn{font-size:15px}
   .results-info{padding:.5rem 1rem}
 }
 </style>
@@ -159,6 +199,10 @@ a.format-badge:hover{filter:brightness(1.25);box-shadow:0 0 0 1px rgba(46,204,11
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="text" id="searchInput" placeholder="Search titles, directors, genres, editions...">
     </div>
+    <span class="filter-label">Type</span>
+    <select id="typeFilter">
+      <option value="">Movies &amp; Shows</option><option value="movie">Movies</option><option value="show">Shows</option>
+    </select>
     <span class="filter-label">Genre</span>
     <select id="genreFilter">
       <option value="">All Genres</option>
@@ -193,6 +237,7 @@ a.format-badge:hover{filter:brightness(1.25);box-shadow:0 0 0 1px rgba(46,204,11
     <select id="ratingFilter">
       <option value="">All Ratings</option>
       <option>G</option><option>PG</option><option>PG-13</option><option>R</option><option>NC-17</option><option>NR</option>
+      <option>TV-Y</option><option>TV-Y7</option><option>TV-PG</option><option>TV-14</option><option>TV-MA</option>
     </select>
     <button class="clear-btn" onclick="clearFilters()">Clear</button>
   </div>
@@ -423,6 +468,18 @@ async function loadMovies() {
     if (!Array.isArray(m.genre)) m.genre = m.genre ? [m.genre] : [];
     if (!Array.isArray(m.edition)) m.edition = m.edition ? [m.edition] : [];
   });
+  try {
+    const sr = await fetch('shows.json');
+    const shows = sr.ok ? await sr.json() : [];
+    shows.forEach(sh => {
+      sh.isShow = true;
+      sh.format = ['Digital'];
+      sh.edition = sh.edition || [];
+      sh.director = sh.creator || '';
+      if (!Array.isArray(sh.genre)) sh.genre = sh.genre ? [sh.genre] : [];
+      movies.push(sh);
+    });
+  } catch(e) {}
   movies.sort((a,b) => a.title.localeCompare(b.title));
   filtered = [...movies];
   render();
@@ -440,6 +497,9 @@ function formatBadges(m) {
   let formats = Array.isArray(m.format) ? m.format : [m.format];
   return `<div style="display:flex;flex-wrap:wrap;gap:2px">${formats.map(f => {
     const cls = fmtClass(f);
+    if (cls === 'fmt-dig' && m.isShow) {
+      return `<span class="format-badge ${cls}" title="Episodes stream from your library">${f} ▶</span>`;
+    }
     if (cls === 'fmt-dig' && m.driveFileId) {
       return `<a class="format-badge ${cls}" href="watch.html?id=${m.id}" target="_blank" onclick="event.stopPropagation()" title="Stream from your library">${f} ▶</a>`;
     }
@@ -457,9 +517,10 @@ function editionBadges(editions) {
 
 // ── Table render ──────────────────────────────────────────────────────────────
 function render() {
-  document.getElementById('totalCount').textContent = `${movies.length} title${movies.length!==1?'s':''}`;
+  const nShows = movies.filter(m => m.isShow).length, nMovies = movies.length - nShows;
+  document.getElementById('totalCount').textContent = `${nMovies} movie${nMovies!==1?'s':''}` + (nShows ? ` · ${nShows} show${nShows!==1?'s':''}` : '');
   document.getElementById('resultsInfo').textContent = filtered.length !== movies.length
-    ? `Showing ${filtered.length} of ${movies.length} titles` : `${movies.length} title${movies.length!==1?'s':''}`;
+    ? `Showing ${filtered.length} of ${movies.length} titles` : `${movies.length} titles`;
   const body = document.getElementById('movieBody');
   const empty = document.getElementById('emptyState');
   if (!filtered.length) { body.innerHTML=''; empty.style.display='block'; return; }
@@ -467,7 +528,7 @@ function render() {
   body.innerHTML = filtered.map((m,i) => `
     <tr onclick="toggleRow(${i})" id="row-${i}" class="${activeIdx===i?'active':''}">
       <td class="td-dim" style="font-size:11px;text-align:center">${m.id}</td>
-      <td class="td-title">${m.title}</td>
+      <td class="td-title">${m.title}${m.isShow ? '<span class="show-badge">TV</span>' : ''}</td>
       <td><span class="rating-badge">${m.rating}</span></td>
       <td class="td-dim">${m.year}</td>
       <td class="td-dim" style="font-size:12px">${m.released||'—'}</td>
@@ -477,7 +538,7 @@ function render() {
       <td class="td-dim">${m.director}</td>
       <td>${formatBadges(m)}</td>
       <td>${editionBadges(m.edition)}</td>
-      <td class="td-dim" style="text-align:center;padding:11px 8px">${m.discs}</td>
+      <td class="td-dim" style="text-align:center;padding:11px 8px">${m.isShow ? '—' : m.discs}</td>
       <td>${m.imdb ? `<a class="imdb-link" href="${m.imdb}" target="_blank" onclick="event.stopPropagation()">IMDb ↗</a>` : ''}</td>
       <td class="td-dim" style="font-size:12px">${m.shelf||'—'}</td>
     </tr>`).join('');
@@ -491,6 +552,14 @@ async function toggleRow(i) {
   activeIdx = i;
   bannerPlotExpanded = false;
   const m = filtered[i];
+  if (m.isShow) {
+    document.getElementById('banner').classList.add('open');
+    render();
+    openShow(m);
+    return;
+  }
+  currentShow = null;
+  document.getElementById('banner').classList.remove('show-mode');
   document.getElementById('bannerCovers').innerHTML = '<div class="poster-loading">Loading...</div>';
   document.getElementById('bannerInfo').innerHTML = '';
   document.getElementById('bannerActions').innerHTML = '';
@@ -564,7 +633,8 @@ function togglePlot() {
 }
 
 function closeBanner() {
-  document.getElementById('banner').classList.remove('open');
+  document.getElementById('banner').classList.remove('open', 'show-mode');
+  currentShow = null;
   activeIdx = null; bannerPlotExpanded = false; render();
 }
 
@@ -594,7 +664,10 @@ function applyFilters() {
   const f = document.getElementById('formatFilter').value;
   const ed = document.getElementById('editionFilter').value;
   const r = document.getElementById('ratingFilter').value;
+  const ty = document.getElementById('typeFilter').value;
   filtered = movies.filter(m => {
+    if (ty === 'show' && !m.isShow) return false;
+    if (ty === 'movie' && m.isShow) return false;
     if (!movieMatchesSearch(m, s)) return false;
     if (g) { const genres = Array.isArray(m.genre)?m.genre:[m.genre]; if (!genres.includes(g)) return false; }
     if (f) { const fmts = Array.isArray(m.format)?m.format:[m.format]; if (!fmts.includes(f)) return false; }
@@ -607,7 +680,7 @@ function applyFilters() {
 
 function clearFilters() {
   document.getElementById('searchInput').value = '';
-  ['genreFilter','formatFilter','editionFilter','ratingFilter'].forEach(id => document.getElementById(id).value = '');
+  ['typeFilter','genreFilter','formatFilter','editionFilter','ratingFilter'].forEach(id => document.getElementById(id).value = '');
   filtered = [...movies]; activeIdx = null; closeBanner(); render();
 }
 
@@ -636,6 +709,7 @@ document.getElementById('genreFilter').addEventListener('change', applyFilters);
 document.getElementById('formatFilter').addEventListener('change', applyFilters);
 document.getElementById('editionFilter').addEventListener('change', applyFilters);
 document.getElementById('ratingFilter').addEventListener('change', applyFilters);
+document.getElementById('typeFilter').addEventListener('change', applyFilters);
 
 // ── Edit modal ────────────────────────────────────────────────────────────────
 function openEdit(id) {
@@ -716,5 +790,6 @@ makeTagInput('genreTagWrap', 'genreTagInput', true);
 makeTagInput('editionTagWrap', 'editionTagInput', false);
 loadMovies();
 </script>
+<script src="shows.js"></script>
 </body>
 </html>

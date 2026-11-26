@@ -65,6 +65,9 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;fon
 const PASSWORD = "Movies!";
 const params = new URLSearchParams(location.search);
 const movieId = parseInt(params.get('id'));
+const fileParam = params.get('file');
+const DRIVE_KEY = 'AIzaSyDfsODhvu3KOgFniJwbx9GetGHz5ES53Hs';
+function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
 document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
 
@@ -88,8 +91,42 @@ function unlock() {
   loadMovie();
 }
 
+function renderPlayer(fileId, title, meta, vlcName) {
+  const area = document.getElementById('playerArea');
+  area.innerHTML = `
+      <div class="player-title">${esc(title)}</div>
+      <div class="player-meta">${esc(meta)}</div>
+      <div class="player-frame-wrap" id="frameWrap">
+        <iframe src="https://drive.google.com/file/d/${fileId}/preview" allow="autoplay" allowfullscreen></iframe>
+      </div>
+      <div class="alt-play">
+        <button id="hqBtn">★ Full quality player</button>
+        <button class="vlc" id="vlcBtn">▶ Open in VLC</button>
+        <button id="copyBtn">Copy Stream Link</button>
+      </div>
+      <div class="alt-hint">Google's player above is often limited to low quality. Full quality player plays the original file in your browser; if it shows an error or has no sound, the file's format isn't supported by your browser, so use VLC. On a computer, Open in VLC downloads a small playlist file: open it and VLC starts streaming. If that doesn't work, click Copy Stream Link, then in VLC choose Media → Open Network Stream and paste it.</div>`;
+  setupVLC({ driveFileId: fileId, title: vlcName, year: '' });
+  document.getElementById('hqBtn').onclick = () => {
+    const wrap = document.getElementById('frameWrap');
+    wrap.innerHTML = `<video controls autoplay playsinline style="width:100%;height:100%;background:#000" src="https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=${DRIVE_KEY}"></video>`;
+    const v = wrap.querySelector('video');
+    v.addEventListener('error', () => {
+      wrap.innerHTML = `<div style="height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;color:#aaa">This file's format can't play in your browser. Use Open in VLC below, or reload the page for Google's player.</div>`;
+    });
+    document.getElementById('hqBtn').style.display = 'none';
+  };
+}
+
 async function loadMovie() {
   const area = document.getElementById('playerArea');
+
+  if (fileParam && /^[\w-]{10,}$/.test(fileParam)) {
+    const title = params.get('title') || 'Episode';
+    const sub = params.get('sub') || '';
+    document.title = `${title} — Øjì's Film Database`;
+    renderPlayer(fileParam, title, sub, sub ? `${sub} - ${title}` : title);
+    return;
+  }
 
   if (!movieId) {
     area.innerHTML = `
@@ -118,18 +155,7 @@ async function loadMovie() {
       return;
     }
 
-    area.innerHTML = `
-      <div class="player-title">${m.title}</div>
-      <div class="player-meta">${m.year} · ${m.director}</div>
-      <div class="player-frame-wrap">
-        <iframe src="https://drive.google.com/file/d/${m.driveFileId}/preview" allow="autoplay" allowfullscreen></iframe>
-      </div>
-      <div class="alt-play">
-        <button class="vlc" id="vlcBtn">▶ Open in VLC</button>
-        <button id="copyBtn">Copy Stream Link</button>
-      </div>
-      <div class="alt-hint">If the player above won't play this file, use VLC. On a computer, Open in VLC downloads a small playlist file: open it and VLC starts streaming. If that doesn't work, click Copy Stream Link, then in VLC choose Media → Open Network Stream and paste it.</div>`;
-    setupVLC(m);
+    renderPlayer(m.driveFileId, m.title, `${m.year} · ${m.director}`, `${m.title} (${m.year})`);
   } catch (e) {
     area.innerHTML = `
       <div class="not-found">
@@ -153,10 +179,10 @@ function setupVLC(m) {
     } else if (/iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
       location.href = `vlc-x-callback://x-callback-url/stream?url=${encodeURIComponent(url)}`;
     } else {
-      const m3u = `#EXTM3U\n#EXTINF:-1,${m.title} (${m.year})\n${url}\n`;
+      const m3u = `#EXTM3U\n#EXTINF:-1,${m.title}\n${url}\n`;
       const a = document.createElement('a');
       a.href = URL.createObjectURL(new Blob([m3u], {type: 'audio/x-mpegurl'}));
-      a.download = `${m.title} (${m.year}).m3u`.replace(/[\\/:*?"<>|]/g, '');
+      a.download = `${m.title}.m3u`.replace(/[\\/:*?"<>|]/g, '');
       document.body.appendChild(a); a.click(); a.remove();
     }
   };
