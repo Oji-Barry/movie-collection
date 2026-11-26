@@ -5,7 +5,7 @@
 // episode names, stills and summaries come from TMDB.
 
 const DRIVE_KEY = 'AIzaSyDfsODhvu3KOgFniJwbx9GetGHz5ES53Hs';
-const VIDEO_EXT = /\.(mkv|avi|mp4|m4v|mov|wmv|mpe?g|ts|divx|flv|webm|ogm|rmvb|vob)$/i;
+const VIDEO_EXT = /\.(mkv|avi|mp4|m4v|mov|wmv|mpe?g|ts|divx|flv|webm|ogm|rmvb|vob|asf)$/i;
 const EXTRA_RE = /\b(extras?|bonus|featurettes?|behind[ ._-]the[ ._-]scenes|backgrounds|example[ ._-]clips|deleted[ ._-]scenes|commentar(y|ies)|trailers?|promos?|shorties|interviews?|sneak[ ._-]peeks?)\b/i;
 
 const showStructCache = {};   // show id -> {seasons:[...], total}
@@ -61,18 +61,27 @@ function seasonFromText(t) {
 }
 
 function cleanEpName(n, showTitle) {
-  let t = n.replace(VIDEO_EXT, '')
+  let t = n.replace(VIDEO_EXT, '').replace(/_+/g, ' ')
     .replace(/\[[^\]]*\]|\([^)]*\)|\{[^}]*\}/g, ' ')
     .replace(/s\d{1,2}[ ._-]*e\d{1,3}([ ._-]*(e|-)\d{1,3})?/ig, ' ')
+    .replace(/\bs\d{1,2}[ .-]+e?\d{1,3}\b/ig, ' ')
     .replace(/\b\d{1,2}x\d{1,3}\b/ig, ' ')
+    .replace(/\b(book|chapter|season|series|episode|ep|vol(ume)?)[ ._-]*(\d{1,3}|one|two|three|four|five|six|seven)\b/ig, ' ')
+    .replace(/\b(water|earth|fire|air)\b(?=[ ._-]*-)/ig, ' ')
+    .replace(/(^|\s)\d{3,4}(-\d{3,4})?(?=\s|$)/g, ' ')
+    .replace(/(^|\s)\d{1,2}-\d{1,2}(?=\s|$)/g, ' ')
     .replace(/\b(xvid|divx|x264|x265|h264|h265|hevc|dvdrip|dvd|bdrip|brrip|bluray|web-?dl|webrip|hdtv|720p|1080p|480p|aac|ac3|mp3|snek|repack|proper)\b/ig, ' ')
     .replace(/[._]+/g, ' ');
-  const words = (showTitle || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').split(' ').filter(w => w.length > 2);
-  if (words.length) {
-    const re = new RegExp('^\\s*(the\\s+)?' + words.join('[\\s\\-]*'), 'i');
-    t = t.replace(re, ' ');
+  // drop the show's own name (or a leading part of it) from the start
+  const showWords = new Set((showTitle || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w && w !== 'the'));
+  const norm = w => (w || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const tw = t.trim().split(/\s+/);
+  while (tw.length > 1) {
+    const w = norm(tw[0]);
+    if (!w || showWords.has(w) || (w === 'the' && showWords.has(norm(tw[1])))) tw.shift(); else break;
   }
-  t = t.replace(/^[\s\-–:#]*\d{1,3}[a-z]?\b[\s\-–:.]*/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s\-–:]+|[\s\-–:]+$/g, '');
+  t = ' ' + tw.join(' ');
+  t = t.replace(/^[\s\-–:#]*\d{1,4}[a-z]?\b[\s\-–:.]*/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s\-–:]+|[\s\-–:]+$/g, '');
   return t.replace(/\b\w/g, c => c.toUpperCase()) || n.replace(VIDEO_EXT, '');
 }
 
@@ -104,7 +113,18 @@ function parseEpisode(file, rootName, show) {
       const v = m[1];
       if (v.length >= 3 && (s == null || +v.slice(0, v.length - 2) === s)) { s = s ?? +v.slice(0, v.length - 2); e = +v.slice(-2); }
       else if (v.length <= 3) e = +v;
-    } else if ((m = n.match(/[ ._-](\d{1,3})[ ._-]/))) e = +m[1];
+    } else {
+      // production codes like "106" or "219-220" (season digit + episode), or "3-13"
+      const pc = n.match(/(?:^|[^\d])(\d{3,4})(?:-(\d{3,4}))?(?=[^\d]|$)/);
+      const dash = n.match(/(?:^|[^\d])(\d{1,2})-(\d{1,2})(?=[^\d]|$)/);
+      if (pc && !/^(19|20)\d\d$/.test(pc[1]) && +pc[1].slice(0, -2) > 0 && (s == null || +pc[1].slice(0, -2) === s)) {
+        s = s ?? +pc[1].slice(0, -2); e = +pc[1].slice(-2); if (pc[2]) e2 = +pc[2].slice(-2);
+        const second = n.match(new RegExp('(?:&|and)\\s*' + pc[1].slice(0, -2) + '(\\d{2})(?!\\d)', 'i'));
+        if (!e2 && second) e2 = +second[1];
+      } else if (dash && (s == null || +dash[1] === s)) {
+        s = s ?? +dash[1]; e = +dash[2];
+      } else if ((m = n.match(/[ ._-](\d{1,2})[ ._-]/))) e = +m[1];
+    }
   }
   return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, extra, name: cleanEpName(file.name, show.title) };
 }
@@ -119,7 +139,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v5:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v7:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
@@ -236,11 +256,11 @@ function tmdbEpisode(seasonData, ep) {
   for (const se of details.seasons || []) {
     const sd = tmdbSeasonCache[details.id + '-' + se.season_number];
     for (const x of (sd && sd.episodes) || []) {
-      const sc = titleScore(ep.name, x.name);
+      const sc = titleScore(ep.name, x.name) + (ep.s != null && x.season_number === ep.s ? 0.05 : 0);
       if (sc > bestScore) { bestScore = sc; best = x; }
     }
   }
-  return bestScore >= 0.6 ? best : null;
+  return bestScore >= 0.6 ? best : (positional && ownWords.length <= 2 ? positional : null);
 }
 
 // ── Banner: show view ─────────────────────────────────────────────────────────
