@@ -63,7 +63,7 @@ function seasonFromText(t) {
 function cleanEpName(n, showTitle) {
   let t = n.replace(VIDEO_EXT, '').replace(/_+/g, ' ')
     .replace(/\[[^\]]*\]|\([^)]*\)|\{[^}]*\}/g, ' ')
-    .replace(/s\d{1,2}[ ._-]*e\d{1,3}([ ._-]*(e|-)\d{1,3})?/ig, ' ')
+    .replace(/s\d{1,2}[ ._-]*e\d{1,3}[ab]?(?![a-z])([ ._-]*(e|-)\d{1,3})?/ig, ' ')
     .replace(/\bs\d{1,2}[ .-]+e?\d{1,3}\b/ig, ' ')
     .replace(/\b\d{1,2}x\d{1,3}\b/ig, ' ')
     .replace(/\b(book|chapter|season|series|episode|ep|vol(ume)?)[ ._-]*(\d{1,3}|one|two|three|four|five|six|seven)\b/ig, ' ')
@@ -89,9 +89,9 @@ function parseEpisode(file, rootName, show) {
   const n = file.name.replace(VIDEO_EXT, '');
   const ctx = [rootName, ...file.path];
   const extra = [...file.path, n].some(x => EXTRA_RE.test(x));
-  let s = null, e = null, e2 = null, m;
-  if ((m = n.match(/s(\d{1,2})[ ._-]*e(\d{1,3})(?:[ ._-]*(?:e|-)[ ._-]*e?(\d{1,3}))?/i))) {
-    s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
+  let s = null, e = null, e2 = null, part = null, m;
+  if ((m = n.match(/s(\d{1,2})[ ._-]*e(\d{1,3})([ab])?(?![a-z])(?:[ ._-]*(?:e|-)[ ._-]*e?(\d{1,3}))?/i))) {
+    s = +m[1]; e = +m[2]; part = m[3] ? m[3].toLowerCase() : null; e2 = m[4] ? +m[4] : null;
   } else if ((m = n.match(/book[ ._-]*(\d{1,2}).*?chapter[ ._-]*(\d{1,3})/i))) {
     s = +m[1]; e = +m[2];
   } else if ((m = n.match(/(?:^|[^a-z0-9])s(\d{1,2})[ ._-]+e?(\d{1,3})(?:[ ._-]*-?[ ._-]*e(\d{1,3}))?(?![0-9])/i))) {
@@ -126,7 +126,7 @@ function parseEpisode(file, rootName, show) {
       } else if ((m = n.match(/[ ._-](\d{1,2})[ ._-]/))) e = +m[1];
     }
   }
-  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, extra, name: cleanEpName(file.name, show.title) };
+  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, part, extra, name: cleanEpName(file.name, show.title) };
 }
 
 function cleanFolderLabel(t) {
@@ -139,7 +139,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v7:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v8:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
@@ -178,8 +178,10 @@ async function buildShowStructure(show) {
     const best = new Map(), loose = [];
     for (const ep of g.eps) {
       if (ep.e == null || g.key === 'extras') { loose.push(ep); continue; }
-      const k = ep.e + '-' + (ep.e2 || '');
-      if (!best.has(k) || ep.size > best.get(k).size) best.set(k, ep);
+      const k = ep.e + '-' + (ep.e2 || '') + (ep.part || '');
+      const b = best.get(k);
+      if (b && titleTokens(b.name).length && titleTokens(ep.name).length && titleScore(ep.name, b.name) < 0.5) { loose.push(ep); continue; }
+      if (!b || ep.size > b.size) { if (b) {} best.set(k, ep); }
     }
     g.eps = [...best.values(), ...loose].sort((a, b) =>
       (a.e ?? 1e9) - (b.e ?? 1e9) || naturalCmp(a.path.join('/') + a.file, b.path.join('/') + b.file));
@@ -236,9 +238,10 @@ function titleTokens(t) {
   return (t || '').toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w) && !/^\d+$/.test(w));
 }
 function titleScore(fileTitle, tmdbName) {
-  const a = titleTokens(fileTitle), b = new Set(titleTokens(tmdbName));
+  const a = [...new Set(titleTokens(fileTitle))], b = new Set(titleTokens(tmdbName));
   if (!a.length || !b.size) return 0;
-  return a.filter(w => b.has(w)).length / a.length;
+  const inter = a.filter(w => b.has(w)).length;
+  return Math.max(2 * inter / (a.length + b.size), 0.9 * inter / a.length);
 }
 
 // Pick the TMDB episode for a file: positional (season/episode numbers) when the
