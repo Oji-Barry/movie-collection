@@ -40,7 +40,9 @@
       for (const ep of list) {
         const twin = k.startsWith('x:')
           ? kept.find(q => normFile(q.file) === normFile(ep.file) || Math.abs(q.size - ep.size) / Math.max(q.size, 1) < 0.02)
-          : kept.find(q => !ownTok(q.name).length || !ownTok(ep.name).length || titleScore(ep.name, q.name) >= 0.5);
+          : kept.find(q => (ownTok(q.name).length && ownTok(ep.name).length)
+              ? titleScore(ep.name, q.name) >= 0.5
+              : Math.abs(q.size - ep.size) / Math.max(q.size, 1) < 0.15);
         if (twin) { losers.add(ep); dupOf.set(ep, twin); } else kept.push(ep);
       }
     }
