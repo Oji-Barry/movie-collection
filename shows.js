@@ -60,29 +60,56 @@ function seasonFromText(t) {
   return +(m[1] || m[2] || m[3] || m[4] || m[5]);
 }
 
-function cleanEpName(n, showTitle) {
-  let t = n.replace(VIDEO_EXT, '').replace(/_+/g, ' ')
-    .replace(/\[[^\]]*\]|\([^)]*\)|\{[^}]*\}/g, ' ')
+function showWordSet(title) {
+  const w = (title || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(x => x && !['the', 'and', 'of', 'a'].includes(x));
+  const set = new Set(w);
+  for (let i = 0; i < w.length - 1; i++) set.add(w[i] + w[i + 1]);
+  if (w.length > 1) set.add(w.map(x => x[0]).join(''));
+  return set;
+}
+
+const CODEC_CUT = /[ ._\-]+(xvid|divx|x264|x265|h\.?264|h\.?265|hevc|hdtv|720p|1080p|480p|576p|web-?dl|webrip|bdrip|brrip|dvdrip|bluray|dvd)\b.*$/i;
+
+function cleanEpName(n, showTitle, path) {
+  let t = n.replace(VIDEO_EXT, '').replace(/_+/g, ' ').replace(CODEC_CUT, '')
+    .replace(/\[[^\]]*\]|\([^)]*\)|\{[^}]*\}/g, ' ');
+  // release-group tags that appear in brackets in the folder names, e.g. [Geophage]
+  for (const m of (path || []).join(' ').matchAll(/\[([^\]]+)\]/g)) {
+    for (const w of m[1].split(/[^A-Za-z0-9]+/)) if (w.length >= 3 && !/^\d+$/.test(w)) t = t.replace(new RegExp('[\\s\\-]*\\b' + w + '\\b', 'ig'), ' ');
+  }
+  t = t
     .replace(/s\d{1,2}[ ._-]*e\d{1,3}[ab]?(?![a-z])([ ._-]*(e|-)\d{1,3})?/ig, ' ')
     .replace(/\bs\d{1,2}[ .-]+e?\d{1,3}\b/ig, ' ')
     .replace(/\b\d{1,2}x\d{1,3}\b/ig, ' ')
+    .replace(/#\s*\d{1,3}(\s*-\s*\d{1,3})?/g, ' ')
     .replace(/\b(book|chapter|season|series|episode|ep|vol(ume)?)[ ._-]*(\d{1,3}|one|two|three|four|five|six|seven)\b/ig, ' ')
     .replace(/\b(water|earth|fire|air)\b(?=[ ._-]*-)/ig, ' ')
-    .replace(/(^|\s)\d{3,4}(-\d{3,4})?(?=\s|$)/g, ' ')
+    .replace(/(^|[\s.])\d{3,4}(-\d{3,4})?(?=[\s.\-]|$)/g, ' ')
     .replace(/(^|\s)\d{1,2}-\d{1,2}(?=\s|$)/g, ' ')
     .replace(/\b(xvid|divx|x264|x265|h264|h265|hevc|dvdrip|dvd|bdrip|brrip|bluray|web-?dl|webrip|hdtv|720p|1080p|480p|aac|ac3|mp3|snek|repack|proper)\b/ig, ' ')
-    .replace(/[._]+/g, ' ');
+    .replace(/\./g, ' ');
   // drop the show's own name (or a leading part of it) from the start
-  const showWords = new Set((showTitle || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w && w !== 'the'));
+  const showWords = showWordSet(showTitle);
   const norm = w => (w || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-  const tw = t.trim().split(/\s+/);
-  while (tw.length > 1) {
-    const w = norm(tw[0]);
-    if (!w || showWords.has(w) || (w === 'the' && showWords.has(norm(tw[1])))) tw.shift(); else break;
+  const original = t.trim().split(/\s+/);
+  const tw = [...original];
+  while (tw.length) {
+    const raw = tw[0], w = norm(raw);
+    if (/[,']$|'s$/i.test(raw) && showWords.has(w)) break;            // "Jack, the Woolies" is a title
+    if (!w || showWords.has(w) || (['the', 'and', 'n', '&'].includes(w || raw) && tw[1] && showWords.has(norm(tw[1])))) tw.shift(); else break;
   }
+  if (tw.length && ['and', '&'].includes(norm(tw[0]) || tw[0])) tw.splice(0, tw.length, ...original);  // "Jack and the ..." keeps Jack
   t = ' ' + tw.join(' ');
   t = t.replace(/^[\s\-–:#]*\d{1,4}[a-z]?\b[\s\-–:.]*/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s\-–:]+|[\s\-–:]+$/g, '');
-  return t.replace(/(^|[\s(\-])([a-z])/g, (m, a, c) => a + c.toUpperCase()) || n.replace(VIDEO_EXT, '');
+  // drop a leading segment that only repeats folder or show words ("Indigo League - - Title")
+  const pathWords = new Set((path || []).join(' ').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean));
+  const segs = t.split(/\s+-\s+(?:-\s+)?/);
+  if (segs.length > 1) {
+    const first = segs[0].toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean);
+    if (first.length && first.every(w => pathWords.has(w) || showWords.has(w))) t = segs.slice(1).join(' - ');
+  }
+  t = t.replace(/^[\s\-–:]+|[\s\-–:]+$/g, '').replace(/\s{2,}/g, ' ');
+  return t.replace(/(^|[\s(\-])([a-z])/g, (m, a, c) => a + c.toUpperCase());
 }
 
 function parseEpisode(file, rootName, show) {
@@ -113,13 +140,16 @@ function parseEpisode(file, rootName, show) {
     else if ((m = n.match(/#(\d{1,3})\b/))) e = +m[1];
     else if ((m = n.match(/^(\d{1,4})(?:[a-z]\b|[^\d]|$)/i))) {
       const v = m[1];
-      if (v.length >= 3 && (s == null || +v.slice(0, v.length - 2) === s)) { s = s ?? +v.slice(0, v.length - 2); e = +v.slice(-2); }
+      if (v.length >= 3 && /^0/.test(v)) { e = +v; }
+      else if (v.length >= 3 && (s == null || +v.slice(0, v.length - 2) === s)) { s = s ?? +v.slice(0, v.length - 2); e = +v.slice(-2); explicit = true; }
       else if (v.length <= 3) e = +v;
     } else {
       // production codes like "106" or "219-220" (season digit + episode), or "3-13"
       const pc = n.match(/(?:^|[^\d])(\d{3,4})(?:-(\d{3,4}))?(?=[^\d]|$)/);
       const dash = n.match(/(?:^|[^\d])(\d{1,2})-(\d{1,2})(?=[^\d]|$)/);
-      if (pc && !/^(19|20)\d\d$/.test(pc[1]) && +pc[1].slice(0, -2) > 0 && (s == null || +pc[1].slice(0, -2) === s)) {
+      if (pc && /^0/.test(pc[1])) {
+        e = +pc[1]; if (pc[2]) e2 = +pc[2]; explicit = false;
+      } else if (pc && !/^(19|20)\d\d$/.test(pc[1]) && +pc[1].slice(0, -2) > 0 && (s == null || +pc[1].slice(0, -2) === s)) {
         s = s ?? +pc[1].slice(0, -2); e = +pc[1].slice(-2); if (pc[2]) e2 = +pc[2].slice(-2);
         const second = n.match(new RegExp('(?:&|and)\\s*' + pc[1].slice(0, -2) + '(\\d{2})(?!\\d)', 'i'));
         if (!e2 && second) e2 = +second[1];
@@ -129,7 +159,7 @@ function parseEpisode(file, rootName, show) {
       } else if ((m = n.match(/[ ._-](\d{1,2})[ ._-]/))) e = +m[1];
     }
   }
-  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, part, explicit, extra, name: cleanEpName(file.name, show.title) };
+  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, part, explicit, extra, name: cleanEpName(file.name, show.title, file.path) };
 }
 
 function cleanFolderLabel(t) {
@@ -142,7 +172,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v8:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v10:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
@@ -171,6 +201,7 @@ async function buildShowStructure(show) {
   for (const ep of eps) {
     if (ep.extra) addTo('extras', 'Extras', 999, ep);
     else if (ep.s != null) addTo('s' + ep.s, ep.s === 0 ? 'Specials' : 'Season ' + ep.s, ep.s, ep);
+    else if (ep.e != null) addTo('s1', 'Season 1', 1, ep);
     else if (ep.path.length) addTo('f:' + ep.path[ep.path.length - 1], cleanFolderLabel(ep.path[ep.path.length - 1]), 500, ep);
     else addTo('s1', 'Season 1', 1, ep);
   }
@@ -251,7 +282,7 @@ function titleScore(fileTitle, tmdbName) {
 // file has no real title; otherwise the best title match anywhere in the show.
 function tmdbEpisode(seasonData, ep) {
   const details = currentShow ? tmdbShowCache[currentShow.id] : null;
-  const showWords = new Set(titleTokens(currentShow ? currentShow.title : ''));
+  const showWords = showWordSet(currentShow ? currentShow.title : '');
   const ownWords = titleTokens(ep.name).filter(w => !showWords.has(w));
   const positional = seasonData && seasonData.episodes && ep.e != null
     ? seasonData.episodes.find(x => x.episode_number === ep.e) || null : null;
@@ -355,7 +386,7 @@ function episodeRows(g, k) {
     const sel = currentEp && currentEp.k === k && currentEp.j === j;
     return `<button class="ep-row${sel ? ' selected' : ''}" onclick="selectEpisode(${k},${j})">
       <span class="ep-num">${epCode(ep) || (j + 1)}</span>
-      <span class="ep-name">${esc(t && t.name ? t.name : ep.name)}</span>
+      <span class="ep-name">${esc(t && t.name ? t.name : (ep.name || (ep.e != null ? 'Episode ' + ep.e : ep.file)))}</span>
     </button>`;
   }).join('');
 }
@@ -385,7 +416,7 @@ async function selectEpisode(k, j) {
   await loadAllTmdbSeasons(details);
   if (currentShow !== show) return;
   const t = tmdbEpisode(sd, ep);
-  const title = t && t.name ? t.name : ep.name;
+  const title = t && t.name ? t.name : (ep.name || (ep.e != null ? 'Episode ' + ep.e : ep.file));
   const still = t && t.still_path ? `https://image.tmdb.org/t/p/w780${t.still_path}` : null;
   const poster = showPoster(details, show);
 
