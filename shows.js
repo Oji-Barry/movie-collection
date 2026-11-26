@@ -92,6 +92,9 @@ function parseEpisode(file, rootName, show) {
   } else if ((m = n.match(/(?:^|[^\d])(\d{1,2})x(\d{1,3})(?:\s*(?:&|-)\s*(?:\d{1,2}x)?(\d{1,3}))?/i))) {
     s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
   }
+  if (s == null && show.seasonMap) {
+    for (const p of [...file.path].reverse()) if (p in show.seasonMap) { s = show.seasonMap[p]; break; }
+  }
   if (s == null) {
     for (const p of [...ctx].reverse()) { const v = seasonFromText(p); if (v != null) { s = v; break; } }
   }
@@ -116,7 +119,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v4:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v5:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
@@ -278,7 +281,7 @@ function renderShowOverview(show, details) {
     <div class="banner-title">${esc(show.title)}</div>
     ${cast ? `<div class="banner-cast">${esc(cast)}</div>` : ''}
     ${genres.length ? `<div class="banner-genres">${genres.map(g => `<span class="banner-genre-chip">${esc(g)}</span>`).join('')}</div>` : ''}
-    ${plot ? `<div class="banner-plot-wrap"><div class="banner-plot show-plot" id="bannerPlotText">${esc(plot)}</div></div>` : ''}
+    ${plot ? `<div class="banner-plot-wrap"><div class="banner-plot show-plot" id="bannerPlotText" title="Click to read more" onclick="this.classList.toggle('expanded')">${esc(plot)}</div></div>` : ''}
     <div class="season-list" id="seasonList">${struct ? '' : '<div class="season-loading">Loading episodes from Drive…</div>'}</div>`;
   document.getElementById('bannerActions').innerHTML =
     (show.imdb ? `<a class="banner-link" href="${show.imdb}" target="_blank">View on IMDb ↗</a>` : '');
@@ -373,7 +376,7 @@ async function selectEpisode(k, j) {
   info.innerHTML = `
     <div class="banner-kicker"><a href="javascript:void(0)" onclick="backToShow()">${esc(show.title)}</a> · ${code}${esc(air)}</div>
     <div class="banner-title ep-title">${esc(title)}</div>
-    ${plot ? `<div class="banner-plot-wrap"><div class="banner-plot show-plot" id="bannerPlotText">${esc(plot)}</div></div>`
+    ${plot ? `<div class="banner-plot-wrap"><div class="banner-plot show-plot" id="bannerPlotText" title="Click to read more" onclick="this.classList.toggle('expanded')">${esc(plot)}</div></div>`
            : `<div class="ep-noplot">No episode summary found.</div>`}
     <div class="season-list" id="seasonList"></div>`;
   renderSeasonList(show);
