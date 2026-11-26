@@ -49,7 +49,12 @@ async function collectVideos(folderId, path, acc, depth) {
 }
 
 // ── File name parsing ─────────────────────────────────────────────────────────
+const WORD_NUM = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,first:1,second:2,third:3,fourth:4,fifth:5,sixth:6,seventh:7};
 function seasonFromText(t) {
+  const w = t.match(/(?:season|series|book)[ ._-]*(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\b|\b(first|second|third|fourth|fifth|sixth|seventh)[ ._-]+season/i);
+  if (w) return WORD_NUM[(w[1] || w[2]).toLowerCase()];
+  const b = t.match(/\bbook[ ._-]*(\d{1,2})\b/i);
+  if (b) return +b[1];
   const m = t.match(/season[ ._-]*(\d{1,2})|series[ ._-]*(\d{1,2})|(?:^|[^a-z0-9])s(\d{1,2})(?:[^a-z0-9e]|$)|volume[ ._-]*(\d{1,2})|vol\.?[ ._-]*(\d{1,2})/i);
   if (!m) return null;
   return +(m[1] || m[2] || m[3] || m[4] || m[5]);
@@ -78,6 +83,12 @@ function parseEpisode(file, rootName, show) {
   let s = null, e = null, e2 = null, m;
   if ((m = n.match(/s(\d{1,2})[ ._-]*e(\d{1,3})(?:[ ._-]*(?:e|-)[ ._-]*e?(\d{1,3}))?/i))) {
     s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
+  } else if ((m = n.match(/book[ ._-]*(\d{1,2}).*?chapter[ ._-]*(\d{1,3})/i))) {
+    s = +m[1]; e = +m[2];
+  } else if ((m = n.match(/\bs(\d{1,2})[ ._-]+e?(\d{1,3})(?:[ ._-]*-?[ ._-]*e(\d{1,3}))?\b/i))) {
+    s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
+  } else if ((m = n.match(/^(\d{1,2})-(\d{1,2})\b(?!\d)/))) {
+    s = +m[1]; e = +m[2];
   } else if ((m = n.match(/(?:^|[^\d])(\d{1,2})x(\d{1,3})(?:\s*(?:&|-)\s*(?:\d{1,2}x)?(\d{1,3}))?/i))) {
     s = +m[1]; e = +m[2]; e2 = m[3] ? +m[3] : null;
   }
@@ -95,11 +106,17 @@ function parseEpisode(file, rootName, show) {
   return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, extra, name: cleanEpName(file.name, show.title) };
 }
 
+function cleanFolderLabel(t) {
+  const c = t.replace(/\[[^\]]*\]|\{[^}]*\}/g, ' ').replace(/^\s*\d{4}\s*-\s*/, '')
+    .replace(/\b(brrip|dvdrip|xvid|x264|720p|1080p|resourcerg|by megaplay)\b/ig, ' ').replace(/[._]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+  return c || t;
+}
+
 function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }); }
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v3:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
@@ -109,7 +126,14 @@ async function buildShowStructure(show) {
   for (const fid of show.folders) {
     const acc = [];
     await collectVideos(fid, [], acc, 0);
-    acc.forEach(f => eps.push(parseEpisode(f, '', show)));
+    const inc = show.include ? new RegExp(show.include, 'i') : null;
+    const exc = show.exclude ? new RegExp(show.exclude, 'i') : null;
+    acc.forEach(f => {
+      const full = f.path.join('/') + '/' + f.name;
+      if (inc && !inc.test(full)) return;
+      if (exc && exc.test(full)) return;
+      eps.push(parseEpisode(f, '', show));
+    });
   }
 
   // Group into seasons
@@ -121,7 +145,7 @@ async function buildShowStructure(show) {
   for (const ep of eps) {
     if (ep.extra) addTo('extras', 'Extras', 999, ep);
     else if (ep.s != null) addTo('s' + ep.s, ep.s === 0 ? 'Specials' : 'Season ' + ep.s, ep.s, ep);
-    else if (ep.path.length) addTo('f:' + ep.path[0], ep.path[0], 500, ep);
+    else if (ep.path.length) addTo('f:' + ep.path[ep.path.length - 1], cleanFolderLabel(ep.path[ep.path.length - 1]), 500, ep);
     else addTo('s1', 'Season 1', 1, ep);
   }
 
@@ -176,9 +200,44 @@ async function tmdbSeason(tmdbId, n) {
   return tmdbSeasonCache[k];
 }
 
+const allSeasonsLoaded = {};
+async function loadAllTmdbSeasons(details) {
+  if (!details || allSeasonsLoaded[details.id]) return;
+  const nums = (details.seasons || []).map(x => x.season_number);
+  await Promise.all(nums.map(n => tmdbSeason(details.id, n)));
+  allSeasonsLoaded[details.id] = true;
+}
+
+const STOP = new Set(['the','a','an','of','and','to','in','on','at','is','for','part','ep','episode','chapter','pt','vs']);
+function titleTokens(t) {
+  return (t || '').toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w) && !/^\d+$/.test(w));
+}
+function titleScore(fileTitle, tmdbName) {
+  const a = titleTokens(fileTitle), b = new Set(titleTokens(tmdbName));
+  if (!a.length || !b.size) return 0;
+  return a.filter(w => b.has(w)).length / a.length;
+}
+
+// Pick the TMDB episode for a file: positional (season/episode numbers) when the
+// file has no real title; otherwise the best title match anywhere in the show.
 function tmdbEpisode(seasonData, ep) {
-  if (!seasonData || !seasonData.episodes || ep.e == null) return null;
-  return seasonData.episodes.find(x => x.episode_number === ep.e) || null;
+  const details = currentShow ? tmdbShowCache[currentShow.id] : null;
+  const showWords = new Set(titleTokens(currentShow ? currentShow.title : ''));
+  const ownWords = titleTokens(ep.name).filter(w => !showWords.has(w));
+  const positional = seasonData && seasonData.episodes && ep.e != null
+    ? seasonData.episodes.find(x => x.episode_number === ep.e) || null : null;
+  if (ownWords.length < 2) return positional;
+  if (positional && titleScore(ep.name, positional.name) >= 0.6) return positional;
+  if (!details || !allSeasonsLoaded[details.id]) return null;
+  let best = null, bestScore = 0;
+  for (const se of details.seasons || []) {
+    const sd = tmdbSeasonCache[details.id + '-' + se.season_number];
+    for (const x of (sd && sd.episodes) || []) {
+      const sc = titleScore(ep.name, x.name);
+      if (sc > bestScore) { bestScore = sc; best = x; }
+    }
+  }
+  return bestScore >= 0.6 ? best : null;
 }
 
 // ── Banner: show view ─────────────────────────────────────────────────────────
@@ -190,13 +249,11 @@ async function openShow(show) {
   document.getElementById('bannerInfo').innerHTML = '';
   document.getElementById('bannerActions').innerHTML = '';
 
-  const [details] = await Promise.all([tmdbShowDetails(show), renderSeasonListShell()]);
+  const details = await tmdbShowDetails(show);
   if (currentShow !== show) return;
   renderShowOverview(show, details);
   loadSeasons(show);
 }
-
-function renderSeasonListShell() { return Promise.resolve(); }
 
 function showPoster(details, show) {
   if (show.image) return show.image;
@@ -282,8 +339,9 @@ async function toggleSeason(k) {
   openSeasons.add(k); box.classList.add('open');
   document.getElementById('eplist-' + k).innerHTML = episodeRows(g, k);
   const details = await tmdbShowDetails(show);
-  if (details && g.tmdbSeason != null) {
-    await tmdbSeason(details.id, g.tmdbSeason);
+  if (details) {
+    if (g.tmdbSeason != null) await tmdbSeason(details.id, g.tmdbSeason);
+    await loadAllTmdbSeasons(details);
     if (currentShow === show && openSeasons.has(k)) document.getElementById('eplist-' + k).innerHTML = episodeRows(g, k);
   }
 }
@@ -295,6 +353,7 @@ async function selectEpisode(k, j) {
   currentEp = { k, j };
   const details = await tmdbShowDetails(show);
   const sd = details && g.tmdbSeason != null ? await tmdbSeason(details.id, g.tmdbSeason) : null;
+  await loadAllTmdbSeasons(details);
   if (currentShow !== show) return;
   const t = tmdbEpisode(sd, ep);
   const title = t && t.name ? t.name : ep.name;
@@ -305,7 +364,8 @@ async function selectEpisode(k, j) {
     ? `<img class="banner-still" src="${still}" alt="${esc(title)}" onclick="openLightbox('${still}')">`
     : (poster ? `<img class="banner-cover" src="${poster}" alt="${esc(show.title)}">` : '<div class="poster-loading">No image</div>');
 
-  const code = (g.tmdbSeason != null ? 'S' + String(g.tmdbSeason).padStart(2, '0') : esc(g.label) + ' · ') + (epCode(ep) || '');
+  const code = t ? 'S' + String(t.season_number).padStart(2, '0') + 'E' + String(t.episode_number).padStart(2, '0')
+    : (g.tmdbSeason != null ? 'S' + String(g.tmdbSeason).padStart(2, '0') : esc(g.label) + ' · ') + (epCode(ep) || '');
   const air = t && t.air_date ? ' · ' + t.air_date : '';
   const plot = t && t.overview ? t.overview : '';
   const info = document.getElementById('bannerInfo');
