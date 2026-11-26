@@ -82,7 +82,7 @@ function cleanEpName(n, showTitle) {
   }
   t = ' ' + tw.join(' ');
   t = t.replace(/^[\s\-–:#]*\d{1,4}[a-z]?\b[\s\-–:.]*/i, '').replace(/\s{2,}/g, ' ').replace(/^[\s\-–:]+|[\s\-–:]+$/g, '');
-  return t.replace(/\b\w/g, c => c.toUpperCase()) || n.replace(VIDEO_EXT, '');
+  return t.replace(/(^|[\s(\-])([a-z])/g, (m, a, c) => a + c.toUpperCase()) || n.replace(VIDEO_EXT, '');
 }
 
 function parseEpisode(file, rootName, show) {
@@ -107,8 +107,10 @@ function parseEpisode(file, rootName, show) {
   if (s == null) {
     for (const p of [...ctx].reverse()) { const v = seasonFromText(p); if (v != null) { s = v; break; } }
   }
+  let explicit = e != null;
   if (e == null) {
-    if ((m = n.match(/(?:\bep(?:isode)?\.?[ ._-]*|#)(\d{1,3})\b/i))) e = +m[1];
+    if ((m = n.match(/\bep(?:isode)?\.?[ ._-]*(\d{1,3})\b/i))) { e = +m[1]; explicit = true; }
+    else if ((m = n.match(/#(\d{1,3})\b/))) e = +m[1];
     else if ((m = n.match(/^(\d{1,4})(?:[a-z]\b|[^\d]|$)/i))) {
       const v = m[1];
       if (v.length >= 3 && (s == null || +v.slice(0, v.length - 2) === s)) { s = s ?? +v.slice(0, v.length - 2); e = +v.slice(-2); }
@@ -121,12 +123,13 @@ function parseEpisode(file, rootName, show) {
         s = s ?? +pc[1].slice(0, -2); e = +pc[1].slice(-2); if (pc[2]) e2 = +pc[2].slice(-2);
         const second = n.match(new RegExp('(?:&|and)\\s*' + pc[1].slice(0, -2) + '(\\d{2})(?!\\d)', 'i'));
         if (!e2 && second) e2 = +second[1];
+        explicit = true;
       } else if (dash && (s == null || +dash[1] === s)) {
-        s = s ?? +dash[1]; e = +dash[2];
+        s = s ?? +dash[1]; e = +dash[2]; explicit = true;
       } else if ((m = n.match(/[ ._-](\d{1,2})[ ._-]/))) e = +m[1];
     }
   }
-  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, part, extra, name: cleanEpName(file.name, show.title) };
+  return { id: file.id, size: file.size, file: file.name, path: file.path, s, e, e2, part, explicit, extra, name: cleanEpName(file.name, show.title) };
 }
 
 function cleanFolderLabel(t) {

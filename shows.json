@@ -1,5 +1,5 @@
 [
-  {"id": "S1", "title": "Animaniacs", "year": 1993, "rating": "TV-Y7", "genre": ["Animation", "Comedy", "Family"], "category": ["Cartoon"], "creator": "Tom Ruegger", "folders": ["10jYflzsfD-iPqgS0-HBTheKD16pqkged"]},
+  {"id": "S1", "title": "Animaniacs", "year": 1993, "rating": "TV-Y7", "genre": ["Animation", "Comedy", "Family"], "category": ["Cartoon"], "creator": "Tom Ruegger", "folders": ["10jYflzsfD-iPqgS0-HBTheKD16pqkged"], "numbering": "file"},
   {"id": "S2", "title": "Avatar: The Last Airbender", "year": 2005, "rating": "TV-Y7", "genre": ["Animation", "Action", "Fantasy"], "category": ["Cartoon"], "creator": "Michael Dante DiMartino, Bryan Konietzko", "folders": ["1DdRfcTHBKJIED9siJm3ULAzTpOtsmzRl"], "exclude": "kor+a"},
   {"id": "S3", "title": "Batman Beyond", "year": 1999, "rating": "TV-Y7", "genre": ["Animation", "Action", "Sci-Fi"], "category": ["Cartoon", "Superhero", "DC"], "creator": "Bruce Timm, Paul Dini, Alan Burnett", "folders": ["1bbfEvLkJNnvPy-P4MKYQXAYt4Ii3H5AI"]},
   {"id": "S4", "title": "The Boondocks", "year": 2005, "rating": "TV-MA", "genre": ["Animation", "Comedy"], "category": ["Cartoon", "Adult Swim"], "creator": "Aaron McGruder", "folders": ["1v3ReBQyCla1UndcS5wyxpvWFnF4viu-a", "1VYrCLdSR7RBKJNpok3Gz2vlSG2kjDSLS"]},
