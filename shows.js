@@ -72,6 +72,7 @@ const CODEC_CUT = /[ ._\-]+(xvid|divx|x264|x265|h\.?264|h\.?265|hevc|hdtv|720p|1
 
 function cleanEpName(n, showTitle, path) {
   let t = n.replace(VIDEO_EXT, '').replace(/_+/g, ' ').replace(CODEC_CUT, '')
+    .replace(/\((part|pt\.?)\s*(\d+|one|two|three|i{1,3})\)/ig, ' Part $2 ')
     .replace(/\[[^\]]*\]|\([^)]*\)|\{[^}]*\}/g, ' ');
   // release-group tags that appear in brackets in the folder names, e.g. [Geophage]
   for (const m of (path || []).join(' ').matchAll(/\[([^\]]+)\]/g)) {
@@ -172,7 +173,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v10:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v11:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }
