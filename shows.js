@@ -173,7 +173,7 @@ function naturalCmp(a, b) { return a.localeCompare(b, undefined, { numeric: true
 
 async function buildShowStructure(show) {
   if (showStructCache[show.id]) return showStructCache[show.id];
-  const key = 'showStruct:v11:' + show.id + ':' + show.folders.join(',');
+  const key = 'showStruct:v12:' + show.id + ':' + show.folders.join(',');
   try {
     const cached = JSON.parse(sessionStorage.getItem(key) || 'null');
     if (cached) { showStructCache[show.id] = cached; return cached; }

@@ -26,5 +26,7 @@
   {"id": "S25", "title": "Tiny Toon Adventures", "year": 1990, "rating": "TV-Y", "genre": ["Animation", "Comedy", "Family"], "category": ["Cartoon"], "creator": "Tom Ruegger", "folders": ["1nF2aI6h4X9x7Q5dV4ie0NNgTffKTQV0a"]},
   {"id": "S26", "title": "The Venture Bros.", "year": 2003, "rating": "TV-14", "genre": ["Animation", "Comedy", "Action"], "category": ["Cartoon", "Adult Swim"], "creator": "Jackson Publick", "folders": ["1RLe4_R1N6wfXEHDYUM8ZXY5-TE3SXCL9"]},
   {"id": "S27", "title": "Wolverine and the X-Men", "year": 2008, "rating": "TV-Y7", "genre": ["Animation", "Action", "Sci-Fi"], "category": ["Cartoon", "Superhero", "Marvel"], "creator": "Craig Kyle", "folders": ["1u1CxZ-uma3Jz5F4yukLxw_klpJ4KoJlz"]},
-  {"id": "S28", "title": "ThunderCats (2011)", "tmdbQuery": "ThunderCats", "year": 2011, "rating": "TV-PG", "genre": ["Animation", "Action", "Fantasy"], "category": ["Cartoon"], "creator": "Ethan Spaulding, Michael Jelenic", "folders": ["1AdOTXsfizjzBzAkB2GTznNoY-Wq0pFu-"]}
+  {"id": "S28", "title": "ThunderCats (2011)", "tmdbQuery": "ThunderCats", "year": 2011, "rating": "TV-PG", "genre": ["Animation", "Action", "Fantasy"], "category": ["Cartoon"], "creator": "Ethan Spaulding, Michael Jelenic", "folders": ["1AdOTXsfizjzBzAkB2GTznNoY-Wq0pFu-"]},
+  {"id": "S29", "title": "Justice League Unlimited", "year": 2004, "rating": "TV-Y7", "genre": ["Animation", "Action", "Sci-Fi"], "category": ["Cartoon"], "creator": "Bruce Timm", "folders": ["1DKdLz0uySQMQU77PDuQoHFVRyqnfg2Fq"], "tmdbId": 84200},
+  {"id": "S30", "title": "Powerpuff Girls Z", "year": 2006, "rating": "TV-Y7", "genre": ["Animation", "Action", "Comedy"], "category": ["Anime"], "creator": "Craig McCracken", "folders": ["1sjNTTE3Sw8umy9RZIGUHU80zt0sWo6V-"], "tmdbId": 12406}
 ]
